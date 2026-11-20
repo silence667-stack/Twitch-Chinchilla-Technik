@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" width="400" height="460">
+  <defs>
+    <radialGradient id="furBody" cx="42%" cy="32%" r="75%">
+      <stop offset="0%" stop-color="#fbf3e2"/>
+      <stop offset="60%" stop-color="#f3e4c8"/>
+      <stop offset="100%" stop-color="#cda877"/>
+    </radialGradient>
+    <radialGradient id="furHead" cx="40%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#fcf6ea"/>
+      <stop offset="65%" stop-color="#f3e4c8"/>
+      <stop offset="100%" stop-color="#d6b589"/>
+    </radialGradient>
+    <radialGradient id="tailFur" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#f3e4c8"/>
+      <stop offset="100%" stop-color="#b8905f"/>
+    </radialGradient>
+    <linearGradient id="earOuter" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#cda877"/>
+      <stop offset="100%" stop-color="#8a7255"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Schwanz, hinter dem Körper -->
+  <g opacity="0.98">
+    <circle cx="78" cy="368" r="52" fill="url(#tailFur)"/>
+    <circle cx="60" cy="330" r="40" fill="url(#tailFur)"/>
+    <circle cx="100" cy="320" r="34" fill="url(#tailFur)"/>
+    <circle cx="55" cy="390" r="30" fill="url(#tailFur)"/>
+  </g>
+
+  <!-- Körper -->
+  <ellipse cx="200" cy="300" rx="118" ry="108" fill="url(#furBody)"/>
+
+  <!-- Ohren -->
+  <g>
+    <ellipse cx="128" cy="92" rx="34" ry="46" fill="url(#earOuter)" transform="rotate(-18 128 92)"/>
+    <ellipse cx="128" cy="96" rx="19" ry="30" fill="#6b5a46" transform="rotate(-18 128 96)"/>
+    <ellipse cx="272" cy="92" rx="34" ry="46" fill="url(#earOuter)" transform="rotate(18 272 92)"/>
+    <ellipse cx="272" cy="96" rx="19" ry="30" fill="#6b5a46" transform="rotate(18 272 96)"/>
+  </g>
+
+  <!-- Kopf -->
+  <circle cx="200" cy="170" r="104" fill="url(#furHead)"/>
+
+  <!-- Wangen-Fluff -->
+  <circle cx="118" cy="195" r="26" fill="#f3e4c8" opacity="0.9"/>
+  <circle cx="282" cy="195" r="26" fill="#f3e4c8" opacity="0.9"/>
+
+  <!-- Headset-Bügel -->
+  <path d="M 118 128 Q 200 48 282 128" fill="none" stroke="#2a2438" stroke-width="10" stroke-linecap="round"/>
+  <!-- Ohrpolster rechts (mit Mikro-Ausleger) -->
+  <circle cx="284" cy="134" r="24" fill="#2a2438"/>
+  <circle cx="284" cy="134" r="14" fill="#79e6e8"/>
+  <path d="M 268 150 Q 236 188 214 196" fill="none" stroke="#2a2438" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="213" cy="197" r="6" fill="#2a2438"/>
+  <!-- Ohrpolster links -->
+  <circle cx="116" cy="134" r="24" fill="#2a2438"/>
+  <circle cx="116" cy="134" r="14" fill="#79e6e8"/>
+
+  <!-- Brille -->
+  <circle cx="166" cy="172" r="29" fill="none" stroke="#2a2438" stroke-width="7"/>
+  <circle cx="234" cy="172" r="29" fill="none" stroke="#2a2438" stroke-width="7"/>
+  <path d="M 195 172 L 205 172" stroke="#2a2438" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Augen -->
+  <circle cx="166" cy="172" r="15" fill="#2a2438"/>
+  <circle cx="234" cy="172" r="15" fill="#2a2438"/>
+  <circle cx="161" cy="167" r="4.5" fill="#f6f1e7"/>
+  <circle cx="229" cy="167" r="4.5" fill="#f6f1e7"/>
+
+  <!-- Nase & Schnurrhaare -->
+  <ellipse cx="200" cy="202" rx="11" ry="8" fill="#6b5a46"/>
+  <path d="M 190 206 Q 200 213 210 206" fill="none" stroke="#6b5a46" stroke-width="3" stroke-linecap="round"/>
+  <g stroke="#cda877" stroke-width="2.5" stroke-linecap="round" opacity="0.85">
+    <path d="M 150 200 L 110 190"/>
+    <path d="M 150 210 L 108 212"/>
+    <path d="M 250 200 L 290 190"/>
+    <path d="M 250 210 L 292 212"/>
+  </g>
+
+  <!-- Pfoten + Mandel -->
+  <ellipse cx="160" cy="352" rx="28" ry="22" fill="#f3e4c8"/>
+  <ellipse cx="240" cy="352" rx="28" ry="22" fill="#f3e4c8"/>
+  <g transform="translate(200 345) rotate(-10)">
+    <path d="M 0 -22 C 16 -22 24 -4 0 22 C -24 -4 -16 -22 0 -22 Z" fill="#d9a441"/>
+    <path d="M 0 -22 C 16 -22 24 -4 0 22" fill="#c7913a"/>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="220" height="220">
+  <defs>
+    <radialGradient id="furHeadIcon" cx="40%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#fcf6ea"/>
+      <stop offset="65%" stop-color="#f3e4c8"/>
+      <stop offset="100%" stop-color="#d6b589"/>
+    </radialGradient>
+    <linearGradient id="earOuterIcon" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#cda877"/>
+      <stop offset="100%" stop-color="#8a7255"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="110" cy="110" r="110" fill="#1b1726"/>
+
+  <ellipse cx="62" cy="58" rx="20" ry="27" fill="url(#earOuterIcon)" transform="rotate(-18 62 58)"/>
+  <ellipse cx="62" cy="61" rx="11" ry="17" fill="#6b5a46" transform="rotate(-18 62 61)"/>
+  <ellipse cx="158" cy="58" rx="20" ry="27" fill="url(#earOuterIcon)" transform="rotate(18 158 58)"/>
+  <ellipse cx="158" cy="61" rx="11" ry="17" fill="#6b5a46" transform="rotate(18 158 61)"/>
+
+  <circle cx="110" cy="112" r="62" fill="url(#furHeadIcon)"/>
+
+  <path d="M 72 78 Q 110 32 148 78" fill="none" stroke="#2a2438" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="150" cy="82" r="15" fill="#2a2438"/>
+  <circle cx="150" cy="82" r="8.5" fill="#79e6e8"/>
+  <circle cx="70" cy="82" r="15" fill="#2a2438"/>
+  <circle cx="70" cy="82" r="8.5" fill="#79e6e8"/>
+
+  <circle cx="92" cy="110" r="18" fill="none" stroke="#2a2438" stroke-width="5"/>
+  <circle cx="128" cy="110" r="18" fill="none" stroke="#2a2438" stroke-width="5"/>
+  <path d="M 110 110 L 110 110" stroke="#2a2438" stroke-width="5"/>
+  <path d="M 108 110 L 112 110" stroke="#2a2438" stroke-width="5"/>
+
+  <circle cx="92" cy="110" r="9" fill="#2a2438"/>
+  <circle cx="128" cy="110" r="9" fill="#2a2438"/>
+  <circle cx="89" cy="107" r="2.6" fill="#f6f1e7"/>
+  <circle cx="125" cy="107" r="2.6" fill="#f6f1e7"/>
+
+  <ellipse cx="110" cy="130" rx="7" ry="5" fill="#6b5a46"/>
+</svg>

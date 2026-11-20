@@ -1,0 +1,98 @@
+<!--
+  Chinchilla-Ticker — StreamElements Custom Widget (Dauer-Overlay, kein Event)
+  =============================================================================
+  Kleine Box unten links, die alle paar Sekunden zwischen Chinchilla-Fakten
+  und Technik-Fakten wechselt. Laeuft die ganze Zeit im Hintergrund mit.
+
+  Einrichtung: wie bei mandel-alert.html — HTML/CSS/JS in die drei Tabs
+  des Custom-Widget-Editors kopieren, Breite/Hoehe 1920x1080, transparent.
+  Die Fakten-Liste unten im JS-Teil ("FACTS") kannst du frei erweitern.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+/* CSS START */
+html, body {
+  margin: 0; padding: 0; background: transparent;
+  width: 1920px; height: 1080px; overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+#chinchilla-ticker {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 560px;
+  padding: 12px 22px 12px 14px;
+  background: rgba(27, 23, 38, 0.82);
+  border: 2px solid #cda877;
+  border-radius: 999px;
+}
+
+#chinchilla-ticker img {
+  width: 40px; height: 40px; flex-shrink: 0;
+}
+
+#chinchilla-ticker .fact {
+  color: #f6f1e7;
+  font-size: 18px;
+  line-height: 1.3;
+  opacity: 1;
+  transition: opacity 400ms ease;
+}
+
+#chinchilla-ticker .fact.fade {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #chinchilla-ticker .fact { transition: none; }
+}
+/* CSS ENDE */
+</style>
+</head>
+<body>
+<!-- HTML START -->
+<div id="chinchilla-ticker">
+  <img src="https://raw.githubusercontent.com/silence667-stack/Twitch-Chinchilla-Technik/main/assets/chinchilla-icon.svg" alt="">
+  <div class="fact" id="chinchilla-ticker-text"></div>
+</div>
+<!-- HTML ENDE -->
+
+<script>
+// JS START
+(function () {
+  var FACTS = [
+    'Wusstest du? Chinchillas nehmen Staubbäder statt Wasserbäder.',
+    'Chinchilla-Fell hat bis zu 80 Haare pro Follikel – das dichteste Fell aller Landsäugetiere.',
+    'Mandeln sind für Chinchillas eigentlich nur ein seltener Leckerbissen – hier auf dem Kanal aber die Stream-Währung 🐹',
+    'Chinchillas kommen ursprünglich aus den Anden in Südamerika.',
+    'Technik-Tipp: Dieses Overlay läuft komplett im Browser, kein eigener Server nötig.',
+    'Chinchillas können bis zu 20 Jahre alt werden – deutlich älter als die meisten Nagetiere.',
+    'derBaLu84 streamt hier mit einem selbstgebauten Setup aus Technik & Chinchilla-Liebe.'
+  ];
+
+  var textEl = document.getElementById('chinchilla-ticker-text');
+  var i = 0;
+
+  function showNext() {
+    textEl.classList.add('fade');
+    setTimeout(function () {
+      i = (i + 1) % FACTS.length;
+      textEl.textContent = FACTS[i];
+      textEl.classList.remove('fade');
+    }, 400);
+  }
+
+  textEl.textContent = FACTS[0];
+  setInterval(showNext, 9000);
+})();
+// JS ENDE
+</script>
+</body>
+</html>

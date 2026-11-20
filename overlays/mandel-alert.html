@@ -1,0 +1,180 @@
+<!--
+  Mandel-Alert — StreamElements Custom Widget
+  ============================================
+  Zeigt bei Sub/Spende/Cheer/Follow eine kurze, dezente Chinchilla-Animation
+  mit "X hat Y Mandeln spendiert"-Text (Mandeln = Spaß-Name für Bits/Spenden
+  in diesem Theme, keine echte Zahlungsfunktion).
+
+  EINRICHTUNG in StreamElements:
+  1. Dashboard -> Overlays -> dein Overlay oeffnen (oder neues anlegen)
+  2. Widget hinzufuegen -> "Custom Widget" / "My Overlays" -> Benutzerdefiniert
+  3. Im Editor gibt es drei Tabs: HTML / CSS / JS
+     - HTML-Tab: den mit "HTML START" / "HTML ENDE" markierten Abschnitt weiter
+       unten im Code einfuegen
+     - CSS-Tab:  den mit "CSS START" / "CSS ENDE" markierten Abschnitt einfuegen
+     - JS-Tab:   den mit "JS START" / "JS ENDE" markierten Abschnitt einfuegen
+  4. Breite/Hoehe des Widgets im Editor auf 1920x1080 stellen (transparenter Hintergrund)
+  5. Fertig, kein eigener Server/Token noetig — StreamElements liefert die Events.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+/* CSS START */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  font-family: "Baloo 2", "Inter", sans-serif;
+}
+
+#mandel-alert {
+  position: absolute;
+  left: 50%;
+  top: 72%;
+  transform: translate(-50%, 0) scale(0.85);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 18px 34px;
+  background: linear-gradient(135deg, rgba(36,31,51,0.92), rgba(27,23,38,0.92));
+  border: 3px solid #79e6e8;
+  border-radius: 20px;
+  box-shadow: 0 0 28px rgba(121,230,232,0.35);
+  opacity: 0;
+  pointer-events: none;
+}
+
+#mandel-alert.show {
+  animation: mandelIn 320ms ease-out forwards, mandelOut 320ms ease-in 4200ms forwards;
+}
+
+#mandel-alert img {
+  width: 84px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+#mandel-alert .text {
+  color: #f6f1e7;
+  font-size: 30px;
+  line-height: 1.25;
+}
+
+#mandel-alert .text b {
+  color: #79e6e8;
+}
+
+#mandel-alert .text .amount {
+  color: #ff9ac0;
+}
+
+@keyframes mandelIn {
+  from { opacity: 0; transform: translate(-50%, 16px) scale(0.85); }
+  to   { opacity: 1; transform: translate(-50%, 0) scale(1); }
+}
+@keyframes mandelOut {
+  from { opacity: 1; transform: translate(-50%, 0) scale(1); }
+  to   { opacity: 0; transform: translate(-50%, 16px) scale(0.85); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #mandel-alert.show {
+    animation: none;
+    opacity: 1;
+    transition: opacity 250ms linear;
+  }
+}
+/* CSS ENDE */
+</style>
+</head>
+<body>
+<!-- HTML START -->
+<div id="mandel-alert">
+  <img src="https://raw.githubusercontent.com/silence667-stack/Twitch-Chinchilla-Technik/main/assets/chinchilla-icon.svg" alt="">
+  <div class="text" id="mandel-alert-text"></div>
+</div>
+<!-- HTML ENDE -->
+
+<script>
+// JS START
+(function () {
+  var el = document.getElementById('mandel-alert');
+  var textEl = document.getElementById('mandel-alert-text');
+  var hideTimer = null;
+
+  function showAlert(name, amountText) {
+    textEl.innerHTML = '<b>' + escapeHtml(name) + '</b> hat ' +
+      '<span class="amount">' + escapeHtml(amountText) + ' Mandeln</span> spendiert!';
+    el.classList.remove('show');
+    void el.offsetWidth; // Reflow erzwingen, damit die Animation neu startet
+    el.classList.add('show');
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(function () {
+      el.classList.remove('show');
+    }, 4600);
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c];
+    });
+  }
+
+  function currencySymbol(code) {
+    switch (String(code || '').toUpperCase()) {
+      case 'EUR': return '€';
+      case 'USD': return '$';
+      case 'GBP': return '£';
+      case '': return '€'; // StreamElements liefert i.d.R. "currency", Fallback auf Euro
+      default: return ' ' + code;
+    }
+  }
+
+  function formatAmount(amount, currency) {
+    // 2 Nachkommastellen statt hartem Runden, damit z.B. 1,49€-Spenden nicht als "1€" erscheinen
+    var n = Math.round((Number(amount) || 0) * 100) / 100;
+    return n + currencySymbol(currency);
+  }
+
+  // StreamElements ruft dies bei jedem Event auf (Follow, Sub, Cheer, Spende, ...)
+  window.addEventListener('onEventReceived', function (obj) {
+    var detail = obj.detail;
+    if (!detail || !detail.event) return;
+    var listenerType = detail.listener;
+    var data = detail.event;
+    var name = data.name || data.displayName || 'Jemand';
+
+    if (listenerType === 'tip-latest' || listenerType === 'donation-latest') {
+      showAlert(name, formatAmount(data.amount, data.currency) + ' an');
+    } else if (listenerType === 'cheer-latest') {
+      showAlert(name, (data.amount || 0) + ' Bits als');
+    } else if (listenerType === 'subscriber-latest') {
+      if (data.gifted) {
+        // Bei verschenkten Subs ist "name" die beschenkte Person, nicht die spendende —
+        // die spendierende Person steht in "sender"
+        var gifter = data.sender || data.gifterName || 'Jemand';
+        var count = data.amount && data.amount > 1 ? (data.amount + ' Abos') : 'ein Abo';
+        showAlert(gifter, count + ' verschenkt als');
+      } else {
+        showAlert(name, 'ein Abo als');
+      }
+    } else if (listenerType === 'follower-latest') {
+      showAlert(name, 'ein Pfötchen-High-Five als');
+    }
+  });
+
+  // Testbutton im Browser-Preview (StreamElements ruft diese Funktion nie auf,
+  // sie stört also im Live-Betrieb nicht): per Konsole testAlert() aufrufen.
+  window.testAlert = function () {
+    showAlert('Test-Chinchilla', '128');
+  };
+})();
+// JS ENDE
+</script>
+</body>
+</html>

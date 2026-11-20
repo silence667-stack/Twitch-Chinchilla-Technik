@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 100" width="80" height="100">
+  <defs>
+    <linearGradient id="almondBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f1c879"/>
+      <stop offset="100%" stop-color="#c7913a"/>
+    </linearGradient>
+  </defs>
+  <path d="M 40 4 C 68 4 76 38 58 66 C 50 80 40 96 40 96 C 40 96 30 80 22 66 C 4 38 12 4 40 4 Z" fill="url(#almondBody)"/>
+  <path d="M 40 4 C 68 4 76 38 58 66 C 50 80 40 96 40 96 Z" fill="#b87f2e" opacity="0.55"/>
+  <path d="M 40 14 C 36 34 34 54 40 84" fill="none" stroke="#8a5f22" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+</svg>

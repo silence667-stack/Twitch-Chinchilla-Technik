@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face {
+    font-family: "PanelSans";
+    src: local("DejaVu Sans"), local("Arial");
+  }
+  html,body{margin:0;padding:0;}
+  .panel{
+    width:320px;height:220px;
+    background: radial-gradient(120% 140% at 20% 0%, #2c2540 0%, #1b1726 65%);
+    box-sizing:border-box;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    font-family:"PanelSans",sans-serif;
+    position:relative;overflow:hidden;
+    border:3px solid #79e6e8;
+  }
+  .glow{
+    position:absolute;top:-40px;right:-40px;width:160px;height:160px;
+    background:radial-gradient(circle, rgba(255,154,192,0.35) 0%, rgba(255,154,192,0) 70%);
+  }
+  .icon{width:92px;height:92px;margin-top:4px;}
+  .title{
+    color:#f6f1e7;font-size:26px;font-weight:700;letter-spacing:0.5px;
+    margin-top:10px;
+  }
+  .sub{
+    color:#79e6e8;font-size:15px;margin-top:4px;letter-spacing:1px;
+    text-transform:uppercase;
+  }
+</style>
+</head>
+<body>
+  <div class="panel">
+    <div class="glow"></div>
+    <img class="icon" src="../assets/chinchilla-icon.svg" alt="Chinchilla-Maskottchen von derBaLu84">
+    <div class="title">derBaLu84</div>
+    <div class="sub">Chinchillas &amp; Technik</div>
+  </div>
+</body>
+</html>
