@@ -130,15 +130,29 @@ html, body {
       case 'EUR': return '€';
       case 'USD': return '$';
       case 'GBP': return '£';
-      case '': return '€'; // StreamElements liefert i.d.R. "currency", Fallback auf Euro
+      case '': return '€'; // kein Code bekannt -> Euro als Fallback
       default: return ' ' + code;
     }
   }
 
+  // StreamElements liefert die Kanal-Standardwährung nicht zuverlässig pro Tip-Event,
+  // sondern beim Laden des Widgets. Wir cachen sie hier defensiv aus mehreren möglichen
+  // Pfaden (Doku-Lage dazu ist uneindeutig) und fallen sonst auf Euro zurück.
+  var cachedCurrency = null;
+  window.addEventListener('onWidgetLoad', function (obj) {
+    var d = obj && obj.detail;
+    if (!d) return;
+    cachedCurrency =
+      (d.session && d.session.data && d.session.data.currency) ||
+      (d.fieldData && d.fieldData.currency) ||
+      (d.channel && d.channel.currency) ||
+      cachedCurrency;
+  });
+
   function formatAmount(amount, currency) {
     // 2 Nachkommastellen statt hartem Runden, damit z.B. 1,49€-Spenden nicht als "1€" erscheinen
     var n = Math.round((Number(amount) || 0) * 100) / 100;
-    return n + currencySymbol(currency);
+    return n + currencySymbol(currency || cachedCurrency);
   }
 
   // StreamElements ruft dies bei jedem Event auf (Follow, Sub, Cheer, Spende, ...)
@@ -154,11 +168,16 @@ html, body {
     } else if (listenerType === 'cheer-latest') {
       showAlert(name, (data.amount || 0) + ' Bits als');
     } else if (listenerType === 'subscriber-latest') {
+      if (data.isCommunityGift) {
+        // Einzelne Empfänger-Events innerhalb eines Massen-Gifts — das zugehörige
+        // bulkGifted-Event deckt den Alert für die ganze Aktion schon ab.
+        return;
+      }
       if (data.gifted) {
         // Bei verschenkten Subs ist "name" die beschenkte Person, nicht die spendende —
         // die spendierende Person steht in "sender"
-        var gifter = data.sender || data.gifterName || 'Jemand';
-        var count = data.amount && data.amount > 1 ? (data.amount + ' Abos') : 'ein Abo';
+        var gifter = data.sender || 'Jemand';
+        var count = data.bulkGifted && data.amount > 1 ? (data.amount + ' Abos') : 'ein Abo';
         showAlert(gifter, count + ' verschenkt als');
       } else {
         showAlert(name, 'ein Abo als');
