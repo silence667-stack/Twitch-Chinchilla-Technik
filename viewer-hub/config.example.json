@@ -1,0 +1,21 @@
+{
+  "_hinweis": "Zu config.json kopieren und ausfuellen. config.json ist in .gitignore, landet NIE auf GitHub -- hier stehen Secrets drin.",
+
+  "clientId": "DEINE-TWITCH-APP-CLIENT-ID",
+  "clientSecret": "DEIN-TWITCH-APP-CLIENT-SECRET",
+  "redirectUri": "http://localhost:8520/auth/callback",
+  "broadcasterLogin": "derbalu84",
+  "broadcasterTwitchId": "",
+
+  "sessionSecret": "irgendein-langer-zufaelliger-text-nur-du-kennst-ihn",
+
+  "port": 8520,
+
+  "currencyName": "Mandeln",
+  "currencyEmoji": "🌰",
+  "pointsPerHeartbeat": 1,
+  "heartbeatIntervalSeconds": 60,
+  "dailyCheckinBonus": 20,
+
+  "_broadcasterTwitchId_hinweis": "Kann leer bleiben -- wird beim ersten Serverstart automatisch per Helix-API aus broadcasterLogin aufgeloest und hier eingetragen."
+}

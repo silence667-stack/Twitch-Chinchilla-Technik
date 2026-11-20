@@ -11,11 +11,12 @@ const OUT = join(__dirname, '..', 'strips');
 mkdirSync(OUT, { recursive: true });
 
 const TAU = Math.PI * 2;
-const DARK = '#2a2438';
-const FUR = 'url(#fur)';
-const EAR_OUT = 'url(#earOuter)';
-const EAR_IN = '#6b5a46';
-const CHEEK = '#f3e4c8';
+const DARK = '#151515';
+const FUR = '#595552';
+const FUR_MID = '#777573';
+const EAR_OUT = '#595552';
+const EAR_IN = '#d6c5bc';
+const CHEEK = '#babcbd';
 const CYAN = '#79e6e8';
 const PINK = '#ff9ac0';
 const ALMOND = '#d9a441';
@@ -37,9 +38,16 @@ function earsHead(t, { earAmp = 6 } = {}) {
   const earL = wiggle(t, earAmp, -18, 0.3);
   const earR = wiggle(t, earAmp, 18, Math.PI + 0.3);
   return `
-    <g style="transform-origin:34px 34px" transform="rotate(${earL})"><ellipse cx="34" cy="34" rx="16" ry="21" fill="${EAR_OUT}" stroke="${DARK}" stroke-width="3"/><ellipse cx="34" cy="36" rx="8.5" ry="13" fill="${EAR_IN}"/></g>
-    <g style="transform-origin:78px 34px" transform="rotate(${earR})"><ellipse cx="78" cy="34" rx="16" ry="21" fill="${EAR_OUT}" stroke="${DARK}" stroke-width="3"/><ellipse cx="78" cy="36" rx="8.5" ry="13" fill="${EAR_IN}"/></g>
-    <circle cx="56" cy="62" r="46" fill="${FUR}" stroke="${DARK}" stroke-width="3"/>
+    <!-- Große, seitlich hinter dem Kopf angesetzte Blattohren mit dünnem Fellrand. -->
+    <g transform="rotate(${earL} 30 44)">
+      <path d="M30 51 C17 48 10 30 12 14 C13 6 17 3 22 4 C35 6 44 22 43 35 C42 44 37 50 30 51 Z" fill="${EAR_OUT}" stroke="${DARK}" stroke-width="2"/>
+      <path d="M30 46 C21 43 15 28 17 15 C18 9 20 8 23 9 C33 12 39 25 38 35 C37 41 34 45 30 46 Z" fill="${EAR_IN}"/>
+    </g>
+    <g transform="rotate(${earR} 82 44)">
+      <path d="M82 51 C95 48 102 30 100 14 C99 6 95 3 90 4 C77 6 68 22 69 35 C70 44 75 50 82 51 Z" fill="${EAR_OUT}" stroke="${DARK}" stroke-width="2"/>
+      <path d="M82 46 C91 43 97 28 95 15 C94 9 92 8 89 9 C79 12 73 25 74 35 C75 41 78 45 82 46 Z" fill="${EAR_IN}"/>
+    </g>
+    <circle cx="56" cy="62" r="46" fill="url(#fur)" stroke="${DARK}" stroke-width="3"/>
     <circle cx="56" cy="90" r="20" fill="${CHEEK}"/>`;
 }
 
@@ -70,11 +78,11 @@ function eyesRound(t, { r = 7, pupilDX = 0, pupilDY = 0, blink = true, highlight
   return `
     <g style="transform-origin:40px 60px" transform="scale(1 ${open})">
       <ellipse cx="40" cy="60" rx="${r}" ry="${r}" fill="${DARK}"/>
-      ${highlight ? `<circle cx="${40 + pupilDX - 2}" cy="${60 + pupilDY - 2.5}" r="2" fill="#f6f1e7"/>` : ''}
+      ${highlight ? `<circle cx="${40 + pupilDX - 2}" cy="${60 + pupilDY - 2.5}" r="1.5" fill="#ffffff"/>` : ''}
     </g>
     <g style="transform-origin:72px 60px" transform="scale(1 ${open})">
       <ellipse cx="72" cy="60" rx="${r}" ry="${r}" fill="${DARK}"/>
-      ${highlight ? `<circle cx="${72 + pupilDX - 2}" cy="${60 + pupilDY - 2.5}" r="2" fill="#f6f1e7"/>` : ''}
+      ${highlight ? `<circle cx="${72 + pupilDX - 2}" cy="${60 + pupilDY - 2.5}" r="1.5" fill="#ffffff"/>` : ''}
     </g>`;
 }
 function eyesArcHappy(flip = false) {
@@ -114,15 +122,15 @@ function browFocus() {
           <path d="M84 40 L62 46" stroke="${DARK}" stroke-width="4" stroke-linecap="round"/>`;
 }
 
-function mouthSmile() { return `<path d="M46 86 Q56 93 66 86" fill="none" stroke="${EAR_IN}" stroke-width="3.2" stroke-linecap="round"/>`; }
+function mouthSmile() { return `<path d="M46 86 Q56 93 66 86" fill="none" stroke="${DARK}" stroke-width="3.2" stroke-linecap="round"/>`; }
 function mouthOpenOval(big = false) { const ry = big ? 13 : 9; return `<ellipse cx="56" cy="${82+ry/2}" rx="${big?11:8}" ry="${ry}" fill="${DARK}"/>${big?`<ellipse cx="56" cy="${82+ry/2-2}" rx="6" ry="6" fill="${PINK}"/>`:''}`; }
-function mouthFrown() { return `<path d="M46 90 Q56 83 66 90" fill="none" stroke="${EAR_IN}" stroke-width="3.2" stroke-linecap="round"/>`; }
-function mouthFlat() { return `<path d="M48 86 L64 86" stroke="${EAR_IN}" stroke-width="3.2" stroke-linecap="round"/>`; }
-function mouthWavy() { return `<path d="M46 86 Q51 82 56 86 Q61 90 66 86" fill="none" stroke="${EAR_IN}" stroke-width="3" stroke-linecap="round"/>`; }
-function mouthSmirk() { return `<path d="M48 88 Q58 90 67 82" fill="none" stroke="${EAR_IN}" stroke-width="3.2" stroke-linecap="round"/>`; }
+function mouthFrown() { return `<path d="M46 90 Q56 83 66 90" fill="none" stroke="${DARK}" stroke-width="3.2" stroke-linecap="round"/>`; }
+function mouthFlat() { return `<path d="M48 86 L64 86" stroke="${DARK}" stroke-width="3.2" stroke-linecap="round"/>`; }
+function mouthWavy() { return `<path d="M46 86 Q51 82 56 86 Q61 90 66 86" fill="none" stroke="${DARK}" stroke-width="3" stroke-linecap="round"/>`; }
+function mouthSmirk() { return `<path d="M48 88 Q58 90 67 82" fill="none" stroke="${DARK}" stroke-width="3.2" stroke-linecap="round"/>`; }
 function mouthGrimace() { return `<path d="M44 87 L68 87 M48 87 L46 92 M56 87 L56 92 M64 87 L62 92" stroke="${DARK}" stroke-width="2.6" stroke-linecap="round"/>`; }
 function mouthYawn() { return `<ellipse cx="56" cy="90" rx="9" ry="14" fill="${DARK}"/><ellipse cx="56" cy="86" rx="5" ry="5" fill="${PINK}"/>`; }
-function nose() { return `<ellipse cx="56" cy="80" rx="9" ry="7" fill="${EAR_IN}"/>`; }
+function nose() { return `<ellipse cx="56" cy="80" rx="9" ry="7" fill="${DARK}"/>`; }
 
 // ---------- Props ----------
 function tear(t, cx, phase = 0) {
@@ -351,15 +359,11 @@ for (const e of EMOTES) {
   </style></head><body>
   <svg width="${frames * 112}" height="112" viewBox="0 0 ${frames * 112} 112" xmlns="http://www.w3.org/2000/svg">
     <defs>
-      <radialGradient id="fur" cx="40%" cy="28%" r="75%">
-        <stop offset="0%" stop-color="#fcf6ea"/>
-        <stop offset="65%" stop-color="#f3e4c8"/>
-        <stop offset="100%" stop-color="#d6b589"/>
+      <radialGradient id="fur" cx="50%" cy="90%" r="88%">
+        <stop offset="0%" stop-color="${CHEEK}"/>
+        <stop offset="55%" stop-color="${FUR_MID}"/>
+        <stop offset="100%" stop-color="${FUR}"/>
       </radialGradient>
-      <linearGradient id="earOuter" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#cda877"/>
-        <stop offset="100%" stop-color="#8a7255"/>
-      </linearGradient>
       <clipPath id="cell" clipPathUnits="userSpaceOnUse"><rect x="0" y="0" width="112" height="112"/></clipPath>
     </defs>
     ${cells.join('\n')}
