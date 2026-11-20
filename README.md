@@ -10,9 +10,11 @@ Overlay-Konventionen 1920×1080, "Mandeln"-Bauchbinden-Idee).
 
 ## Was hier drin ist
 
-- `assets/` — Maskottchen (Chinchilla mit Brille &amp; Headset), Icon-Version,
-  Mandel-Icon, Technik-Icon, Farbpalette (`palette.md`). Alles als SVG,
-  beliebig skalierbar, wiederverwendbar für alle anderen Teile.
+- `assets/` — Maskottchen (naturgetreu gezeichnetes graues Chinchilla mit
+  Brille &amp; Headset, siehe `reference/` für die Foto-Quellen), Icon-Version,
+  `chinchilla-pixel.svg` (8-Bit-Variante fürs "Night Arcade"-Motto, per
+  `generate-pixel-mascot.mjs` erzeugt), Mandel-Icon, Technik-Icon,
+  Farbpalette (`palette.md`). Alles als SVG, beliebig skalierbar.
 - `panels/` — 3 fertige Twitch-Info-Panels (320×220, als 2x-PNG gerendert):
   "Über mich", "Die Crew" (Chinchillas), "Mein Setup" (Technik).
   Die `.html`-Dateien sind die Quelle, `render-panels.sh` erzeugt die PNGs neu.
@@ -24,11 +26,18 @@ Overlay-Konventionen 1920×1080, "Mandeln"-Bauchbinden-Idee).
 - `website/` — statische Zuschauer-Website (GitHub-Pages-fertig):
   Twitch-Embed, Stream-Zeiten, Chinchilla-Crew-Steckbriefe, Setup-Vorstellung,
   Mandel-Erklärung, Link-Liste.
-- `docs/` — Einrichtungsanleitungen (StreamElements, GitHub Pages, Twitch-Panels).
+- `docs/` — Einrichtungsanleitungen (StreamElements, GitHub Pages, Twitch-Panels,
+  Elgato Key Lights, Better-Points-Redemptions, Viewer-Hub, weitere Nilson1489-
+  Ideen wie Remotion/Virtual Stream Deck/ControlPlay).
 - `emotes/` — 30 animierte Chat-Emotes (GIF, transparent, 112×112px) mit dem
   vermenschlichten Chinchilla-Maskottchen in verschiedenen Emotionen
   (Hype, Love, LOL, Facepalm, Rage, Sleepy, …). Details und Upload-Anleitung
   in `emotes/README.md`.
+- `lights-bridge/` — kleiner Node-Dienst, der Stream-Events in Helligkeits-/
+  Temperatur-Blitze auf 2 Elgato Key Lights übersetzt.
+- `viewer-hub/` — fertiges, aber geparktes Zusatz-Backend (Twitch-Login +
+  eigene Rangliste) — Kanal nutzt stattdessen StreamElements-Loyalty als
+  einziges Mandel-System, siehe `viewer-hub/README.md`.
 
 ## Was schon erledigt ist
 
