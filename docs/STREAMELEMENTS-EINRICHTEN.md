@@ -27,10 +27,47 @@ Gleiches Vorgehen wie oben, nur mit `overlays/chinchilla-ticker.html`.
 Dieses Widget braucht keine Events, es läuft einfach die ganze Zeit mit.
 Die Fakten-Liste kannst du direkt im JS-Tab unter `FACTS` erweitern/ändern.
 
-**Platzierung:** Beide Overlays als eigene Browser-Quelle (oder als
+## 2b. Stream-Pet (Chinchilla läuft über den Screen)
+
+Gleiches Vorgehen, mit `overlays/stream-pet.html`. Läuft von selbst alle
+3-7 Minuten einmal quer über den Screen (Ambient-Verhalten, Intervall im
+JS-Tab unter `AMBIENT_MIN_MS`/`AMBIENT_MAX_MS` einstellbar) und reagiert
+zusätzlich sofort auf Follow/Sub/Cheer/Spende: läuft dann zur Mitte, hüpft
+kurz mit Glitzer-Effekt und einer "Danke, NAME!"-Sprechblase.
+
+Falls du die Elgato-Key-Lights-Bridge eingerichtet hast (siehe
+`ELGATO-KEY-LIGHTS-EINRICHTEN.md`), lösen dieselben Events zusätzlich einen
+kurzen Lichtblitz auf deinen beiden Key Lights aus — Overlay und Lichter
+reagieren auf das exakt gleiche Event, laufen aber unabhängig voneinander
+(falls die Lichter-Bridge nicht läuft, merkt das Overlay-Widget das gar
+nicht, es versucht nur kurz und gibt sonst Ruhe).
+
+**Platzierung aller drei Overlays:** Als eigene Browser-Quelle (oder als
 zusätzliches Widget im bestehenden Overlay) über deine OBS-Kulisse legen,
 Reihenfolge so, dass sie über dem Spielbild, aber nicht über wichtigen
 UI-Elementen liegen.
+
+## 2c. Mandeln als echtes Punktesystem (StreamElements Loyalty)
+
+Bisher sind "Mandeln" nur ein Wort im Alert-Text. Lässt sich mit Bordmitteln
+echt machen, ganz ohne eigenen Code:
+
+1. StreamElements-Dashboard → **Loyalty** (manchmal auch "Punkte" genannt) →
+   aktivieren, falls noch nicht an.
+2. Dort den Punktenamen (`$(pointsname)`) von "Points" auf **"Mandeln"**
+   ändern. Ab sofort nutzen alle eingebauten Befehle (`!points`,
+   `!addpoints`, `!givepoints` …) automatisch "Mandeln" im Text.
+3. Verdienrate einstellen (Punkte pro Minute Zuschauen, Bonus für Subs
+   etc. — nach Geschmack).
+4. Optional: **Loyalty Store** einrichten, in dem Zuschauer ihre Mandeln
+   gegen Perks eintauschen (Soundeffekt, TTS-Nachricht, Highlight-Message).
+5. Die eingebauten Befehlsnamen bleiben technisch `!points` & co. — falls
+   du lieber `!mandeln` als Befehlsnamen willst, unter **Chatbot → Befehle**
+   die Standardbefehle umbenennen/Aliase anlegen.
+
+Wichtig: Das sind StreamElements-eigene Loyalty-Punkte, keine echten
+Twitch-Channel-Points (die heißen bei Twitch weiterhin "Kanalpunkte" und
+laufen getrennt, siehe `BETTER-POINTS-REDEMPTIONS-EINRICHTEN.md`).
 
 ## 3. `!mandel`-Chat-Befehl
 

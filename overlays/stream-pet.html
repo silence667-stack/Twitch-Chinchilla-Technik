@@ -1,0 +1,263 @@
+<!--
+  Stream-Pet — StreamElements Custom Widget
+  ==========================================
+  Das Chinchilla-Maskottchen läuft von Zeit zu Zeit unten über den Screen
+  (Ambient-Verhalten) und reagiert zusätzlich sofort auf Follow/Sub/Cheer/
+  Spende: läuft dann zur Mitte, hüpft kurz mit Glitzer-Effekt und einer
+  kurzen "Danke, NAME!"-Sprechblase, läuft danach weiter.
+
+  EINRICHTUNG in StreamElements (wie bei den anderen Custom Widgets):
+  1. Dashboard -> Overlays -> dein Overlay oeffnen (oder neues anlegen)
+  2. Widget hinzufuegen -> "Custom Widget" / "My Overlays" -> Benutzerdefiniert
+  3. Im Editor gibt es drei Tabs: HTML / CSS / JS
+     - HTML-Tab: den mit "HTML START" / "HTML ENDE" markierten Abschnitt
+       weiter unten im Code einfuegen
+     - CSS-Tab:  den mit "CSS START" / "CSS ENDE" markierten Abschnitt einfuegen
+     - JS-Tab:   den mit "JS START" / "JS ENDE" markierten Abschnitt einfuegen
+  4. Breite/Hoehe des Widgets im Editor auf 1920x1080 stellen (transparenter
+     Hintergrund), Widget unter/parallel zu den anderen Overlays platzieren.
+  5. Die Laufhaeufigkeit (Ambient) und Pausen laesst sich unten im JS-Teil
+     unter "AMBIENT_MIN_MS" / "AMBIENT_MAX_MS" einstellen.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+/* CSS START */
+html, body {
+  margin: 0; padding: 0; background: transparent;
+  width: 1920px; height: 1080px; overflow: hidden;
+}
+
+#pet {
+  position: absolute;
+  bottom: 30px;
+  left: -140px;
+  width: 90px;
+  height: 90px;
+  will-change: transform;
+}
+
+#pet img {
+  width: 100%; height: 100%;
+  display: block;
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,0.35));
+}
+
+#pet.walking {
+  animation: petBob 420ms ease-in-out infinite;
+}
+
+@keyframes petBob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+
+#pet.face-left img { transform: scaleX(-1); }
+
+#pet-bubble {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px) scale(0.85);
+  background: rgba(27,23,38,0.92);
+  border: 2px solid #79e6e8;
+  border-radius: 14px;
+  padding: 8px 16px;
+  color: #f6f1e7;
+  font-family: "Baloo 2", "Inter", sans-serif;
+  font-size: 20px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms ease, transform 220ms ease;
+}
+
+#pet-bubble.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0) scale(1);
+}
+
+.pet-sparkle {
+  position: absolute;
+  width: 20px; height: 20px;
+  opacity: 0;
+}
+
+.pet-sparkle.show {
+  animation: petSparkle 700ms ease-out;
+}
+
+@keyframes petSparkle {
+  0%   { opacity: 0; transform: translateY(0) scale(0.4) rotate(0deg); }
+  30%  { opacity: 1; transform: translateY(-18px) scale(1) rotate(60deg); }
+  100% { opacity: 0; transform: translateY(-40px) scale(0.6) rotate(140deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #pet.walking { animation: none; }
+  #pet-bubble { transition: opacity 120ms linear; transform: translateX(-50%); }
+}
+/* CSS ENDE */
+</style>
+</head>
+<body>
+<!-- HTML START -->
+<div id="pet">
+  <img src="https://raw.githubusercontent.com/DEIN-GITHUB-USER/Twitch-Chinchilla-Technik/main/assets/chinchilla-icon.svg" alt="">
+  <svg class="pet-sparkle" id="pet-sparkle-a" style="left:-6px; top:-6px;" viewBox="0 0 20 20"><path d="M10 0 L12 8 L20 10 L12 12 L10 20 L8 12 L0 10 L8 8 Z" fill="#79e6e8"/></svg>
+  <svg class="pet-sparkle" id="pet-sparkle-b" style="right:-6px; top:0;" viewBox="0 0 20 20"><path d="M10 0 L12 8 L20 10 L12 12 L10 20 L8 12 L0 10 L8 8 Z" fill="#ff9ac0"/></svg>
+</div>
+<div id="pet-bubble"></div>
+<!-- HTML ENDE -->
+
+<script>
+// JS START
+(function () {
+  var AMBIENT_MIN_MS = 3 * 60 * 1000;   // fruehestens alle 3 Minuten
+  var AMBIENT_MAX_MS = 7 * 60 * 1000;   // spaetestens alle 7 Minuten
+  var WALK_DURATION_MS = 14000;         // Laufzeit quer ueber den Screen
+  var SCREEN_WIDTH = 1920;
+  var PET_WIDTH = 90;
+
+  var pet = document.getElementById('pet');
+  var bubble = document.getElementById('pet-bubble');
+  var sparkleA = document.getElementById('pet-sparkle-a');
+  var sparkleB = document.getElementById('pet-sparkle-b');
+  var busy = false;
+  var ambientTimer = null;
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c];
+    });
+  }
+
+  function randomBetween(min, max) {
+    return min + Math.random() * (max - min);
+  }
+
+  function showBubble(text, durationMs) {
+    bubble.textContent = text;
+    bubble.classList.add('show');
+    setTimeout(function () { bubble.classList.remove('show'); }, durationMs);
+  }
+
+  function sparkle() {
+    [sparkleA, sparkleB].forEach(function (el, i) {
+      el.classList.remove('show');
+      void el.offsetWidth;
+      setTimeout(function () { el.classList.add('show'); }, i * 120);
+    });
+  }
+
+  // Einfacher Spaziergang von links nach rechts oder umgekehrt, optional
+  // mit Stopp in der Mitte fuer eine Reaktion (greetText).
+  function walkAcross(opts) {
+    opts = opts || {};
+    var toRight = Math.random() > 0.5;
+    var fromX = toRight ? -PET_WIDTH : SCREEN_WIDTH;
+    var toX = toRight ? SCREEN_WIDTH : -PET_WIDTH;
+    var midX = SCREEN_WIDTH / 2 - PET_WIDTH / 2;
+
+    pet.classList.toggle('face-left', !toRight);
+    pet.classList.add('walking');
+    pet.style.transition = 'none';
+    pet.style.left = fromX + 'px';
+    void pet.offsetWidth;
+
+    if (opts.greetText) {
+      // Erste Haelfte zur Mitte laufen, kurz stehenbleiben + reagieren, dann weiterlaufen.
+      var halfDuration = WALK_DURATION_MS * 0.4;
+      pet.style.transition = 'left ' + halfDuration + 'ms linear';
+      pet.style.left = midX + 'px';
+      setTimeout(function () {
+        pet.classList.remove('walking');
+        sparkle();
+        showBubble(opts.greetText, 2600);
+        setTimeout(function () {
+          pet.classList.add('walking');
+          var restDuration = WALK_DURATION_MS * 0.6;
+          pet.style.transition = 'left ' + restDuration + 'ms linear';
+          pet.style.left = toX + 'px';
+          setTimeout(finishWalk, restDuration);
+        }, 2200);
+      }, halfDuration);
+    } else {
+      pet.style.transition = 'left ' + WALK_DURATION_MS + 'ms linear';
+      pet.style.left = toX + 'px';
+      setTimeout(finishWalk, WALK_DURATION_MS);
+    }
+
+    function finishWalk() {
+      pet.classList.remove('walking');
+      busy = false;
+    }
+  }
+
+  function scheduleAmbientWalk() {
+    clearTimeout(ambientTimer);
+    var delay = randomBetween(AMBIENT_MIN_MS, AMBIENT_MAX_MS);
+    ambientTimer = setTimeout(function () {
+      if (!busy) {
+        busy = true;
+        walkAcross({});
+      }
+      scheduleAmbientWalk();
+    }, delay);
+  }
+
+  function reactToEvent(name, verb) {
+    // Reaktion hat Vorrang vor dem normalen Spaziergang.
+    busy = true;
+    walkAcross({ greetText: 'Danke, ' + name + ', ' + verb + '!' });
+  }
+
+  // Optionale Elgato-Key-Lights-Bridge (siehe docs/ELGATO-KEY-LIGHTS-EINRICHTEN.md).
+  // Laeuft die Bridge nicht, schlaegt der Fetch einfach lautlos fehl.
+  function notifyLightsBridge(listenerType) {
+    try {
+      fetch('http://127.0.0.1:8420/event', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: listenerType }),
+      }).catch(function () {});
+    } catch (e) {}
+  }
+
+  window.addEventListener('onEventReceived', function (obj) {
+    var detail = obj.detail;
+    if (!detail || !detail.event) return;
+    var listenerType = detail.listener;
+    var data = detail.event;
+    var name = data.name || data.displayName || 'Jemand';
+
+    if (listenerType === 'subscriber-latest' && data.isCommunityGift) {
+      // Einzelne Empfaenger-Events innerhalb eines Massen-Gifts ueberspringen,
+      // sonst laeuft das Pet mehrfach fuer eine einzige Aktion durchs Bild.
+      return;
+    }
+    notifyLightsBridge(listenerType);
+
+    if (listenerType === 'follower-latest') {
+      reactToEvent(name, 'für den Follow');
+    } else if (listenerType === 'subscriber-latest') {
+      reactToEvent(name, 'für das Abo');
+    } else if (listenerType === 'cheer-latest') {
+      reactToEvent(name, 'für die Bits');
+    } else if (listenerType === 'tip-latest' || listenerType === 'donation-latest') {
+      reactToEvent(name, 'für die Mandeln');
+    }
+  });
+
+  // Testfunktionen im Browser-Preview (StreamElements ruft diese nie auf):
+  window.testPetWalk = function () { if (!busy) { busy = true; walkAcross({}); } };
+  window.testPetReact = function () { reactToEvent('Test-Zuschauer', 'für den Test'); };
+
+  scheduleAmbientWalk();
+})();
+// JS ENDE
+</script>
+</body>
+</html>

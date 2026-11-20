@@ -1,40 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="220" height="220">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="220" height="220" role="img" aria-labelledby="icon-title icon-desc">
+  <title id="icon-title">Chinchilla-Kopf mit Brille und Cyan-Headset</title>
+  <desc id="icon-desc">Graues Chinchilla im runden dunklen Badge: sehr große seitliche Blattohren mit rosa-grauem Inneren, helles Kinn, dunkle seitliche Knopfaugen mit je einem Lichtpunkt und lange Schnurrhaare.</desc>
   <defs>
-    <radialGradient id="furHeadIcon" cx="40%" cy="28%" r="75%">
-      <stop offset="0%" stop-color="#fcf6ea"/>
-      <stop offset="65%" stop-color="#f3e4c8"/>
-      <stop offset="100%" stop-color="#d6b589"/>
+    <radialGradient id="i-bodyFur" cx="54%" cy="66%" r="65%">
+      <stop offset="0" stop-color="#eeeef0"/>
+      <stop offset=".35" stop-color="#babcbd"/>
+      <stop offset=".76" stop-color="#777573"/>
+      <stop offset="1" stop-color="#595552"/>
     </radialGradient>
-    <linearGradient id="earOuterIcon" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#cda877"/>
-      <stop offset="100%" stop-color="#8a7255"/>
+    <radialGradient id="i-headFur" cx="51%" cy="91%" r="88%">
+      <stop offset="0" stop-color="#eeeef0"/>
+      <stop offset=".28" stop-color="#dcdedf"/>
+      <stop offset=".5" stop-color="#babcbd"/>
+      <stop offset=".78" stop-color="#777573"/>
+      <stop offset="1" stop-color="#595552"/>
+    </radialGradient>
+    <linearGradient id="i-earSkin" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#eee7e3"/>
+      <stop offset=".5" stop-color="#d6c5bc"/>
+      <stop offset="1" stop-color="#babcbd"/>
     </linearGradient>
+    <linearGradient id="i-earRim" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#595552"/>
+      <stop offset=".6" stop-color="#777573"/>
+      <stop offset="1" stop-color="#dcdedf"/>
+    </linearGradient>
+    <linearGradient id="i-tailFur" x1=".7" y1="1" x2=".2" y2="0">
+      <stop stop-color="#babcbd"/>
+      <stop offset=".35" stop-color="#999a9a"/>
+      <stop offset=".65" stop-color="#595552"/>
+      <stop offset="1" stop-color="#151515"/>
+    </linearGradient>
+    <pattern id="i-ticking" width="23" height="21" patternUnits="userSpaceOnUse">
+      <path d="m3 4 1-2 m11 10 1-2 m4 10 1-2" stroke="#dcdedf" stroke-width="1.3" stroke-linecap="round" opacity=".48"/>
+      <path d="m7 15 1-2 m11-8 1-2" stroke="#babcbd" stroke-width="1" stroke-linecap="round" opacity=".4"/>
+    </pattern>
+    <linearGradient id="i-tickFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset=".35" stop-color="white"/>
+      <stop offset=".85" stop-color="black"/>
+    </linearGradient>
+    <mask id="i-softTicks" maskUnits="userSpaceOnUse" x="110" y="150" width="300" height="380">
+      <rect x="110" y="150" width="300" height="380" fill="url(#i-tickFade)"/>
+    </mask>
   </defs>
-
-  <circle cx="110" cy="110" r="110" fill="#1b1726"/>
-
-  <ellipse cx="62" cy="58" rx="20" ry="27" fill="url(#earOuterIcon)" transform="rotate(-18 62 58)"/>
-  <ellipse cx="62" cy="61" rx="11" ry="17" fill="#6b5a46" transform="rotate(-18 62 61)"/>
-  <ellipse cx="158" cy="58" rx="20" ry="27" fill="url(#earOuterIcon)" transform="rotate(18 158 58)"/>
-  <ellipse cx="158" cy="61" rx="11" ry="17" fill="#6b5a46" transform="rotate(18 158 61)"/>
-
-  <circle cx="110" cy="112" r="62" fill="url(#furHeadIcon)"/>
-
-  <path d="M 72 78 Q 110 32 148 78" fill="none" stroke="#2a2438" stroke-width="7" stroke-linecap="round"/>
-  <circle cx="150" cy="82" r="15" fill="#2a2438"/>
-  <circle cx="150" cy="82" r="8.5" fill="#79e6e8"/>
-  <circle cx="70" cy="82" r="15" fill="#2a2438"/>
-  <circle cx="70" cy="82" r="8.5" fill="#79e6e8"/>
-
-  <circle cx="92" cy="110" r="18" fill="none" stroke="#2a2438" stroke-width="5"/>
-  <circle cx="128" cy="110" r="18" fill="none" stroke="#2a2438" stroke-width="5"/>
-  <path d="M 110 110 L 110 110" stroke="#2a2438" stroke-width="5"/>
-  <path d="M 108 110 L 112 110" stroke="#2a2438" stroke-width="5"/>
-
-  <circle cx="92" cy="110" r="9" fill="#2a2438"/>
-  <circle cx="128" cy="110" r="9" fill="#2a2438"/>
-  <circle cx="89" cy="107" r="2.6" fill="#f6f1e7"/>
-  <circle cx="125" cy="107" r="2.6" fill="#f6f1e7"/>
-
-  <ellipse cx="110" cy="130" rx="7" ry="5" fill="#6b5a46"/>
+  <circle id="i-badge" cx="110" cy="110" r="110" fill="#1b1726"/>
+  <g transform="translate(-25.96 -3) scale(.515)">
+  <g id="i-head">
+    <!-- Large thin leaf-shaped ears: rooted far to the sides, behind the skull. -->
+    <g id="i-ears" stroke="#383735" stroke-width="3" stroke-linejoin="round">
+      <path id="i-ear-left" d="M179 224 C137 220 98 180 88 125 C80 90 82 58 98 48 C121 33 168 62 189 102 C210 143 207 192 179 224Z" fill="url(#i-earRim)"/>
+      <path d="M173 205 C144 198 115 167 104 123 C97 96 96 69 104 64 C124 57 157 82 175 113 C194 147 193 180 173 205Z" fill="url(#i-earSkin)" stroke="#babcbd" stroke-width="5"/>
+      <path id="i-ear-right" d="M350 224 C392 220 431 180 441 125 C449 90 447 58 431 48 C408 33 361 62 340 102 C319 143 322 192 350 224Z" fill="url(#i-earRim)"/>
+      <path d="M356 205 C385 198 414 167 425 123 C432 96 433 69 425 64 C405 57 372 82 354 113 C335 147 336 180 356 205Z" fill="url(#i-earSkin)" stroke="#babcbd" stroke-width="5"/>
+    </g>
+    <g id="i-ear-folds" fill="none" stroke="#eee7e3" stroke-width="2" stroke-linecap="round" opacity=".7">
+      <path d="M172 187 Q130 137 112 82 M153 162 Q133 145 118 142 M356 187 Q398 137 417 82 M375 162 Q395 145 410 142"/>
+    </g>
+    <path id="i-head-fur" d="M137 251 C133 213 156 183 193 173 C230 157 292 157 330 175 C372 186 397 217 391 254 L399 269 L390 271 L394 285 L383 284 C371 325 322 347 264 350 C208 350 158 333 143 303 L131 301 L137 290 L127 281 L137 275 Z" fill="url(#i-headFur)" stroke="#383735" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M137 251 C133 213 156 183 193 173 C230 157 292 157 330 175 C372 186 397 217 391 254 L399 269 L390 271 L394 285 L383 284 C371 325 322 347 264 350 C208 350 158 333 143 303 L131 301 L137 290 L127 281 L137 275 Z" fill="url(#i-ticking)" mask="url(#i-softTicks)"/>
+    <!-- The narrow headset rests below the open pinnae. -->
+    <g id="i-headset" fill="none" stroke-linecap="round">
+      <path d="M151 229 C159 147 363 147 378 229" stroke="#151515" stroke-width="11"/>
+      <path d="M163 195 C209 153 321 153 364 195" stroke="#79e6e8" stroke-width="3"/>
+      <rect x="134" y="216" width="30" height="54" rx="14" fill="#383735" stroke="#151515" stroke-width="3" transform="rotate(-12 149 243)"/>
+      <rect x="138" y="222" width="17" height="41" rx="8" fill="#79e6e8" transform="rotate(-12 149 243)"/>
+      <rect x="364" y="216" width="30" height="54" rx="14" fill="#383735" stroke="#151515" stroke-width="3" transform="rotate(12 379 243)"/>
+      <rect x="373" y="222" width="17" height="41" rx="8" fill="#79e6e8" transform="rotate(12 379 243)"/>
+      <path d="M382 266 Q382 301 331 313" stroke="#151515" stroke-width="5"/>
+      <rect x="316" y="307" width="20" height="9" rx="4.5" fill="#151515" transform="rotate(-12 326 311)"/>
+    </g>
+    <!-- Wide-set solid button eyes; one catchlight each, no sclera. -->
+    <g id="i-eyes" fill="#151515">
+      <ellipse cx="192" cy="252" rx="18" ry="21" transform="rotate(-8 192 252)"/>
+      <ellipse cx="336" cy="252" rx="18" ry="21" transform="rotate(8 336 252)"/>
+      <circle cx="187" cy="245" r="4" fill="#ffffff"/>
+      <circle cx="331" cy="245" r="4" fill="#ffffff"/>
+    </g>
+    <g id="i-glasses" fill="none" stroke="#151515" stroke-width="5" stroke-linecap="round">
+      <ellipse cx="192" cy="252" rx="33" ry="32"/>
+      <ellipse cx="336" cy="252" rx="33" ry="32"/>
+      <path d="M225 250 Q264 232 303 250 M159 247 L151 240 M369 247 L378 240"/>
+    </g>
+    <!-- Chin lightens continuously through the head gradient. -->
+    <g id="i-muzzle">
+      <path d="M253 296 Q264 292 275 296 Q274 304 264 308 Q254 304 253 296Z" fill="#151515"/>
+      <path d="M264 308 L264 315 M249 316 Q256 325 264 315 Q272 325 279 316" fill="none" stroke="#595552" stroke-width="2.5" stroke-linecap="round"/>
+      <g fill="#babcbd"><circle cx="241" cy="301" r="1.5"/><circle cx="235" cy="309" r="1.5"/><circle cx="287" cy="301" r="1.5"/><circle cx="293" cy="309" r="1.5"/></g>
+    </g>
+    <g id="i-whiskers" fill="none" stroke="#eeeef0" stroke-width="1.8" stroke-linecap="round">
+      <path d="M241 301 Q190 277 93 264 M240 305 Q174 290 76 291 M238 309 Q165 305 64 317 M240 313 Q164 327 82 345 M242 317 Q181 344 111 369 M242 299 Q185 263 113 247 M243 320 Q205 350 156 371"/>
+      <path d="M287 301 Q338 277 435 264 M288 305 Q354 290 452 291 M290 309 Q363 305 464 317 M288 313 Q364 327 446 345 M286 317 Q347 344 417 369 M286 299 Q343 263 415 247 M285 320 Q323 350 372 371"/>
+    </g>
+  </g>
+  </g>
 </svg>

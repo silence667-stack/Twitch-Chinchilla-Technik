@@ -155,6 +155,19 @@ html, body {
     return n + currencySymbol(currency || cachedCurrency);
   }
 
+  // Optionale Elgato-Key-Lights-Bridge (siehe docs/ELGATO-KEY-LIGHTS-EINRICHTEN.md).
+  // Laeuft die Bridge nicht, schlaegt der Fetch einfach lautlos fehl -- das
+  // Overlay funktioniert davon unabhaengig weiter.
+  function notifyLightsBridge(listenerType) {
+    try {
+      fetch('http://127.0.0.1:8420/event', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: listenerType }),
+      }).catch(function () {});
+    } catch (e) {}
+  }
+
   // StreamElements ruft dies bei jedem Event auf (Follow, Sub, Cheer, Spende, ...)
   window.addEventListener('onEventReceived', function (obj) {
     var detail = obj.detail;
@@ -163,16 +176,19 @@ html, body {
     var data = detail.event;
     var name = data.name || data.displayName || 'Jemand';
 
+    if (listenerType === 'subscriber-latest' && data.isCommunityGift) {
+      // Einzelne Empfänger-Events innerhalb eines Massen-Gifts — das zugehörige
+      // bulkGifted-Event deckt den Alert (und den Lichtblitz) für die ganze
+      // Aktion schon ab.
+      return;
+    }
+    notifyLightsBridge(listenerType);
+
     if (listenerType === 'tip-latest' || listenerType === 'donation-latest') {
       showAlert(name, formatAmount(data.amount, data.currency) + ' an');
     } else if (listenerType === 'cheer-latest') {
       showAlert(name, (data.amount || 0) + ' Bits als');
     } else if (listenerType === 'subscriber-latest') {
-      if (data.isCommunityGift) {
-        // Einzelne Empfänger-Events innerhalb eines Massen-Gifts — das zugehörige
-        // bulkGifted-Event deckt den Alert für die ganze Aktion schon ab.
-        return;
-      }
       if (data.gifted) {
         // Bei verschenkten Subs ist "name" die beschenkte Person, nicht die spendende —
         // die spendierende Person steht in "sender"

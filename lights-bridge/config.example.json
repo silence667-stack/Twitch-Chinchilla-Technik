@@ -1,0 +1,21 @@
+{
+  "_hinweis": "Diese Datei zu config.json kopieren und mit deinen echten Werten füllen. config.json ist in .gitignore und wird NICHT ins Repo übernommen.",
+
+  "lights": [
+    { "name": "Key Light links", "ip": "192.168.178.XX" },
+    { "name": "Key Light rechts", "ip": "192.168.178.YY" }
+  ],
+
+  "port": 8420,
+
+  "normalBrightness": 45,
+  "normalTemperatureKelvin": 4700,
+
+  "effects": {
+    "follower-latest": { "flashes": 1, "flashBrightness": 100, "flashTemperatureKelvin": 6500, "flashMs": 220 },
+    "subscriber-latest": { "flashes": 2, "flashBrightness": 100, "flashTemperatureKelvin": 6500, "flashMs": 260 },
+    "cheer-latest": { "flashes": 2, "flashBrightness": 100, "flashTemperatureKelvin": 3000, "flashMs": 220 },
+    "tip-latest": { "flashes": 3, "flashBrightness": 100, "flashTemperatureKelvin": 3000, "flashMs": 260 },
+    "donation-latest": { "flashes": 3, "flashBrightness": 100, "flashTemperatureKelvin": 3000, "flashMs": 260 }
+  }
+}
