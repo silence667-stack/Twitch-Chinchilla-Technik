@@ -30,18 +30,17 @@ function pulse01(t, phase = 0) { return round((Math.sin(TAU * t + phase) + 1) / 
 function sawtoothFall(t, phase = 0) { return round(((t + phase) % 1)); } // 0..1 steigend, dann Sprung
 
 // ---------- Basis-Körperteile ----------
-function earsHead(t, { bounceAmp = 8, earAmp = 6, stretch = 0 } = {}) {
-  const by = bounceY(t, bounceAmp);
-  const ss = squash(t, stretch);
+// Nur Ohren+Kopf (OHNE eigene Bounce-Transform -- die kommt jetzt von außen,
+// damit Brille/Augen/Mund/Requisiten beim Stauchen/Strecken mit dem Kopf
+// mitwandern statt fix stehen zu bleiben).
+function earsHead(t, { earAmp = 6 } = {}) {
   const earL = wiggle(t, earAmp, -18, 0.3);
   const earR = wiggle(t, earAmp, 18, Math.PI + 0.3);
   return `
-  <g transform="translate(0 ${by}) scale(${ss.sx} ${ss.sy})" style="transform-origin:56px 70px">
     <g style="transform-origin:34px 34px" transform="rotate(${earL})"><ellipse cx="34" cy="34" rx="16" ry="21" fill="${EAR_OUT}" stroke="${DARK}" stroke-width="3"/><ellipse cx="34" cy="36" rx="8.5" ry="13" fill="${EAR_IN}"/></g>
     <g style="transform-origin:78px 34px" transform="rotate(${earR})"><ellipse cx="78" cy="34" rx="16" ry="21" fill="${EAR_OUT}" stroke="${DARK}" stroke-width="3"/><ellipse cx="78" cy="36" rx="8.5" ry="13" fill="${EAR_IN}"/></g>
     <circle cx="56" cy="62" r="46" fill="${FUR}" stroke="${DARK}" stroke-width="3"/>
-    <circle cx="56" cy="90" r="20" fill="${CHEEK}"/>
-  </g>`;
+    <circle cx="56" cy="90" r="20" fill="${CHEEK}"/>`;
 }
 
 function glasses() {
@@ -198,13 +197,13 @@ function question(t, flip = false) {
   return `<text x="${flip?8:88}" y="${30-b}" font-family="Arial,sans-serif" font-weight="700" font-size="26" fill="${CYAN}">?</text>`;
 }
 function orbitStars(t) {
-  const a = (cx, cy, r, phase) => {
+  const a = (cx, cy, r, phase, color) => {
     const ang = TAU * t + phase;
     const x = cx + Math.cos(ang) * r;
     const y = cy + Math.sin(ang) * r * 0.5;
-    return `<path transform="translate(${round(x)} ${round(y)}) scale(0.5)" d="M0 -10 L3 -3 L10 0 L3 3 L0 10 L-3 3 L-10 0 L-3 -3 Z" fill="${ALMOND}"/>`;
+    return `<path transform="translate(${round(x)} ${round(y)}) scale(0.8)" d="M0 -10 L3 -3 L10 0 L3 3 L0 10 L-3 3 L-10 0 L-3 -3 Z" fill="${color}" stroke="${DARK}" stroke-width="1.2"/>`;
   };
-  return a(56, 20, 34, 0) + a(56, 20, 34, Math.PI);
+  return a(56, 16, 36, 0, PINK) + a(56, 16, 36, Math.PI, CYAN);
 }
 function impactLines(t) {
   const op = round(Math.max(0, 1 - (t % 0.5) * 4));
@@ -222,8 +221,8 @@ const EMOTES = [
   { name: 'balu84Love', loopMs: 1400, bounceAmp: 4, earAmp: 4,
     draw: (t) => eyesHeart() + nose() + mouthSmile() + (() => { const local=sawtoothFall(t,0); const y=round(24-local*26); const op=round(Math.sin(Math.PI*local)); return `<path d="M56 ${y} c-4-6 4-12 8-5 c4-7 12-1 8 5 l-8 9 Z" fill="${PINK}" stroke="${DARK}" stroke-width="2" opacity="${op}"/>`; })(), noBlink: true },
 
-  { name: 'balu84LOL', loopMs: 700, bounceAmp: 10, earAmp: 10, stretch: 0.08,
-    draw: (t) => eyesArcHappy(true) + nose() + mouthOpenOval(true), noBlink: true },
+  { name: 'balu84LOL', loopMs: 700, bounceAmp: 10, earAmp: 10, stretch: 0.08, tilt: 7,
+    draw: (t) => eyesArcHappy(true) + nose() + mouthOpenOval(false), noBlink: true },
 
   { name: 'balu84Think', loopMs: 1500, bounceAmp: 3, earAmp: 3,
     draw: (t) => eyesRound(t, { pupilDY: -2 }) + nose() + mouthFlat() + question(t) + pawAt(78, 90, wiggle(t,6,-18), CHEEK) },
@@ -309,7 +308,7 @@ const EMOTES = [
   { name: 'balu84Yawn', loopMs: 1700, bounceAmp: 5, earAmp: 4,
     draw: (t) => eyesClosedFlat(0) + nose() + mouthYawn() + pawAt(74, 92, wiggle(t,6,-10), CHEEK), noBlink: true },
 
-  { name: 'balu84Dizzy', loopMs: 900, bounceAmp: 5, earAmp: 10,
+  { name: 'balu84Dizzy', loopMs: 900, bounceAmp: 5, earAmp: 10, tilt: 8,
     draw: (t) => eyesSpiral(t) + nose() + mouthWavy() + orbitStars(t), noBlink: true },
 
   { name: 'balu84Focus', loopMs: 1100, bounceAmp: 3, earAmp: 3,
@@ -319,8 +318,9 @@ const EMOTES = [
     draw: (t) => eyesArcHappy(true) + nose() + mouthOpenOval(true) + tear(t, 30, 0.2), noBlink: true },
 
   { name: 'balu84Shush', loopMs: 1400, bounceAmp: 3, earAmp: 3,
-    draw: (t) => eyesRound(t,{r:6}) + nose() + pawAt(60, 86, -10, CHEEK) +
-      (() => { const op = pulse01(t); return `<text x="70" y="90" font-family="Arial,sans-serif" font-weight="700" font-size="14" fill="${CYAN}" opacity="${op}">...</text>`; })() },
+    draw: (t) => eyesRound(t,{r:6}) +
+      `<ellipse cx="62" cy="84" rx="9" ry="16" fill="${CHEEK}" stroke="${DARK}" stroke-width="3" transform="rotate(-16 62 84)"/>` +
+      (() => { const op = round(0.5 + 0.5*pulse01(t)); return `<text x="74" y="78" font-family="Arial,sans-serif" font-weight="700" font-size="16" fill="${CYAN}" opacity="${op}">...</text>`; })() },
 
   { name: 'balu84Salute', loopMs: 1200, bounceAmp: 5, earAmp: 5,
     draw: (t) => eyesArcHappy() + nose() + mouthFlat() + pawAt(78, 46, wiggle(t,4,-30), CHEEK) },
@@ -336,11 +336,14 @@ for (const e of EMOTES) {
   const cells = [];
   for (let i = 0; i < frames; i++) {
     const t = i / frames;
+    const by = bounceY(t, e.bounceAmp ?? 8);
+    const ss = squash(t, e.stretch ?? 0);
+    const tiltAngle = wiggle(t, e.tilt ?? 0, 0);
     const body = earsHead(t, e);
     const eyewear = e.replaceGlasses ?? glasses();
     const extra = e.draw(t);
     const topmost = e.extraTopmost || '';
-    cells.push(`<g transform="translate(${i * 112} 0)"><g>${body}${eyewear}${extra}${topmost}</g></g>`);
+    cells.push(`<g transform="translate(${i * 112} 0)"><g transform="translate(0 ${by}) scale(${ss.sx} ${ss.sy}) rotate(${tiltAngle})" style="transform-origin:56px 70px">${body}${eyewear}${extra}${topmost}</g></g>`);
   }
   const svg = `<!doctype html><html><head><meta charset="utf-8"><style>
     html,body{margin:0;padding:0;background:transparent;overflow:hidden;}
