@@ -25,6 +25,10 @@ Overlay-Konventionen 1920×1080, "Mandeln"-Bauchbinden-Idee).
   Twitch-Embed, Stream-Zeiten, Chinchilla-Crew-Steckbriefe, Setup-Vorstellung,
   Mandel-Erklärung, Link-Liste.
 - `docs/` — Einrichtungsanleitungen (StreamElements, GitHub Pages, Twitch-Panels).
+- `emotes/` — 30 animierte Chat-Emotes (GIF, transparent, 112×112px) mit dem
+  vermenschlichten Chinchilla-Maskottchen in verschiedenen Emotionen
+  (Hype, Love, LOL, Facepalm, Rage, Sleepy, …). Details und Upload-Anleitung
+  in `emotes/README.md`.
 
 ## Was schon erledigt ist
 
