@@ -343,7 +343,7 @@ for (const e of EMOTES) {
     const eyewear = e.replaceGlasses ?? glasses();
     const extra = e.draw(t);
     const topmost = e.extraTopmost || '';
-    cells.push(`<g transform="translate(${i * 112} 0)"><g transform="translate(0 ${by}) scale(${ss.sx} ${ss.sy}) rotate(${tiltAngle})" style="transform-origin:56px 70px">${body}${eyewear}${extra}${topmost}</g></g>`);
+    cells.push(`<g transform="translate(${i * 112} 0)" clip-path="url(#cell)"><g transform="translate(0 ${by}) scale(${ss.sx} ${ss.sy}) rotate(${tiltAngle})" style="transform-origin:56px 70px">${body}${eyewear}${extra}${topmost}</g></g>`);
   }
   const svg = `<!doctype html><html><head><meta charset="utf-8"><style>
     html,body{margin:0;padding:0;background:transparent;overflow:hidden;}
@@ -360,6 +360,7 @@ for (const e of EMOTES) {
         <stop offset="0%" stop-color="#cda877"/>
         <stop offset="100%" stop-color="#8a7255"/>
       </linearGradient>
+      <clipPath id="cell" clipPathUnits="userSpaceOnUse"><rect x="0" y="0" width="112" height="112"/></clipPath>
     </defs>
     ${cells.join('\n')}
   </svg>
