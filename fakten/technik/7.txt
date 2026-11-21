@@ -1,1 +1,1 @@
-Die erste E-Mail nach Deutschland kam am 3. August 1984 an der Universität Karlsruhe an, empfangen von Michael Rotert und Werner Zorn.
+Die RTX-40-Serie war Nvidias erste Generation mit Hardware-AV1-Encoding. Die RTX 4090 hat zwei NVENC-Encoder der 8. Generation, was für Streaming in hoher Qualität bei geringer CPU-Last praktisch ist.

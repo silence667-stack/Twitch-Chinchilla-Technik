@@ -1,1 +1,1 @@
-NVENC, Nvidias Hardware-Videoencoder, debütierte 2012 mit der Kepler-Generation. Seitdem kann man Streams kodieren, ohne dass die CPU stark ausgelastet wird.
+Die Kaffeemaschinen-Kamera im Trojan Room der Universität Cambridge ging 1991 in Betrieb und gilt als erste Webcam der Welt. So sparte man sich den Weg zur leeren Kanne.

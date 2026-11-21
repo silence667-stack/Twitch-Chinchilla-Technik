@@ -1,1 +1,1 @@
-Flüssigstickstoff siedet bei minus 196 Grad Celsius und wird bei Overclocking-Rekorden zum Kühlen von CPUs genutzt. Dabei darf der Chip nicht kondensieren, sonst droht Kurzschluss.
+Der Smarthome-Standard Matter wurde am 4. Oktober 2022 in Version 1.0 veröffentlicht. Er soll Geräte unterschiedlicher Hersteller herstellerübergreifend verbinden.

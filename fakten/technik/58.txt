@@ -1,1 +1,1 @@
-Der erste dokumentierte Bug: Am 9. September 1947 fand man eine Motte in einem Relais des Harvard Mark II und klebte sie ins Logbuch. Grace Hopper machte die Geschichte berühmt. Den Begriff Bug gab es aber schon vorher.
+Der Begriff Byte wurde 1956 von Werner Buchholz bei IBM geprägt. Die Schreibweise mit y sollte Verwechslungen mit bit vermeiden.

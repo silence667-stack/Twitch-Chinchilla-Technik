@@ -1,1 +1,1 @@
-Die IBM 350 RAMAC (1956 vorgestellt) war die erste Festplatte. Sie speicherte rund 5 Millionen Zeichen (etwa 3,75 MB) auf 50 Scheiben mit 24 Zoll Durchmesser und war so groß wie zwei Kühlschränke.
+Ethernet wurde 1973 von Bob Metcalfe und David Boggs bei Xerox PARC entwickelt. Metcalfes Netz hieß zuerst Alto Aloha Network. In seinem Memo vom 22. Mai 1973 nannte er es Ether Network.

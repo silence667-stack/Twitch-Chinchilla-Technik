@@ -1,1 +1,1 @@
-OBS Studio entstand aus Open Broadcaster Software, das Hugh Bailey 2012 gestartet hat. Es ist Open Source und für Streaming weit verbreitet.
+Die Angabe Nanometer bei Fertigungsprozessen wie 5 nm ist heute eine Marketingbezeichnung. Sie entspricht nicht der tatsächlichen Strukturgröße.

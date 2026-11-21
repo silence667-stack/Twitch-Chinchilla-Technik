@@ -1,1 +1,1 @@
-Der Begriff Byte wurde 1956 von Werner Buchholz bei IBM geprägt. Die Schreibweise mit y sollte Verwechslungen mit bit vermeiden.
+Der IBM PC 5150 erschien im August 1981 mit einem Intel 8088 bei 4,77 MHz. Die Grundausstattung hatte nur 16 KB RAM, ein Diskettenlaufwerk kostete extra.

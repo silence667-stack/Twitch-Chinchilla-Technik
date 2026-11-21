@@ -1,1 +1,1 @@
-Der Cray-1 von 1976 leistete rund 160 MFLOPS und wog etwa 5,5 Tonnen. Seine runde Form mit Sitzbank diente auch der kurzen Verdrahtung.
+NVENC, Nvidias Hardware-Videoencoder, debütierte im März 2012 mit der Kepler-Generation. Seitdem kann man Streams kodieren, ohne dass die CPU stark ausgelastet wird.

@@ -1,1 +1,1 @@
-Der 16-polige 12VHPWR-Stecker liefert bis zu 600 Watt. 2022 kam es bei der RTX 4090 zu geschmolzenen Steckern, später wurde er als 12V-2x6 überarbeitet.
+Der Cray-1 von 1976 leistete rund 160 MFLOPS und wog etwa 5,5 Tonnen. Sein C-förmiger Aufbau mit Sitzbank außen herum diente der kurzen Verdrahtung.

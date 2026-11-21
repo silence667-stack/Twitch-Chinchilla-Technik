@@ -1,1 +1,1 @@
-Der Raspberry Pi, ein Minicomputer im Scheckkartenformat, erschien 2012 und kostete zunächst 35 US-Dollar.
+Am 9. September 1947 fand man eine Motte in einem Relais des Harvard Mark II und klebte sie mit dem Vermerk First actual case of bug being found ins Logbuch. Grace Hopper machte die Geschichte bekannt. Den Begriff Bug gab es aber schon vorher.

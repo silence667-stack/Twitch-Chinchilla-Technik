@@ -1,1 +1,1 @@
-Der Cray-2 wurde ab 1985 in die Flüssigkeit Fluorinert getaucht. Das war eine frühe Form der Immersionskühlung, wie sie heute in Rechenzentren wieder genutzt wird.
+Der Cerebras WSE-3 (2024) ist ein Chip so groß wie ein ganzer Wafer, mit rund 4 Billionen Transistoren und etwa 900.000 Kernen.

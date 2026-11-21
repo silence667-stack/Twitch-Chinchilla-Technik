@@ -1,1 +1,1 @@
-In Wasserkühlkreisläufen sollten möglichst keine unterschiedlichen Metalle gemischt werden, vor allem Aluminium und Kupfer. Sonst kann galvanische Korrosion entstehen.
+Beim extremen Overclocking mit Flüssigstickstoff gibt es den Cold Bug: Viele CPUs laufen unterhalb einer vom Chip abhängigen Temperatur nicht mehr, bis sie wieder erwärmt werden. Manche Modelle haben ihn gar nicht.

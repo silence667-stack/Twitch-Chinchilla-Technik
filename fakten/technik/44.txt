@@ -1,1 +1,1 @@
-Der ENIAC (1945/46) hatte rund 18.000 Elektronenröhren und wog etwa 27 Tonnen. Er füllte einen ganzen Saal von rund 30 Metern Länge und brauchte etwa 150 Kilowatt Strom.
+Der Kondensator im DRAM verliert seine Ladung nach Millisekunden. Deshalb muss der Arbeitsspeicher ständig aufgefrischt werden, das nennt man Refresh.

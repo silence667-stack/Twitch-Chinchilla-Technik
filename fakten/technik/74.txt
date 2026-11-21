@@ -1,1 +1,1 @@
-Ctrl+Alt+Entf wurde 1981 vom IBM-Entwickler David Bradley erfunden, damit Entwickler den Rechner neu starten konnten. Gedacht war es nicht für Endnutzer.
+PCIe 5.0 schafft 32 GT/s pro Lane. Die RTX 4090 nutzt trotzdem nur PCIe 4.0 x16, obwohl ihr Stromanschluss schon nach dem PCIe-5.0-Standard gebaut ist.

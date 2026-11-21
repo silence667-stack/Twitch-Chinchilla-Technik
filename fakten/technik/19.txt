@@ -1,1 +1,1 @@
-Die Einheit Hertz ist nach dem deutschen Physiker Heinrich Hertz benannt. Seit 1960 ersetzt sie in der SI-Welt die Angabe Zyklen pro Sekunde.
+Nvidia bewarb die GeForce 256 im Oktober 1999 als erste GPU der Welt und machte den Begriff Grafikverarbeitungseinheit damit populär.

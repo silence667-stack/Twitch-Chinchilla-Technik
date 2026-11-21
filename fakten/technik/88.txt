@@ -1,1 +1,1 @@
-ASCII, der Zeichencode mit 7 Bit, wurde 1963 standardisiert. Er enthält 128 Zeichen, darunter den Klingelton BEL.
+Die Einheit Hertz ist nach dem deutschen Physiker Heinrich Hertz benannt. Die IEC schlug sie 1930 vor, seit 1960 gehört sie zum Internationalen Einheitensystem SI.

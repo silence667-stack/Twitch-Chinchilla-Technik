@@ -1,1 +1,1 @@
-Gordon Moore sagte 1965 voraus, dass sich die Zahl der Bauteile auf einem Chip regelmäßig verdoppelt. 1975 korrigierte er das auf etwa alle zwei Jahre. Das ist das Mooresche Gesetz, ein Trend und kein Naturgesetz.
+Der Supercomputer JUPITER im Forschungszentrum Jülich wurde am 5. September 2025 als erster europäischer Exascale-Rechner eingeweiht. In der TOP500-Liste vom November 2025 landete er auf Platz 4.

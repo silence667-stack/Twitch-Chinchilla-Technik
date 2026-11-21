@@ -1,1 +1,1 @@
-Ethernet wurde 1973 von Bob Metcalfe bei Xerox PARC erfunden. Seine Skizze nannte er zunächst Alto Aloha Network.
+2003 brachte AMD die ersten x86-CPUs mit 64-Bit-Erweiterung, zuerst im April den Opteron, dann den Athlon 64. Intel übernahm sie später als EM64T. Deshalb heißt die Erweiterung vielerorts noch amd64.

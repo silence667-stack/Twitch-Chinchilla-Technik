@@ -1,1 +1,1 @@
-1994 fiel beim Intel Pentium ein Rechenfehler in der Fließkomma-Division auf, der FDIV-Bug. Intel tauschte schließlich auf Wunsch kostenlos aus und buchte dafür im Januar 1995 475 Millionen US-Dollar Abschreibung.
+Die Zuse Z3 von 1941 gilt als erster funktionsfähiger, programmgesteuerter Digitalrechner der Welt. Konrad Zuse baute sie in Berlin aus Telefonrelais. Das Original ging 1943 im Bombenkrieg verloren.

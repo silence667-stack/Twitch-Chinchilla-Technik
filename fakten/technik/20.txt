@@ -1,1 +1,1 @@
-Die Zuse Z3 rechnete binär und taktete mit nur etwa 5,3 Hertz: Eine motorgetriebene Trommel steuerte die Relais. Balus Ryzen 9 7950X schafft bis zu 5,7 Milliarden Takte pro Sekunde pro Kern.
+Der Ryzen 9 7950X3D stapelt zusätzlichen Cache per 3D V-Cache auf einen der beiden Chiplets und kommt so auf 128 MB L3-Cache (96 MB plus 32 MB). Das hilft vor allem in Spielen.

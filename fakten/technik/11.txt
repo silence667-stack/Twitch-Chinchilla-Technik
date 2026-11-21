@@ -1,1 +1,1 @@
-Der Kondensator im DRAM verliert seine Ladung nach Millisekunden. Deshalb muss der Arbeitsspeicher ständig aufgefrischt werden, das nennt man Refresh.
+Der Name Wi-Fi stammt von der Agentur Interbrand und sollte vor allem wie Hi-Fi klingen. Ob er für Wireless Fidelity steht, ist umstritten: Die Wi-Fi Alliance warb zeitweise mit diesem Slogan.

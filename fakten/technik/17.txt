@@ -1,1 +1,1 @@
-Die 80-Plus-Zertifizierung für Netzteile startete 2004. Sie garantiert einen Mindestwirkungsgrad von 80 Prozent bei bestimmten Lasten.
+Seit 1999 gibt es die IEC-Präfixe Kibi, Mebi und Gibi für Potenzen von 1024. Eine als 1 TB verkaufte Platte hat deshalb in Windows nur etwa 931 GiB, angezeigt als GB.

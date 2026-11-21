@@ -1,1 +1,1 @@
-Der Codec AV1 wurde 2018 als lizenzfreie Alternative zu H.264 und HEVC veröffentlicht. Er komprimiert effizienter und kann Streams bei gleicher Qualität kleiner machen.
+Die Zuse Z4 wurde 1950 an die ETH Zürich vermietet und arbeitete dort bis 1955. Sie gilt als erster kommerzieller Computer der Welt, denn der US-Rechner UNIVAC wurde erst Monate später fertig. Zuse baute sie in Deutschland.

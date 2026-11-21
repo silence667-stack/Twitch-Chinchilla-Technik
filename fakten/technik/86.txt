@@ -1,1 +1,1 @@
-Der Twitch-Chat basiert auf dem IRC-Protokoll. Das wurde 1988 vom Finnen Jarkko Oikarinen entwickelt.
+Linus Torvalds kündigte Linux am 25. August 1991 an. Er schrieb damals, es sei nur ein Hobby und werde nicht groß und professionell wie GNU.

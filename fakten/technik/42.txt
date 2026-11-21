@@ -1,1 +1,1 @@
-Die GeForce RTX 4090 (AD102, Oktober 2022) hat 16.384 CUDA-Kerne, 24 GB GDDR6X und rund 76 Milliarden Transistoren. Der volle AD102-Chip hätte 18.432 Kerne, kam aber nie als Karte.
+Gordon Moore sagte 1965 voraus, dass sich die Zahl der Bauteile auf einem Chip regelmäßig verdoppelt. 1975 korrigierte er das auf etwa alle zwei Jahre. Das ist das Mooresche Gesetz, ein Trend und kein Naturgesetz.

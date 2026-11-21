@@ -1,1 +1,1 @@
-EUV-Lithographiemaschinen baut weltweit nur ASML in den Niederlanden. Die Spiegel stammen von Carl Zeiss in Oberkochen, der Laser von Trumpf aus Ditzingen.
+Moderne Chips werden auf Wafern mit 300 Millimetern Durchmesser gefertigt. Das Silizium ist dabei extrem rein, mit weniger als einem Fremdatom auf eine Milliarde.

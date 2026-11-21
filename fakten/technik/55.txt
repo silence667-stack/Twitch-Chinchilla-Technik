@@ -1,1 +1,1 @@
-Der Intel 8086 von 1978 gab der x86-Architektur ihren Namen. Der Befehlssatz läuft in Weiterentwicklung bis heute in Balus Ryzen 9 7950X, daher kann er noch uralte Programme verstehen.
+Der Ryzen 9 7950X (Zen 4, September 2022) hat 16 Kerne, 32 Threads und boostet auf bis zu 5,7 GHz. Er sitzt auf dem Sockel AM5, AMDs erstem Mainstream-Desktop-Sockel im LGA-Design mit 1718 Kontakten.

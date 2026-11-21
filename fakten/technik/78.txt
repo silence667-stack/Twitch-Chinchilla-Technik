@@ -1,1 +1,1 @@
-Der Smarthome-Standard Matter wurde im Herbst 2022 in Version 1.0 veröffentlicht. Er soll Geräte unterschiedlicher Hersteller herstellerübergreifend verbinden.
+Der 16-polige 12VHPWR-Stecker liefert bis zu 600 Watt. 2022 gab es bei der RTX 4090 Berichte über geschmolzene Stecker, meist bei nicht ganz eingesteckten Steckern. 2023 folgte die überarbeitete Version 12V-2x6.

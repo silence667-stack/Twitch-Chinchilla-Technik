@@ -1,1 +1,1 @@
-Deep Blue von IBM besiegte im Mai 1997 den Schachweltmeister Garry Kasparov in einem Wettkampf über sechs Partien mit 3,5 zu 2,5. Es war der erste Sieg einer Maschine gegen einen amtierenden Weltmeister unter Turnierbedingungen.
+Zuses Plankalkül (1942 bis 1945) gilt als erste höhere Programmiersprache der Welt. Auf Zuses Rechnern lief sie nie. Den ersten Compiler schrieb Joachim Hohmann erst 1975 für seine Dissertation.

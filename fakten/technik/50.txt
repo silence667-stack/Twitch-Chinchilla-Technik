@@ -1,1 +1,1 @@
-2003 brachte AMD mit dem Athlon 64 die erste 64-Bit-x86-CPU. Intel übernahm die Erweiterung später, deshalb heißt sie bei Linux oft noch amd64.
+Der Commodore 64 wurde im Januar 1982 vorgestellt und kam im August 1982 in den Handel. Laut Guinness World Records ist er das meistverkaufte Desktop-Computermodell aller Zeiten. Schätzungen reichen von 12,5 bis 17 Millionen Stück.

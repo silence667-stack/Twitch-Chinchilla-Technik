@@ -1,1 +1,1 @@
-Mit CUDA öffnete Nvidia 2007 seine Grafikchips für allgemeines Rechnen. Ohne diese Plattform wäre der heutige KI-Boom auf Grafikkarten kaum denkbar gewesen.
+Heinz Nixdorf gründete 1952 in Essen ein Labor für Impulstechnik, aus dem später Nixdorf Computer in Paderborn wurde. Das System 820 machte die Firma Ende der 1960er zum Pionier der Büro-Minicomputer.

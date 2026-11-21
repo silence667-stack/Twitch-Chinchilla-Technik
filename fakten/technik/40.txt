@@ -1,1 +1,1 @@
-Robert Dennard erfand 1966 bei IBM das DRAM, den Aufbau fast jedes heutigen Arbeitsspeichers. Eine Speicherzelle besteht aus nur einem Transistor und einem Kondensator.
+Bei Ivy Bridge (2012) nutzte Intel unter dem Heatspreader der Mainstream-Desktop-CPUs Wärmeleitpaste statt Lot, der Sockel 2011 behielt Lot. Das ließ das Delidding aufkommen. Die K-Modelle der 9. Generation haben wieder Lot (STIM).
