@@ -1,0 +1,1 @@
+In Duck Hunt kann Spieler 2 im ersten Modus die Ente mit dem zweiten Controller steuern.
