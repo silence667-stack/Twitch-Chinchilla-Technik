@@ -66,6 +66,17 @@ Mandel-Icon für die Kanalpunkte (28/56/112 px, PNG, max. 25 KB).
 | `!chinfakt` | `!chinchilla` | Chinchilla-Fakt aus `fakten/chinchilla.txt` | 300 s / 300 s |
 | `!chintyp @Name` | – | Zufälliger Chinchilla-Typ mit Prozentzahl | 60 s / 10 s |
 | `!retrolevel @Name` | – | Zufälliges Retro-Gamer-Level mit Prozentzahl | 60 s / 10 s |
+| `!discord` | – | Discord-Einladung | 15 s / 5 s |
+| `!socials` | – | Alle Social-Links + Zuschauer-Website | 15 s / 5 s |
+| `!setup` | `!pc` | Kurzfassung der PC-Specs + Link | 15 s / 5 s |
+| `!lurk` | – | Chinchilla-Lurk-Spruch | 15 s / 5 s |
+
+Timer "Befehle-Hinweis" (Chatbot → Timers): alle 30 Min, nur bei mind. 10
+Chatzeilen. **Absichtlich deaktiviert angelegt** – bei Bedarf einschalten.
+
+Kanalpunkte-Belohnungen (Twitch → Zuschauer-Belohnungen → Kanalpunkte):
+Trink was! (300), Retro-Story (1.500), Chin-Cam (2.500),
+Retro-Spielwunsch (3.000, mit Texteingabe).
 
 **So funktionieren die Fakten-Befehle:** `node fakten/build.mjs` macht aus
 jeder Zeile von `fakten/<name>.txt` eine eigene Datei `fakten/<name>/<n>.txt`
