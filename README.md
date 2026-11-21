@@ -16,7 +16,7 @@ Overlay-Konventionen 1920×1080, "Mandeln"-Bauchbinden-Idee).
   `generate-pixel-mascot.mjs` erzeugt), Mandel-Icon, Technik-Icon,
   Farbpalette (`palette.md`). Alles als SVG, beliebig skalierbar.
 - `panels/` — 3 fertige Twitch-Info-Panels (320×220, als 2x-PNG gerendert):
-  "Über mich", "Die Crew" (Chinchillas), "Mein Setup" (Technik).
+  "Über mich", "Die Chinchillas", "Mein Setup" (Technik).
   Die `.html`-Dateien sind die Quelle, `render-panels.sh` erzeugt die PNGs neu.
 - `overlays/` — zwei StreamElements-Custom-Widgets:
   - `mandel-alert.html` — Alert bei Sub/Spende/Cheer/Follow ("X hat Y
@@ -24,7 +24,7 @@ Overlay-Konventionen 1920×1080, "Mandeln"-Bauchbinden-Idee).
   - `chinchilla-ticker.html` — Dauer-Overlay unten links mit rotierenden
     Chinchilla-/Technik-Fakten
 - `website/` — statische Zuschauer-Website (GitHub-Pages-fertig):
-  Twitch-Embed, Stream-Zeiten, Chinchilla-Crew-Steckbriefe, Setup-Vorstellung,
+  Twitch-Embed, Stream-Zeiten, Chinchilla-Steckbriefe, Setup-Vorstellung,
   Mandel-Erklärung, Link-Liste.
 - `docs/` — Einrichtungsanleitungen (StreamElements, GitHub Pages, Twitch-Panels,
   Elgato Key Lights, Better-Points-Redemptions, Viewer-Hub, weitere Nilson1489-

@@ -35,5 +35,5 @@ Noch ungenutzt im Pack: CONTACT ME, FACEBOOK, WISHLIST (Amazon).
 
 ## Fehlt noch (Grafik → Codex)
 
-- Eigenes Panel für die Chinchilla-Crew im Pack-Stil.
+- Eigenes Panel "Die Chinchillas" im Pack-Stil.
 - Mandel-Icon für die Kanalpunkte (28/56/112 px, PNG, max. 25 KB).
