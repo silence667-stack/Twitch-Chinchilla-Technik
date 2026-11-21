@@ -71,6 +71,7 @@ Mandel-Icon für die Kanalpunkte (28/56/112 px, PNG, max. 25 KB).
 | `!socials` | – | Alle Social-Links + Zuschauer-Website | 15 s / 5 s |
 | `!setup` | `!pc` | Kurzfassung der PC-Specs + Link | 15 s / 5 s |
 | `!lurk` | – | Chinchilla-Lurk-Spruch | 15 s / 5 s |
+| `!spende` | `!spenden` | Spendenlink (streamelements.com/derbalu84/tip), Hinweis: Geld geht in Sachen für die Chinchillas | 60 s / 30 s |
 
 Timer "Befehle-Hinweis" (Chatbot → Timers): alle 30 Min, nur bei mind. 10
 Chatzeilen. **Absichtlich deaktiviert angelegt** – bei Bedarf einschalten.
