@@ -1,0 +1,1 @@
+Die 3,5-Zoll-Diskette von 1,44 MB hat weder 1,44 Millionen noch 1,44 mal 1024 mal 1024 Byte, sondern 1440 mal 1024 Byte. Das ist ein Mix zweier Zählweisen.

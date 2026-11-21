@@ -1,0 +1,1 @@
+2003 brachte AMD mit dem Athlon 64 die erste 64-Bit-x86-CPU. Intel übernahm die Erweiterung später, deshalb heißt sie bei Linux oft noch amd64.

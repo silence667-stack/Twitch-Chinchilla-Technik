@@ -1,0 +1,1 @@
+Die Uhr im PC läuft oft mit einem 32.768-Hz-Quarz. Das ist 2 hoch 15, mit einem 15-Bit-Zähler erhält man genau eine Sekunde.

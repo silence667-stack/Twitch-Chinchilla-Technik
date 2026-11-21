@@ -1,0 +1,1 @@
+Der Twitch-Chat basiert auf dem IRC-Protokoll. Das wurde 1988 vom Finnen Jarkko Oikarinen entwickelt.

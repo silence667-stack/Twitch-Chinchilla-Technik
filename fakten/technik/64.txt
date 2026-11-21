@@ -1,0 +1,1 @@
+Der Soundchip SID im C64 stammt von Bob Yannes. Er hatte drei Stimmen und klingt bis heute so charakteristisch, dass es Nachbauten und Hardware-Synthesizer gibt.

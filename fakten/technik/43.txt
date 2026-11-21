@@ -1,0 +1,1 @@
+Der Cerebras WSE-3 (2024) ist ein Chip so groß wie ein ganzer Wafer, mit rund 4 Billionen Transistoren und etwa 900.000 Kernen.

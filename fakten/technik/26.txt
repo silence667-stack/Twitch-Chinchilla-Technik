@@ -1,0 +1,1 @@
+H.264/AVC wurde 2003 standardisiert und ist bis heute der meistgenutzte Videocodec im Streaming.

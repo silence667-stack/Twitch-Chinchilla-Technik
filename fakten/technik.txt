@@ -1,0 +1,104 @@
+Die Zuse Z3 von 1941 gilt als erster funktionsfähiger, programmgesteuerter Digitalrechner der Welt. Konrad Zuse baute sie in Berlin aus Telefonrelais. Das Original ging 1943 im Bombenkrieg verloren.
+Die Zuse Z3 rechnete binär und taktete mit nur etwa 5,3 Hertz: Eine motorgetriebene Trommel steuerte die Relais. Balus Ryzen 9 7950X schafft bis zu 5,7 Milliarden Takte pro Sekunde pro Kern.
+Konrad Zuse baute seinen ersten Rechner, die mechanische Z1, ab 1936 im Wohnzimmer seiner Eltern in Berlin. Die Z1 war 1938 funktionsfähig, arbeitete aber wegen der Mechanik nicht zuverlässig.
+Die Zuse Z4 wurde 1950 an die ETH Zürich vermietet und gilt als erster kommerziell vertriebener Computer der Welt. Gebaut wurde sie in Deutschland von Konrad Zuse.
+Zuses Plankalkül (1942 bis 1945) gilt als erste höhere Programmiersprache der Welt. Praktisch genutzt wurde sie damals nicht, ein Compiler entstand erst um die Jahrtausendwende an der FU Berlin.
+Heinz Nixdorf gründete 1952 in Essen ein Labor für Impulstechnik, aus dem später Nixdorf Computer in Paderborn wurde. Das System 820 machte die Firma Ende der 1960er zum Pionier der Büro-Minicomputer.
+Heinz Nixdorf starb am 17. März 1986 auf der CeBIT in Hannover an einem Herzinfarkt. 1990 ging seine Firma in Siemens Nixdorf Informationssysteme auf.
+Der Commodore 64 kam 1982 auf den Markt und gilt als meistverkauftes Einzelmodell eines Computers aller Zeiten. Geschätzt wurden 12,5 bis 17 Millionen Stück verkauft, genau weiß es keiner.
+Der Soundchip SID im C64 stammt von Bob Yannes. Er hatte drei Stimmen und klingt bis heute so charakteristisch, dass es Nachbauten und Hardware-Synthesizer gibt.
+In Deutschland war der C64 in den 1980ern einer der beliebtesten Heimcomputer. Auch der Schneider CPC 464 von 1984 war hier erfolgreich: Der Amstrad-Rechner wurde in Deutschland unter dem Namen Schneider vertrieben.
+Der Commodore Amiga 1000 erschien 1985 mit Mehrkanal-Sound, Multitasking und Grafik, die damals PCs weit voraus waren. Der Amiga 500 von 1987 wurde zum Spielerechner vieler Kinderzimmer.
+Der Apple I von 1976 wurde von Steve Wozniak entworfen und kostete 666,66 US-Dollar. Das war ein Bausatz-Mainboard, Tastatur und Monitor musste man selbst dazu besorgen.
+Der IBM PC 5150 erschien im August 1981 mit einem Intel 8088 bei 4,77 MHz. Die Grundausstattung hatte nur 16 KB RAM, ein Diskettenlaufwerk kostete extra.
+Der erste dokumentierte Bug: Am 9. September 1947 fand man eine Motte in einem Relais des Harvard Mark II und klebte sie ins Logbuch. Grace Hopper machte die Geschichte berühmt. Den Begriff Bug gab es aber schon vorher.
+Der ENIAC (1945/46) hatte rund 18.000 Elektronenröhren und wog etwa 27 Tonnen. Er füllte einen ganzen Saal von rund 30 Metern Länge und brauchte etwa 150 Kilowatt Strom.
+Der Intel 4004 von 1971 war der erste kommerzielle Mikroprozessor auf einem Chip. Er hatte rund 2.300 Transistoren und bis zu 740 kHz Takt. Balus Ryzen 9 7950X hat mehrere Milliarden Transistoren.
+Der Intel 8086 von 1978 gab der x86-Architektur ihren Namen. Der Befehlssatz läuft in Weiterentwicklung bis heute in Balus Ryzen 9 7950X, daher kann er noch uralte Programme verstehen.
+Gordon Moore sagte 1965 voraus, dass sich die Zahl der Bauteile auf einem Chip regelmäßig verdoppelt. 1975 korrigierte er das auf etwa alle zwei Jahre. Das ist das Mooresche Gesetz, ein Trend und kein Naturgesetz.
+1994 fiel beim Intel Pentium ein Rechenfehler in der Fließkomma-Division auf, der FDIV-Bug. Intel tauschte schließlich auf Wunsch kostenlos aus und buchte dafür im Januar 1995 475 Millionen US-Dollar Abschreibung.
+Im März 2000 knackte der AMD Athlon als erster Prozessor die 1-GHz-Marke im Handel und schlug Intel damit knapp. Heute sind 5 GHz und mehr bei Desktop-CPUs normal.
+2003 brachte AMD mit dem Athlon 64 die erste 64-Bit-x86-CPU. Intel übernahm die Erweiterung später, deshalb heißt sie bei Linux oft noch amd64.
+Der Ryzen 9 7950X (Zen 4, September 2022) hat 16 Kerne, 32 Threads und boostet auf bis zu 5,7 GHz. Er sitzt auf dem Sockel AM5, AMDs erstem Mainstream-Desktop-Sockel im LGA-Design mit 1718 Kontakten.
+Der Ryzen 9 7950X3D stapelt zusätzlichen Cache per 3D V-Cache direkt auf den Chip und kommt auf 128 MB L3-Cache. Das hilft vor allem in Spielen.
+Die GeForce RTX 4090 (AD102, Oktober 2022) hat 16.384 CUDA-Kerne, 24 GB GDDR6X und rund 76 Milliarden Transistoren. Der volle AD102-Chip hätte 18.432 Kerne, kam aber nie als Karte.
+Die RTX 4090 hat eine Leistungsaufnahme von 450 Watt (Total Graphics Power). Damit gehört sie zu den stromhungrigsten Consumer-Grafikkarten der Geschichte.
+Der Begriff GPU wurde 1999 von Nvidia mit der GeForce 256 populär gemacht. Nvidia bewarb sie als erste Grafikverarbeitungseinheit der Welt.
+Nvidia wurde 1993 von Jensen Huang, Chris Malachowsky und Curtis Priem gegründet. Die Idee soll bei einem Treffen in einem Denny's-Restaurant entstanden sein.
+AMD kaufte 2006 den Grafikkartenhersteller ATI für über 5 Milliarden US-Dollar. Daher stammen die Radeon-Karten heute von AMD.
+Mit CUDA öffnete Nvidia 2007 seine Grafikchips für allgemeines Rechnen. Ohne diese Plattform wäre der heutige KI-Boom auf Grafikkarten kaum denkbar gewesen.
+Die RTX-40-Serie war Nvidias erste Generation mit Hardware-AV1-Encoding. Die RTX 4090 hat zwei NVENC-Encoder, was für Streaming in hoher Qualität bei geringer Last praktisch ist.
+NVENC, Nvidias Hardware-Videoencoder, debütierte 2012 mit der Kepler-Generation. Seitdem kann man Streams kodieren, ohne dass die CPU stark ausgelastet wird.
+Intel wurde 1968 von Robert Noyce und Gordon Moore gegründet, AMD folgte 1969. Die beiden sind seitdem ständige Konkurrenten im x86-Markt.
+Die IBM 350 RAMAC (1956 vorgestellt) war die erste Festplatte. Sie speicherte rund 5 Millionen Zeichen (etwa 3,75 MB) auf 50 Scheiben mit 24 Zoll Durchmesser und war so groß wie zwei Kühlschränke.
+Der Begriff Byte wurde 1956 von Werner Buchholz bei IBM geprägt. Die Schreibweise mit y sollte Verwechslungen mit bit vermeiden.
+Die erste Festplatte mit 1 Terabyte für Endkunden brachte Hitachi 2007 heraus, die Deskstar 7K1000. Heute gibt es Festplatten mit über 30 TB, Seagate liefert 2026 sogar bis zu 44 TB an Cloud-Großkunden.
+Flash-Speicher wurde Anfang der 1980er von Fujio Masuoka bei Toshiba erfunden. NAND-Flash, die Basis moderner SSDs, folgte 1987.
+Robert Dennard erfand 1966 bei IBM das DRAM, den Aufbau fast jedes heutigen Arbeitsspeichers. Eine Speicherzelle besteht aus nur einem Transistor und einem Kondensator.
+Der Kondensator im DRAM verliert seine Ladung nach Millisekunden. Deshalb muss der Arbeitsspeicher ständig aufgefrischt werden, das nennt man Refresh.
+DDR5 wurde 2020 von JEDEC spezifiziert und startet bei 4800 MT/s. Neu sind unter anderem ein Spannungsregler direkt auf dem Modul und eine On-Die-ECC.
+Die 3,5-Zoll-Diskette von 1,44 MB hat weder 1,44 Millionen noch 1,44 mal 1024 mal 1024 Byte, sondern 1440 mal 1024 Byte. Das ist ein Mix zweier Zählweisen.
+Seit 1998 gibt es die IEC-Präfixe Kibi, Mebi und Gibi für Potenzen von 1024. Eine als 1 TB verkaufte Platte hat deshalb in Windows nur etwa 931 GiB, angezeigt als GB.
+Der erste Rollkugel-Vorläufer der Maus kam aus Deutschland: Telefunken baute 1968 die Rollkugel RKS 100-86 für den Rechner SIG 100.
+Douglas Engelbart baute Anfang der 1960er den ersten Maus-Prototyp mit Holzgehäuse und zwei Metallrädern. Öffentlich vorgeführt wurde er am 9. Dezember 1968 in der berühmten Mother of All Demos.
+Ctrl+Alt+Entf wurde 1981 vom IBM-Entwickler David Bradley erfunden, damit Entwickler den Rechner neu starten konnten. Gedacht war es nicht für Endnutzer.
+Cherry, Hersteller der MX-Schalter, wurde 1953 in den USA gegründet und zog 1979 nach Auerbach in Bayern. Die MX-Schalter kamen Mitte der 1980er auf den Markt und prägen mechanische Tastaturen bis heute.
+Der 1969 gestartete Vorläufer des Internets ARPANET übertrug am 29. Oktober 1969 die erste Nachricht. Gesendet werden sollte LOGIN, das System stürzte nach LO ab.
+Ray Tomlinson verschickte 1971 die erste E-Mail zwischen zwei Rechnern im Netz und führte das @-Zeichen für die Adresse ein.
+Am 1. Januar 1983 stellte das ARPANET auf TCP/IP um. Dieser Stichtag gilt als Geburtstag des Internets in seiner heutigen Form.
+Tim Berners-Lee schlug 1989 am CERN das World Wide Web vor. 1993 gab CERN die Technik frei, ohne Lizenzgebühren.
+Die erste Webcam der Welt filmte ab 1991 eine Kaffeemaschine im Trojan Room der Universität Cambridge, damit niemand umsonst zur leeren Kanne lief.
+Die erste E-Mail nach Deutschland kam am 3. August 1984 an der Universität Karlsruhe an, empfangen von Michael Rotert und Werner Zorn.
+Die Top-Level-Domain .de wurde am 5. November 1986 eingerichtet. Ende Juni 2026 knackte sie laut DENIC erstmals die Marke von 18 Millionen Domains und ist damit eine der größten Länderdomains der Welt.
+Der DE-CIX in Frankfurt ging im Herbst 1995 in Betrieb und zählt zu den größten Internetknoten der Welt. Anfangs verband er nur drei deutsche Internetanbieter.
+Ethernet wurde 1973 von Bob Metcalfe bei Xerox PARC erfunden. Seine Skizze nannte er zunächst Alto Aloha Network.
+Der Name Wi-Fi steht nicht offiziell für Wireless Fidelity. Die Agentur Interbrand erfand die Marke, sie sollte vor allem wie Hi-Fi klingen. Der Slogan mit Fidelity kam erst später.
+Der erste 802.11-Standard erschien 1997 und schaffte 2 Mbit/s. Heutiges Wi-Fi 6 oder 7 kommt auf mehrere Gigabit pro Sekunde theoretisch.
+Bluetooth ist nach dem dänischen Wikingerkönig Harald Blauzahn benannt. Das Logo kombiniert seine Initialen in Runenschrift.
+Zigbee, das viele Smarthome-Geräte nutzen, ist nach dem Schwänzeltanz der Bienen benannt, mit dem sie sich in einem Zickzack-Muster verständigen.
+Der Smarthome-Standard Matter wurde im Herbst 2022 in Version 1.0 veröffentlicht. Er soll Geräte unterschiedlicher Hersteller herstellerübergreifend verbinden.
+HomematicIP-Geräte stammen von eQ-3 aus Leer in Ostfriesland. Das Unternehmen wurde 2007 aus der ELV Elektronik AG ausgegründet und gehört mit ihr zu einer familiengeführten Unternehmensgruppe.
+USB 1.0 erschien 1996 mit 12 Mbit/s. USB4 schafft 40 Gbit/s, und die Version USB4 2.0 aus dem Jahr 2022 sogar 80 Gbit/s (Stand 2026). Das ist rund 6.700-mal schneller.
+PCIe 5.0 schafft 32 GT/s pro Lane. Die RTX 4090 nutzt trotzdem nur PCIe 4.0 x16, weil sie die Bandbreite nicht ausreizt.
+Der ATX-Standard stammt von Intel und wurde 1995 eingeführt. Sein Aufbau von Netzteil und Mainboard hat sich seither kaum verändert.
+Der 16-polige 12VHPWR-Stecker liefert bis zu 600 Watt. 2022 kam es bei der RTX 4090 zu geschmolzenen Steckern, später wurde er als 12V-2x6 überarbeitet.
+Die 80-Plus-Zertifizierung für Netzteile startete 2004. Sie garantiert einen Mindestwirkungsgrad von 80 Prozent bei bestimmten Lasten.
+Wasser kann pro Volumen rund 3.500-mal mehr Wärme aufnehmen als Luft. Deshalb sind Wasserkühlungen so leistungsfähig.
+Der Cray-2 wurde ab 1985 in die Flüssigkeit Fluorinert getaucht. Das war eine frühe Form der Immersionskühlung, wie sie heute in Rechenzentren wieder genutzt wird.
+Der Cray-1 von 1976 leistete rund 160 MFLOPS und wog etwa 5,5 Tonnen. Seine runde Form mit Sitzbank diente auch der kurzen Verdrahtung.
+In Wasserkühlkreisläufen sollten möglichst keine unterschiedlichen Metalle gemischt werden, vor allem Aluminium und Kupfer. Sonst kann galvanische Korrosion entstehen.
+Flüssigmetall-Wärmeleitpaste besteht meist aus Galinstan, einer Legierung aus Gallium, Indium und Zinn. Sie schmilzt bei etwa minus 19 Grad Celsius.
+Flüssigmetall leitet Strom und greift Aluminium an. Deshalb darf es nicht auf Aluminium-Kühler und nicht auf Kontakte der Platine gelangen.
+Der Heatspreader des Ryzen 7000 hat acht Arme mit Aussparungen für Kondensatoren. AMD nennt ihn intern Octopus, wegen seiner Form wirkt er wie ein Tintenfisch.
+Flüssigstickstoff siedet bei minus 196 Grad Celsius und wird bei Overclocking-Rekorden zum Kühlen von CPUs genutzt. Dabei darf der Chip nicht kondensieren, sonst droht Kurzschluss.
+Intel plante mit dem Pentium 4 (NetBurst) anfangs Taktraten von bis zu 10 GHz. Wegen Abwärme und Stromverbrauch lief das Konzept 2004 bei 3,8 GHz aus, die Zukunft lag in Mehrkern-CPUs.
+Die Angabe Nanometer bei Fertigungsprozessen wie 5 nm ist heute eine Marketingbezeichnung. Sie entspricht nicht der tatsächlichen Strukturgröße.
+EUV-Lithographiemaschinen baut weltweit nur ASML in den Niederlanden. Die Spiegel stammen von Carl Zeiss in Oberkochen, der Laser von Trumpf aus Ditzingen.
+Moderne Chips werden auf Wafern mit 300 Millimetern Durchmesser gefertigt. Das Silizium ist dabei extrem rein, mit weniger als einem Fremdatom auf eine Milliarde.
+Der Cerebras WSE-3 (2024) ist ein Chip so groß wie ein ganzer Wafer, mit rund 4 Billionen Transistoren und etwa 900.000 Kernen.
+Die Uhr im PC läuft oft mit einem 32.768-Hz-Quarz. Das ist 2 hoch 15, mit einem 15-Bit-Zähler erhält man genau eine Sekunde.
+Die BIOS-Batterie im PC ist meist eine CR2032-Knopfzelle mit 3 Volt. Sie hält die Uhr am Laufen, wenn der Rechner vom Strom getrennt ist.
+Unix-Systeme zählen Sekunden seit dem 1. Januar 1970. Bei 32-Bit-Zählern läuft die Zahl am 19. Januar 2038 über, das Jahr-2038-Problem.
+ASCII, der Zeichencode mit 7 Bit, wurde 1963 standardisiert. Er enthält 128 Zeichen, darunter den Klingelton BEL.
+Den Begriff Bit führte der Statistiker John Tukey 1947 ein. Claude Shannon machte ihn 1948 mit der Informationstheorie bekannt.
+Vier Bit nennt man ein Nibble, also ein halbes Byte. Der Begriff ist ein Wortspiel auf englisch für ein Häppchen.
+Die Einheit Hertz ist nach dem deutschen Physiker Heinrich Hertz benannt. Seit 1960 ersetzt sie in der SI-Welt die Angabe Zyklen pro Sekunde.
+Linus Torvalds kündigte Linux am 25. August 1991 an. Er schrieb damals, es sei nur ein Hobby und werde nicht groß und professionell wie GNU.
+Windows 1.0 erschien im November 1985. Es war zunächst nur eine grafische Oberfläche über MS-DOS.
+Das erste Computervirus-Programm Creeper lief 1971 im ARPANET. Es zeigte nur die Meldung I'M THE CREEPER: CATCH ME IF YOU CAN an.
+Die Domain symbolics.com wurde am 15. März 1985 als erste dauerhaft registrierte .com-Domain angemeldet.
+Twitch ging im Juni 2011 aus Justin.tv hervor. Amazon kaufte die Plattform 2014 für rund 970 Millionen US-Dollar.
+Der Twitch-Chat basiert auf dem IRC-Protokoll. Das wurde 1988 vom Finnen Jarkko Oikarinen entwickelt.
+OBS Studio entstand aus Open Broadcaster Software, das Hugh Bailey 2012 gestartet hat. Es ist Open Source und für Streaming weit verbreitet.
+Der Stream Deck von Elgato kam am 23. März 2017 mit 15 LCD-Tasten auf den Markt. Corsair übernahm die Marke Elgato im Juni 2018.
+Als Corsair 2018 die Marke Elgato kaufte, behielt die ursprüngliche Firma Elgato Systems ihr Smarthome-Geschäft und nannte sich in Eve Systems um. Sie stammt ursprünglich aus München.
+Der Codec AV1 wurde 2018 als lizenzfreie Alternative zu H.264 und HEVC veröffentlicht. Er komprimiert effizienter und kann Streams bei gleicher Qualität kleiner machen.
+H.264/AVC wurde 2003 standardisiert und ist bis heute der meistgenutzte Videocodec im Streaming.
+Tennis for Two war 1958 ein frühes Computerspiel und lief auf einem Oszilloskop in einem US-Forschungslabor.
+Deep Blue von IBM besiegte im Mai 1997 den Schachweltmeister Garry Kasparov in einem Wettkampf über sechs Partien mit 3,5 zu 2,5. Es war der erste Sieg einer Maschine gegen einen amtierenden Weltmeister unter Turnierbedingungen.
+Der Raspberry Pi, ein Minicomputer im Scheckkartenformat, erschien 2012 und kostete zunächst 35 US-Dollar.
+Die c't, das Computermagazin aus dem Heise-Verlag in Hannover, erschien erstmals 1983.
+Die CeBIT in Hannover war lange die größte Computermesse der Welt. 2018 fand sie zum letzten Mal statt.
+Der Supercomputer JUPITER im Forschungszentrum Jülich wurde am 5. September 2025 als erster europäischer Exascale-Rechner eingeweiht. In der TOP500-Liste vom November 2025 landete er auf Platz 4.
+TSMC, Bosch, Infineon und NXP bauen in Dresden eine neue Chipfabrik, die ESMC. Der Spatenstich war am 20. August 2024, TSMC hält 70 Prozent. Die Produktion soll Ende 2027 starten.
+Die Siemens Nixdorf Informationssysteme AG entstand am 1. Oktober 1990. Ihr Banken- und Handelsgeschäft wurde zu Wincor Nixdorf, das seit 2016 zu Diebold Nixdorf gehört, dem Hersteller von Geldautomaten.

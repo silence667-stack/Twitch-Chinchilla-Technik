@@ -23,7 +23,7 @@ function seededShuffle(items, seed) {
   return a;
 }
 
-for (const [name, seed] of [['retro', 84], ['chinchilla', 1923]]) {
+for (const [name, seed] of [['retro', 84], ['chinchilla', 1923], ['technik', 1941]]) {
   const facts = readFileSync(join(here, `${name}.txt`), 'utf-8')
     .split('\n').map((l) => l.trim()).filter(Boolean);
   const tooLong = facts.filter((f) => Buffer.byteLength(f) > MAX_BYTES);

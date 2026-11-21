@@ -1,0 +1,1 @@
+Ctrl+Alt+Entf wurde 1981 vom IBM-Entwickler David Bradley erfunden, damit Entwickler den Rechner neu starten konnten. Gedacht war es nicht für Endnutzer.

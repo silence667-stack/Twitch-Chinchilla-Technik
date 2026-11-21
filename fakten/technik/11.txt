@@ -1,0 +1,1 @@
+Der Kondensator im DRAM verliert seine Ladung nach Millisekunden. Deshalb muss der Arbeitsspeicher ständig aufgefrischt werden, das nennt man Refresh.

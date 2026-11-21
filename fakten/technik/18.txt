@@ -1,0 +1,1 @@
+Der Begriff Byte wurde 1956 von Werner Buchholz bei IBM geprägt. Die Schreibweise mit y sollte Verwechslungen mit bit vermeiden.

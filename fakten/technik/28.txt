@@ -1,0 +1,1 @@
+Der Codec AV1 wurde 2018 als lizenzfreie Alternative zu H.264 und HEVC veröffentlicht. Er komprimiert effizienter und kann Streams bei gleicher Qualität kleiner machen.

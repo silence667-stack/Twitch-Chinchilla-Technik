@@ -1,0 +1,1 @@
+Mit CUDA öffnete Nvidia 2007 seine Grafikchips für allgemeines Rechnen. Ohne diese Plattform wäre der heutige KI-Boom auf Grafikkarten kaum denkbar gewesen.

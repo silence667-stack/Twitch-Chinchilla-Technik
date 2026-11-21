@@ -1,0 +1,1 @@
+Ethernet wurde 1973 von Bob Metcalfe bei Xerox PARC erfunden. Seine Skizze nannte er zunächst Alto Aloha Network.

@@ -1,0 +1,1 @@
+NVENC, Nvidias Hardware-Videoencoder, debütierte 2012 mit der Kepler-Generation. Seitdem kann man Streams kodieren, ohne dass die CPU stark ausgelastet wird.

@@ -1,0 +1,1 @@
+Die BIOS-Batterie im PC ist meist eine CR2032-Knopfzelle mit 3 Volt. Sie hält die Uhr am Laufen, wenn der Rechner vom Strom getrennt ist.

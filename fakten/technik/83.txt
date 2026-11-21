@@ -1,0 +1,1 @@
+Flüssigstickstoff siedet bei minus 196 Grad Celsius und wird bei Overclocking-Rekorden zum Kühlen von CPUs genutzt. Dabei darf der Chip nicht kondensieren, sonst droht Kurzschluss.

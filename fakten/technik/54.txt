@@ -1,0 +1,1 @@
+Der Ryzen 9 7950X (Zen 4, September 2022) hat 16 Kerne, 32 Threads und boostet auf bis zu 5,7 GHz. Er sitzt auf dem Sockel AM5, AMDs erstem Mainstream-Desktop-Sockel im LGA-Design mit 1718 Kontakten.

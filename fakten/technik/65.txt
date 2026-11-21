@@ -1,0 +1,1 @@
+Seit 1998 gibt es die IEC-Präfixe Kibi, Mebi und Gibi für Potenzen von 1024. Eine als 1 TB verkaufte Platte hat deshalb in Windows nur etwa 931 GiB, angezeigt als GB.

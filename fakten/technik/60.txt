@@ -1,0 +1,1 @@
+DDR5 wurde 2020 von JEDEC spezifiziert und startet bei 4800 MT/s. Neu sind unter anderem ein Spannungsregler direkt auf dem Modul und eine On-Die-ECC.

@@ -1,0 +1,1 @@
+OBS Studio entstand aus Open Broadcaster Software, das Hugh Bailey 2012 gestartet hat. Es ist Open Source und für Streaming weit verbreitet.

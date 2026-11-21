@@ -1,0 +1,1 @@
+Unix-Systeme zählen Sekunden seit dem 1. Januar 1970. Bei 32-Bit-Zählern läuft die Zahl am 19. Januar 2038 über, das Jahr-2038-Problem.

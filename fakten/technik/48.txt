@@ -1,0 +1,1 @@
+Flüssigmetall leitet Strom und greift Aluminium an. Deshalb darf es nicht auf Aluminium-Kühler und nicht auf Kontakte der Platine gelangen.

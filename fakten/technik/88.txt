@@ -1,0 +1,1 @@
+ASCII, der Zeichencode mit 7 Bit, wurde 1963 standardisiert. Er enthält 128 Zeichen, darunter den Klingelton BEL.

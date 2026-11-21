@@ -1,0 +1,1 @@
+USB 1.0 erschien 1996 mit 12 Mbit/s. USB4 schafft 40 Gbit/s, und die Version USB4 2.0 aus dem Jahr 2022 sogar 80 Gbit/s (Stand 2026). Das ist rund 6.700-mal schneller.

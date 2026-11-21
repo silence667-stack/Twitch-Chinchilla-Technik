@@ -1,0 +1,1 @@
+Vier Bit nennt man ein Nibble, also ein halbes Byte. Der Begriff ist ein Wortspiel auf englisch für ein Häppchen.

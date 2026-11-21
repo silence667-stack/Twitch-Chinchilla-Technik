@@ -1,0 +1,1 @@
+Der Heatspreader des Ryzen 7000 hat acht Arme mit Aussparungen für Kondensatoren. AMD nennt ihn intern Octopus, wegen seiner Form wirkt er wie ein Tintenfisch.
