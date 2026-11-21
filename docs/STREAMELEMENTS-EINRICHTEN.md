@@ -62,7 +62,7 @@ Mandel-Icon für die Kanalpunkte (28/56/112 px, PNG, max. 25 KB).
 
 | Befehl | Alias | Was passiert | Cooldown (User/Global) |
 |---|---|---|---|
-| `!retrofakt` | `!retro` | Retro-Spiele-Fakt (188, `fakten/retro.txt`) | 300 s / 300 s |
+| `!retrofakt` | `!retro` | Retro-Fakt zu Spielen und Konsolen bis ca. 2010 (331, `fakten/retro.txt`) | 300 s / 300 s |
 | `!chinfakt` | `!chinchilla` | Chinchilla-Fakt (109, `fakten/chinchilla.txt`) | 300 s / 300 s |
 | `!techfakt` | `!tech` | Technik-Fakt (109, `fakten/technik.txt`) | 300 s / 300 s |
 | `!chintyp @Name` | – | Zufälliger Chinchilla-Typ mit Prozentzahl | 60 s / 10 s |
@@ -83,7 +83,7 @@ Retro-Spielwunsch (3.000, mit Texteingabe).
 **So funktionieren die Fakten-Befehle:** `node fakten/build.mjs` macht aus
 jeder Zeile von `fakten/<name>.txt` eine eigene Datei `fakten/<name>/<n>.txt`
 (fest gemischte Reihenfolge). Der Befehl zählt per `$(count retrofakt)` hoch
-und holt per `$(customapi …/fakten/retro/$(math mod($(count retrofakt),188)+1).txt)`
+und holt per `$(customapi …/fakten/retro/$(math mod($(count retrofakt),331)+1).txt)`
 die passende Datei von GitHub Pages. So kommt jeder Fakt einmal dran, bevor
 sich einer wiederholt.
 

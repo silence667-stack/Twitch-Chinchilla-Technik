@@ -1,0 +1,1 @@
+In Galaga kann ein Boss-Gegner das eigene Schiff per Traktorstrahl entführen. Befreit man es, wird daraus ein Doppeljäger mit mehr Feuerkraft – aber auch größerer Trefferfläche.

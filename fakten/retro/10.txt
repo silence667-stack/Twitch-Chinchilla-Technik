@@ -1,1 +1,1 @@
-E.T. für den Atari 2600 wurde in nur etwa sechs Wochen programmiert. Es wurden rund 4 Millionen Module hergestellt, aber nur etwa 1,5 Millionen verkauft.
+Bei Space Invaders werden die Gegner schneller, je weniger übrig sind: Der Prozessor musste weniger Figuren zeichnen. Nishikado ließ diesen Effekt bewusst als Spielelement im Spiel.

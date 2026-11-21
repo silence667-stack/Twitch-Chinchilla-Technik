@@ -1,1 +1,1 @@
-Die 255 Bildschirme von Pitfall! brauchen weniger als 50 Byte im Modul: Ein 8-Bit-Zähler erzeugt sie. Das ganze Spiel passt in ein 4-Kilobyte-ROM. Über 4 Millionen Stück gingen auf dem Atari 2600 weg.
+Die Magnavox Odyssey kostete 99,95 Dollar, hatte keinen Ton und zählte keine Punkte. Laut Baer verkaufte sie sich etwa 350.000 Mal. 1974 verklagte Magnavox Atari wegen Patenten, 1976 gab es einen Vergleich.

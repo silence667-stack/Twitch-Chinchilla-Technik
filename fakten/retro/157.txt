@@ -1,1 +1,1 @@
-Der Super-FX-Chip im Modul machte Star Fox möglich: Er ist ein RISC-Prozessor als Zusatz-Hardware und berechnete Polygon-3D, zu dem das SNES allein nicht fähig war.
+Blue Byte entstand im Oktober 1988 auf dem Dachboden von Thomas Hertzler in Mülheim, gegründet von ihm und Lothar Schmitt. Battle Isle (1991) war der erste große Erfolg.

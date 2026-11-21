@@ -1,1 +1,1 @@
-Laut Guinness ist der C64 das meistverkaufte Desktop-Computermodell. Die Schätzungen schwanken zwischen 12,5 und 17 Millionen Stück.
+Elite (20.9.1984, BBC Micro) von David Braben und Ian Bell bot acht Galaxien mit je 256 Planeten. Sie wurden nicht gespeichert, sondern aus einer einzigen Startzahl (Seed) per Algorithmus erzeugt.

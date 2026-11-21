@@ -1,0 +1,1 @@
+Tetris programmierte Alexey Pajitnov in etwa drei Wochen in Pascal auf einem Elektronika 60. Der Name verbindet "tetra" (vier) mit Tennis, seinem Lieblingssport.

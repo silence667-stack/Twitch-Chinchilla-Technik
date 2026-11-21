@@ -1,0 +1,1 @@
+Mario Kart 64 zeigt die Figuren als 2D-Bilder, die der Kamera zugewandt sind. Das sparte Speicher und ermöglichte vier Spieler und Battle-Modus. Nach einem Festplattenschaden mussten rund 80 Prozent der Figurenmodelle neu gemacht werden.

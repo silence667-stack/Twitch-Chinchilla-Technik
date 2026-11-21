@@ -1,1 +1,1 @@
-Die Geister in Pac-Man haben eigene Strategien: Blinky jagt direkt, Pinky und Inky versuchen, Pac-Man den Weg abzuschneiden, und Clyde wechselt je nach Abstand zwischen Verfolgen und Flucht.
+Das N64 hat vier Controller-Anschlüsse serienmäßig. Das Expansion Pak erweiterte den Arbeitsspeicher von 4 auf 8 MB, das Rumble Pak brachte Force Feedback.

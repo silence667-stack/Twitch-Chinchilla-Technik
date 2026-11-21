@@ -1,1 +1,1 @@
-Asteroids (Atari, 1979) von Lyle Rains und Ed Logg nutzt Vektorgrafik. Über 70.000 Automaten wurden ausgeliefert. Die Highscore-Liste mit Initialen übernahm Logg von Exidys Star Fire.
+Laut Wikipedia hatte das Neo Geo AES als erste Heimkonsole eine austauschbare Memory Card. Damit konnte man Spielstände zwischen Heimkonsole und Spielhalle (MVS) mitnehmen.

@@ -1,0 +1,1 @@
+Kurz vor Half-Life-Release "explodierte" Valves Versionsverwaltung Visual SourceSafe. Protokolle der technischen Änderungen aus der Zeit vor dem letzten Monat gingen verloren, Code musste von einzelnen Rechnern gerettet werden.

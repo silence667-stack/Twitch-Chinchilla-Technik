@@ -1,1 +1,1 @@
-"Racing the Beam": Atari-Programmierer mussten ihren Code mit dem Elektronenstrahl des Fernsehers synchronisieren, weil es keinen Bildspeicher gab. Spiellogik lief nur, wenn der Strahl außerhalb des Bildes war.
+In Europa hieß der Erstling oft Tony Hawk's Skateboarding statt Pro Skater. Der Port für das Nintendo 64 bekam stark gekürzte Musik, keine Sprachausgabe und kein Blut, damit Nintendo die Freigabe "E" vergab.

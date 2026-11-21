@@ -1,0 +1,1 @@
+"Spacewar!" schrieb Steve Russell 1962 am MIT für einen PDP-1, der etwa 120.000 Dollar kostete. Der Code war gemeinfrei und verbreitete sich unter Computerleuten.

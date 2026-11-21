@@ -1,1 +1,1 @@
-Das Adventure Loom (1990) wird statt mit Verben mit Zaubersprüchen auf einem Notenstab gesteuert und lief ebenfalls auf SCUMM. ScummVM lässt viele dieser Spiele heute auf modernen Rechnern laufen.
+Der zweite Famicom-Controller hatte statt Start und Select ein kleines Mikrofon. Nur wenige Spiele nutzten es.

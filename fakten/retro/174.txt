@@ -1,1 +1,1 @@
-Der VIC-II im C64 konnte 320 x 200 Pixel in 16 Farben und Hardware-Sprites. Produziert wurde der Rechner bis April 1994, rund 11,5 Jahre lang.
+Spyro sollte zuerst "Pete" heißen, doch das war wegen Disneys Film Elliot, das Schmunzelmonster (Originaltitel Pete's Dragon) heikel. "Pyro" war dem Team zu erwachsen, daher Spyro. Zuerst war der Drache grün, wurde aber lila, um sich vom Gras abzuheben.

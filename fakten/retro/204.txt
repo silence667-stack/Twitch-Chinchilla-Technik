@@ -1,0 +1,1 @@
+Die "Scumm Bar" in Monkey Island trägt den Namen der Skriptsprache. In Escape from Monkey Island wurde sie zur "Lua Bar", weil die Engine auf Lua wechselte.

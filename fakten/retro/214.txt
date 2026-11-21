@@ -1,0 +1,1 @@
+Unreal Tournament (1999) hatte ein Budget von 2 Millionen Dollar und 350.000 Zeilen Code in C++ und UnrealScript. Ein Team von rund 16 Leuten brauchte etwa anderthalb Jahre dafür. Die Musik schrieben sechs Komponisten als Modul-Dateien.

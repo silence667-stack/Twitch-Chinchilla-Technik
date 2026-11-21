@@ -1,1 +1,1 @@
-In Street Fighter II (Capcom, März 1991) entstanden die Combos zufällig: Ein Fehler beim Testen ließ Treffer verketten, das Team behielt es. Es gibt acht spielbare Kämpfer.
+Der Super-FX-Chip im Modul machte Star Fox möglich: Er ist ein RISC-Prozessor als Zusatz-Hardware und berechnete Polygon-3D, zu dem das SNES allein nicht fähig war.

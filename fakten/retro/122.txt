@@ -1,1 +1,1 @@
-Gunpei Yokoi lebte beim Game Boy sein Motto "Lateral Thinking with Withered Technology" aus: bewährte, billige Technik kreativ einsetzen statt Spitzentechnik.
+Bei Die Siedler II funktionierte der Warentransport per Segelschiff nicht wie geplant, auch nicht nach Patches. Debugger zum Aufspüren der Fehler fehlten den Entwicklern damals. Haiko Ruttmann komponierte die Musik.
