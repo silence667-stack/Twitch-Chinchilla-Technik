@@ -25,6 +25,8 @@ if (!existsSync(CONFIG_PATH)) {
 }
 
 const config = JSON.parse(readFileSync(CONFIG_PATH, 'utf-8'));
+config.lights = config.lights || [];
+config.wled = config.wled || [];
 
 function kelvinToMired(kelvin) {
   const mired = Math.round(1000000 / kelvin);
@@ -63,13 +65,54 @@ function wait(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+// ---------- WLED-LED-Streifen (JSON-API: GET/POST http://<ip>/json/state) ----------
+async function wledRequest(ip, method, body) {
+  const res = await fetch(`http://${ip}/json/state`, {
+    method,
+    headers: body ? { 'Content-Type': 'application/json' } : undefined,
+    body: body ? JSON.stringify(body) : undefined,
+    signal: AbortSignal.timeout(1500),
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return method === 'GET' ? res.json() : null;
+}
+
+// Spielt den WLED-Teil eines Effekts auf einem Streifen ab und stellt danach
+// den vorherigen Zustand (Farbe, Effekt, Helligkeit, an/aus) wieder her.
+async function runWledEffect(strip, wled) {
+  let previous = null;
+  try {
+    previous = await wledRequest(strip.ip, 'GET');
+    const seg = { col: [wled.color || [255, 255, 255]], fx: wled.fx ?? 0 };
+    if (wled.sx !== undefined) seg.sx = wled.sx;
+    await wledRequest(strip.ip, 'POST', { on: true, bri: wled.brightness ?? 255, transition: 0, seg: [seg] });
+    await wait(wled.durationMs ?? 3000);
+  } catch (err) {
+    console.error(`WLED ${strip.name || strip.ip} nicht erreichbar:`, err.message);
+  } finally {
+    if (previous) {
+      const { on, bri, seg } = previous;
+      await wledRequest(strip.ip, 'POST', { on, bri, transition: 7, seg })
+        .catch((err) => console.error(`WLED ${strip.ip} Wiederherstellen fehlgeschlagen:`, err.message));
+    }
+  }
+}
+
 async function runEffectNow(effectKey) {
   const effect = config.effects[effectKey];
   if (!effect) {
     console.log(`Kein Effekt fuer "${effectKey}" konfiguriert, ignoriere.`);
     return;
   }
-  console.log(`Effekt "${effectKey}": ${effect.flashes}x blitzen`);
+  const wledRun = effect.wled && config.wled?.length
+    ? Promise.all(config.wled.map((s) => runWledEffect(s, effect.wled)))
+    : Promise.resolve();
+  console.log(`Effekt "${effectKey}": ${effect.flashes}x blitzen${effect.wled ? ' + WLED' : ''}`);
+  await Promise.all([wledRun, flashKeyLights(effect)]);
+}
+
+async function flashKeyLights(effect) {
+  if (!config.lights?.length || !effect.flashes) return;
   for (let i = 0; i < effect.flashes; i++) {
     await setAllLights({
       on: true,
@@ -115,7 +158,7 @@ const server = createServer((req, res) => {
 
   if (req.method === 'GET' && req.url === '/status') {
     res.writeHead(200, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify({ ok: true, lights: config.lights.length }));
+    res.end(JSON.stringify({ ok: true, lights: config.lights.length, wled: config.wled.length }));
     return;
   }
 
@@ -153,5 +196,6 @@ const server = createServer((req, res) => {
 
 server.listen(config.port, '127.0.0.1', () => {
   console.log(`Lights-Bridge laeuft auf http://127.0.0.1:${config.port}`);
-  console.log(`Konfigurierte Lichter: ${config.lights.map((l) => l.name + ' (' + l.ip + ')').join(', ')}`);
+  console.log(`Key Lights: ${config.lights.map((l) => l.name + ' (' + l.ip + ')').join(', ') || 'keine'}`);
+  console.log(`WLED-Streifen: ${config.wled.map((w) => w.name + ' (' + w.ip + ')').join(', ') || 'keine'}`);
 });

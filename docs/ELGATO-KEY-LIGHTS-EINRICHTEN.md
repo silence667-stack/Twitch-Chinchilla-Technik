@@ -72,3 +72,22 @@ Beide Key Lights sollten jetzt kurz blitzen.
   der nächste Effekt setzt wieder die konfigurierten Normal-Werte.
 - `config.json` ist bewusst in `.gitignore` (deine WLAN/IP-Daten bleiben
   lokal, landen nicht auf GitHub).
+
+## WLED-LED-Streifen (seit 21.11.2026)
+
+Die Lights-Bridge steuert zusätzlich LED-Streifen mit **WLED**-Firmware
+(lokale JSON-API, kein Cloud-Konto nötig).
+
+1. IP des Streifens in der WLED-App bzw. -Weboberfläche ablesen
+   (am besten in der FritzBox eine feste IP vergeben).
+2. In `lights-bridge/config.json` unter `"wled"` eintragen,
+   z. B. `{ "name": "Schreibtisch", "ip": "192.168.178.50" }`.
+3. Pro Event steht unter `"effects" → <event> → "wled"`, was passieren soll:
+   `color` (RGB), `fx` (WLED-Effektnummer: 0 Solid, 1 Blink, 2 Breathe,
+   9 Rainbow), `brightness` (0–255), `durationMs`.
+4. Nach dem Effekt stellt die Bridge automatisch den vorherigen Zustand des
+   Streifens wieder her (Farbe, Effekt, Helligkeit, an/aus).
+
+Voreinstellung: Follow = cyan atmen, Abo = lila blinken, Bits = pink blinken,
+Spende = mandel-gold atmen, Raid = 8 Sekunden Regenbogen.
+Key Lights und WLED laufen beim selben Event gleichzeitig.

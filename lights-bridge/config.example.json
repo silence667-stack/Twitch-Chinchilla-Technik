@@ -14,11 +14,23 @@
   "normalBrightness": 45,
   "normalTemperatureKelvin": 4700,
 
+  "_wled_hinweis": "LED-Streifen mit WLED-Firmware. IP in der WLED-App/-Weboberfläche ablesen. Leer lassen, wenn keine Streifen genutzt werden. Pro Effekt: color [R,G,B], fx = WLED-Effekt-Nummer (0 Solid, 1 Blink, 2 Breathe, 9 Rainbow), durationMs = Dauer, danach wird der vorherige Zustand wiederhergestellt.",
+  "wled": [
+    { "name": "LED-Streifen Schreibtisch", "ip": "192.168.178.ZZ" }
+  ],
+
   "effects": {
-    "follower-latest": { "flashes": 1, "flashBrightness": 100, "flashTemperatureKelvin": 6500, "flashMs": 220 },
-    "subscriber-latest": { "flashes": 2, "flashBrightness": 100, "flashTemperatureKelvin": 6500, "flashMs": 260 },
-    "cheer-latest": { "flashes": 2, "flashBrightness": 100, "flashTemperatureKelvin": 3000, "flashMs": 220 },
-    "tip-latest": { "flashes": 3, "flashBrightness": 100, "flashTemperatureKelvin": 3000, "flashMs": 260 },
-    "donation-latest": { "flashes": 3, "flashBrightness": 100, "flashTemperatureKelvin": 3000, "flashMs": 260 }
+    "follower-latest":   { "flashes": 1, "flashBrightness": 100, "flashTemperatureKelvin": 6500, "flashMs": 220,
+                           "wled": { "color": [0, 220, 255], "fx": 2, "durationMs": 3000 } },
+    "subscriber-latest": { "flashes": 2, "flashBrightness": 100, "flashTemperatureKelvin": 6500, "flashMs": 260,
+                           "wled": { "color": [150, 60, 255], "fx": 1, "durationMs": 4000 } },
+    "cheer-latest":      { "flashes": 2, "flashBrightness": 100, "flashTemperatureKelvin": 3000, "flashMs": 220,
+                           "wled": { "color": [255, 0, 200], "fx": 1, "durationMs": 4000 } },
+    "tip-latest":        { "flashes": 3, "flashBrightness": 100, "flashTemperatureKelvin": 3000, "flashMs": 260,
+                           "wled": { "color": [255, 170, 40], "fx": 2, "durationMs": 5000 } },
+    "donation-latest":   { "flashes": 3, "flashBrightness": 100, "flashTemperatureKelvin": 3000, "flashMs": 260,
+                           "wled": { "color": [255, 170, 40], "fx": 2, "durationMs": 5000 } },
+    "raid-latest":       { "flashes": 4, "flashBrightness": 100, "flashTemperatureKelvin": 6500, "flashMs": 200,
+                           "wled": { "color": [255, 255, 255], "fx": 9, "durationMs": 8000 } }
   }
 }
