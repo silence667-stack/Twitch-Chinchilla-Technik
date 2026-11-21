@@ -14,8 +14,8 @@
 // Start: node server.mjs   (vorher config.example.json -> config.json)
 
 import { createServer } from 'node:http';
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
-import { createHmac, randomBytes } from 'node:crypto';
+import { readFileSync, writeFileSync, renameSync, existsSync, mkdirSync } from 'node:fs';
+import { createHmac, randomBytes, timingSafeEqual } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -40,12 +40,27 @@ function loadData() {
 }
 
 function saveData(data) {
-  writeFileSync(DATA_PATH, JSON.stringify(data, null, 2));
+  // Atomar schreiben (temp + rename), damit ein Absturz mittendrin nicht die
+  // ganze viewers.json zerstoert.
+  const tmpPath = DATA_PATH + '.tmp';
+  writeFileSync(tmpPath, JSON.stringify(data, null, 2));
+  renameSync(tmpPath, DATA_PATH);
 }
 
 // ---------- Signiertes Token (stateless, kein Session-Speicher noetig) ----------
 function base64url(buf) {
   return Buffer.from(buf).toString('base64url');
+}
+
+// Verhindert, dass ein praeparierter Login-Link das Session-Token nach dem
+// Twitch-Login an eine fremde Seite umleitet (offener Redirect + Token-Leak).
+function isAllowedReturnTo(value) {
+  try {
+    const origin = new URL(value).origin;
+    return config.allowedReturnOrigins.includes(origin);
+  } catch {
+    return false;
+  }
 }
 
 function signToken(payload) {
@@ -58,10 +73,12 @@ function verifyToken(token) {
   if (!token || typeof token !== 'string' || !token.includes('.')) return null;
   const [body, sig] = token.split('.');
   const expected = createHmac('sha256', config.sessionSecret).update(body).digest('base64url');
-  if (sig !== expected) return null;
+  const sigBuf = Buffer.from(sig || '', 'utf-8');
+  const expectedBuf = Buffer.from(expected, 'utf-8');
+  if (sigBuf.length !== expectedBuf.length || !timingSafeEqual(sigBuf, expectedBuf)) return null;
   try {
     const payload = JSON.parse(Buffer.from(body, 'base64url').toString('utf-8'));
-    if (payload.exp && Date.now() > payload.exp) return null;
+    if (typeof payload.exp !== 'number' || Date.now() > payload.exp) return null;
     return payload;
   } catch {
     return null;
@@ -182,7 +199,10 @@ const server = createServer(async (req, res) => {
   try {
     // --- Login: leitet zu Twitch weiter ---
     if (req.method === 'GET' && url.pathname === '/auth/login') {
-      const returnTo = url.searchParams.get('return_to') || '';
+      const requestedReturnTo = url.searchParams.get('return_to') || '';
+      const returnTo = isAllowedReturnTo(requestedReturnTo)
+        ? requestedReturnTo
+        : config.allowedReturnOrigins[0];
       const state = base64url(returnTo);
       const authUrl = new URL('https://id.twitch.tv/oauth2/authorize');
       authUrl.searchParams.set('client_id', config.clientId);
@@ -199,7 +219,8 @@ const server = createServer(async (req, res) => {
     if (req.method === 'GET' && url.pathname === '/auth/callback') {
       const code = url.searchParams.get('code');
       const state = url.searchParams.get('state') || '';
-      const returnTo = Buffer.from(state, 'base64url').toString('utf-8') || '/';
+      const decodedReturnTo = Buffer.from(state, 'base64url').toString('utf-8');
+      const returnTo = isAllowedReturnTo(decodedReturnTo) ? decodedReturnTo : config.allowedReturnOrigins[0];
 
       const tokenRes = await fetch('https://id.twitch.tv/oauth2/token', {
         method: 'POST',
@@ -323,9 +344,37 @@ const server = createServer(async (req, res) => {
       }
       if (req.method === 'POST') {
         const body = await readJsonBody(req);
-        for (const key of ['currencyName', 'currencyEmoji', 'pointsPerHeartbeat', 'heartbeatIntervalSeconds', 'dailyCheckinBonus']) {
-          if (key in body) config[key] = body[key];
+        const errors = [];
+        const next = { ...config };
+        if ('currencyName' in body) {
+          if (typeof body.currencyName === 'string' && body.currencyName.trim().length > 0 && body.currencyName.length <= 40) {
+            next.currencyName = body.currencyName.trim();
+          } else errors.push('currencyName muss ein nicht-leerer Text (max. 40 Zeichen) sein');
         }
+        if ('currencyEmoji' in body) {
+          if (typeof body.currencyEmoji === 'string' && body.currencyEmoji.length > 0 && body.currencyEmoji.length <= 8) {
+            next.currencyEmoji = body.currencyEmoji;
+          } else errors.push('currencyEmoji muss ein kurzes Emoji/Zeichen sein');
+        }
+        if ('pointsPerHeartbeat' in body) {
+          if (Number.isFinite(body.pointsPerHeartbeat) && body.pointsPerHeartbeat > 0 && body.pointsPerHeartbeat <= 1000) {
+            next.pointsPerHeartbeat = body.pointsPerHeartbeat;
+          } else errors.push('pointsPerHeartbeat muss eine Zahl zwischen 0 und 1000 sein');
+        }
+        if ('heartbeatIntervalSeconds' in body) {
+          if (Number.isFinite(body.heartbeatIntervalSeconds) && body.heartbeatIntervalSeconds >= 10 && body.heartbeatIntervalSeconds <= 3600) {
+            next.heartbeatIntervalSeconds = body.heartbeatIntervalSeconds;
+          } else errors.push('heartbeatIntervalSeconds muss eine Zahl zwischen 10 und 3600 sein');
+        }
+        if ('dailyCheckinBonus' in body) {
+          if (Number.isFinite(body.dailyCheckinBonus) && body.dailyCheckinBonus >= 0 && body.dailyCheckinBonus <= 10000) {
+            next.dailyCheckinBonus = body.dailyCheckinBonus;
+          } else errors.push('dailyCheckinBonus muss eine Zahl zwischen 0 und 10000 sein');
+        }
+        if (errors.length) {
+          return send(res, 400, { error: 'ungueltige Eingabe', details: errors });
+        }
+        config = next;
         saveConfig();
         send(res, 200, { ok: true });
         return;

@@ -7,6 +7,9 @@
   "broadcasterLogin": "derbalu84",
   "broadcasterTwitchId": "",
 
+  "_allowedReturnOrigins_hinweis": "Nach dem Login darf nur zu einer dieser Adressen (exakter Origin, kein Pfad) weitergeleitet werden -- verhindert, dass ein praeparierter Login-Link das Session-Token an eine fremde Seite schickt.",
+  "allowedReturnOrigins": ["https://silence667-stack.github.io"],
+
   "sessionSecret": "irgendein-langer-zufaelliger-text-nur-du-kennst-ihn",
 
   "port": 8520,

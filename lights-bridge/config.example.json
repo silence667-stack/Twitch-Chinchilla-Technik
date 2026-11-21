@@ -8,6 +8,9 @@
 
   "port": 8420,
 
+  "_allowedOrigins_hinweis": "Nur Browser-Seiten mit einem dieser Origins duerfen /event aufrufen (Schutz, falls im selben Browser eine fremde Webseite offen ist). 'null' passt zu lokal geoeffneten file://-Overlays. '*' schaltet den Schutz komplett ab.",
+  "allowedOrigins": ["null"],
+
   "normalBrightness": 45,
   "normalTemperatureKelvin": 4700,
 

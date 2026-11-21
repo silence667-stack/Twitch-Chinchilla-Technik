@@ -41,12 +41,15 @@ async function setLight(ip, { on, brightness, temperatureKelvin }) {
     }],
   };
   try {
-    await fetch(`http://${ip}:9123/elgato/lights`, {
+    const res = await fetch(`http://${ip}:9123/elgato/lights`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
       signal: AbortSignal.timeout(1500),
     });
+    if (!res.ok) {
+      console.error(`Licht ${ip} antwortete mit Fehler: HTTP ${res.status}`);
+    }
   } catch (err) {
     console.error(`Licht ${ip} nicht erreichbar:`, err.message);
   }
@@ -60,7 +63,7 @@ function wait(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function runEffect(effectKey) {
+async function runEffectNow(effectKey) {
   const effect = config.effects[effectKey];
   if (!effect) {
     console.log(`Kein Effekt fuer "${effectKey}" konfiguriert, ignoriere.`);
@@ -83,8 +86,24 @@ async function runEffect(effectKey) {
   }
 }
 
+// Effekte werden nacheinander abgearbeitet (Queue), damit sich zwei schnell
+// aufeinanderfolgende Events (z.B. zwei Alerts) nicht gegenseitig ins
+// Gehege kommen und die Lichter in einem halbfertigen Zustand haengen lassen.
+let effectQueue = Promise.resolve();
+function runEffect(effectKey) {
+  effectQueue = effectQueue
+    .then(() => runEffectNow(effectKey))
+    .catch((err) => console.error('Effekt-Fehler:', err));
+  return effectQueue;
+}
+
+const allowedOrigins = config.allowedOrigins || ['null'];
+
 const server = createServer((req, res) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes('*') || (origin && allowedOrigins.includes(origin))) {
+    res.setHeader('Access-Control-Allow-Origin', allowedOrigins.includes('*') ? '*' : origin);
+  }
   res.setHeader('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
@@ -102,11 +121,22 @@ const server = createServer((req, res) => {
 
   if (req.method === 'POST' && req.url === '/event') {
     let body = '';
-    req.on('data', (chunk) => { body += chunk; });
+    let tooLarge = false;
+    req.on('data', (chunk) => {
+      if (tooLarge) return;
+      body += chunk;
+      if (body.length > 4096) {
+        tooLarge = true;
+        res.writeHead(413, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ error: 'body zu gross' }));
+        req.destroy();
+      }
+    });
     req.on('end', () => {
+      if (tooLarge) return;
       try {
         const { type } = JSON.parse(body || '{}');
-        runEffect(type).catch((err) => console.error('Effekt-Fehler:', err));
+        runEffect(type);
         res.writeHead(202, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ accepted: true }));
       } catch (err) {

@@ -1,4 +1,4 @@
-# StreamElements einrichten: Mandel-Alert, Ticker &amp; !mandel-Befehl
+# StreamElements einrichten: Mandel-Alert, Ticker &amp; Chat-Befehle
 
 Voraussetzung: dein GitHub-Repo ist online (siehe `GITHUB-PAGES-DEPLOY.md`),
 damit die Icon-URLs in den Overlays funktionieren.
@@ -47,44 +47,36 @@ zusätzliches Widget im bestehenden Overlay) über deine OBS-Kulisse legen,
 Reihenfolge so, dass sie über dem Spielbild, aber nicht über wichtigen
 UI-Elementen liegen.
 
-## 2c. Mandeln als echtes Punktesystem (StreamElements Loyalty)
+## 2c. Mandeln = Twitch-Kanalpunkte (Stand 21.11.2026)
 
-Bisher sind "Mandeln" nur ein Wort im Alert-Text. Lässt sich mit Bordmitteln
-echt machen, ganz ohne eigenen Code:
+"Mandeln" sind die **Twitch-Kanalpunkte** (Creator-Dashboard →
+Zuschauer-Belohnungen → Kanalpunkte → Punktebezeichnung). Bewusst nur ein
+System: Mit Kanalpunkten können Zuschauer bei Twitch direkt Emotes
+freischalten, Nachrichten hervorheben und bei Vorhersagen mitwetten.
 
-1. StreamElements-Dashboard → **Loyalty** (manchmal auch "Punkte" genannt) →
-   aktivieren, falls noch nicht an.
-2. Dort den Punktenamen (`$(pointsname)`) von "Points" auf **"Mandeln"**
-   ändern. Ab sofort nutzen alle eingebauten Befehle (`!points`,
-   `!addpoints`, `!givepoints` …) automatisch "Mandeln" im Text.
-3. Verdienrate einstellen (Punkte pro Minute Zuschauen, Bonus für Subs
-   etc. — nach Geschmack).
-4. Optional: **Loyalty Store** einrichten, in dem Zuschauer ihre Mandeln
-   gegen Perks eintauschen (Soundeffekt, TTS-Nachricht, Highlight-Message).
-5. Die eingebauten Befehlsnamen bleiben technisch `!points` & co. — falls
-   du lieber `!mandeln` als Befehlsnamen willst, unter **Chatbot → Befehle**
-   die Standardbefehle umbenennen/Aliase anlegen.
+StreamElements-Loyalty ist deshalb **ausgeschaltet** (Einstellungen sind
+noch hinterlegt, falls man es je wieder braucht). Offen: eigenes
+Mandel-Icon für die Kanalpunkte (28/56/112 px, PNG, max. 25 KB).
 
-Wichtig: Das sind StreamElements-eigene Loyalty-Punkte, keine echten
-Twitch-Channel-Points (die heißen bei Twitch weiterhin "Kanalpunkte" und
-laufen getrennt, siehe `BETTER-POINTS-REDEMPTIONS-EINRICHTEN.md`).
+## 3. Chat-Befehle (StreamElements → Chatbot → Chat commands)
 
-## 3. `!mandel`-Chat-Befehl
+| Befehl | Alias | Was passiert | Cooldown (User/Global) |
+|---|---|---|---|
+| `!retrofakt` | `!retro` | Retro-Spiele-Fakt aus `fakten/retro.txt` | 300 s / 300 s |
+| `!chinfakt` | `!chinchilla` | Chinchilla-Fakt aus `fakten/chinchilla.txt` | 300 s / 300 s |
+| `!chintyp @Name` | – | Zufälliger Chinchilla-Typ mit Prozentzahl | 60 s / 10 s |
+| `!retrolevel @Name` | – | Zufälliges Retro-Gamer-Level mit Prozentzahl | 60 s / 10 s |
 
-StreamElements-Dashboard → **Chatbot → Befehle (Commands) → Befehl hinzufügen**:
+**So funktionieren die Fakten-Befehle:** `node fakten/build.mjs` macht aus
+jeder Zeile von `fakten/<name>.txt` eine eigene Datei `fakten/<name>/<n>.txt`
+(fest gemischte Reihenfolge). Der Befehl zählt per `$(count retrofakt)` hoch
+und holt per `$(customapi …/fakten/retro/$(math mod($(count retrofakt),92)+1).txt)`
+die passende Datei von GitHub Pages. So kommt jeder Fakt einmal dran, bevor
+sich einer wiederholt.
 
-- Befehl: `!mandel`
-- Antwort (Beispiel, gern anpassen):
-
-  ```
-  🌰 Mandeln sind hier die Spaß-Währung für Subs/Bits/Spenden —
-  echte Mandeln bekommen die Chinchillas nur sehr selten als Snack!
-  ```
-
-- Cooldown: z. B. 30s (User) / 10s (Global), damit der Chat nicht zugespammt wird.
-
-Optional: ein zweiter Befehl `!chinchillas` mit kurzer Vorstellung der drei
-Chinchillas (Namen aus `website/index.html` übernehmen, sobald eingetragen).
+**Neuen Fakt hinzufügen:** Zeile in `fakten/retro.txt` ergänzen (max. ~380
+Byte), `node fakten/build.mjs`, committen und pushen. Danach im Befehl die
+Zahl im `mod(…, 92)` auf die neue Anzahl anpassen (das Skript gibt sie aus).
 
 ## 4. Panels einbinden
 
