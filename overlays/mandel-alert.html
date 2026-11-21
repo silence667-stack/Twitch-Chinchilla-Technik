@@ -2,8 +2,9 @@
   Mandel-Alert — StreamElements Custom Widget
   ============================================
   Zeigt bei Sub/Spende/Cheer/Follow eine kurze, dezente Chinchilla-Animation
-  mit "X hat Y Mandeln spendiert"-Text (Mandeln = Spaß-Name für Bits/Spenden
-  in diesem Theme, keine echte Zahlungsfunktion).
+  mit Dankestext ("X hat 500 Bits gecheert – danke!"). Hinweis: "Mandeln"
+  heißen auf dem Kanal die Twitch-Kanalpunkte, deshalb nennt der Alert Bits,
+  Abos und Spenden bewusst bei ihrem echten Namen.
 
   EINRICHTUNG in StreamElements:
   1. Dashboard -> Overlays -> dein Overlay oeffnen (oder neues anlegen)
@@ -107,9 +108,11 @@ html, body {
   var textEl = document.getElementById('mandel-alert-text');
   var hideTimer = null;
 
-  function showAlert(name, amountText) {
-    textEl.innerHTML = '<b>' + escapeHtml(name) + '</b> hat ' +
-      '<span class="amount">' + escapeHtml(amountText) + ' Mandeln</span> spendiert!';
+  // before/highlight/after: Text um die hervorgehobene Angabe (Betrag, Bits, Abos).
+  function showAlert(name, before, highlight, after) {
+    textEl.innerHTML = '<b>' + escapeHtml(name) + '</b> ' + escapeHtml(before) +
+      (highlight ? ' <span class="amount">' + escapeHtml(highlight) + '</span>' : '') +
+      ' ' + escapeHtml(after);
     el.classList.remove('show');
     void el.offsetWidth; // Reflow erzwingen, damit die Animation neu startet
     el.classList.add('show');
@@ -185,28 +188,28 @@ html, body {
     notifyLightsBridge(listenerType);
 
     if (listenerType === 'tip-latest' || listenerType === 'donation-latest') {
-      showAlert(name, formatAmount(data.amount, data.currency) + ' an');
+      showAlert(name, 'hat', formatAmount(data.amount, data.currency), 'gespendet – danke! 🌰');
     } else if (listenerType === 'cheer-latest') {
-      showAlert(name, (data.amount || 0) + ' Bits als');
+      showAlert(name, 'hat', (data.amount || 0) + ' Bits', 'gecheert – danke! 🌰');
     } else if (listenerType === 'subscriber-latest') {
       if (data.gifted) {
         // Bei verschenkten Subs ist "name" die beschenkte Person, nicht die spendende —
         // die spendierende Person steht in "sender"
         var gifter = data.sender || 'Jemand';
         var count = data.bulkGifted && data.amount > 1 ? (data.amount + ' Abos') : 'ein Abo';
-        showAlert(gifter, count + ' verschenkt als');
+        showAlert(gifter, 'hat', count, 'verschenkt – danke! 🌰');
       } else {
-        showAlert(name, 'ein Abo als');
+        showAlert(name, 'hat', 'abonniert', '– willkommen in der Crew! 🐭');
       }
     } else if (listenerType === 'follower-latest') {
-      showAlert(name, 'ein Pfötchen-High-Five als');
+      showAlert(name, 'folgt jetzt –', 'Pfötchen-High-Five!', '🐭');
     }
   });
 
   // Testbutton im Browser-Preview (StreamElements ruft diese Funktion nie auf,
   // sie stört also im Live-Betrieb nicht): per Konsole testAlert() aufrufen.
   window.testAlert = function () {
-    showAlert('Test-Chinchilla', '128');
+    showAlert('Test-Chinchilla', 'hat', '500 Bits', 'gecheert – danke! 🌰');
   };
 })();
 // JS ENDE
