@@ -20,6 +20,6 @@
       .then(function (text) { if (text) el.textContent = text.trim(); })
       .catch(function () { /* Fallback-Text im HTML bleibt stehen */ });
   }
-  loadFact('chin-fakt', 'chinchilla', 71);
+  loadFact('chin-fakt', 'chinchilla', 109);
   loadFact('retro-fakt', 'retro', 188);
 })();

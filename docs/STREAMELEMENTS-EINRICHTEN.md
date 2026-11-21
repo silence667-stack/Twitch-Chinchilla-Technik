@@ -63,7 +63,7 @@ Mandel-Icon für die Kanalpunkte (28/56/112 px, PNG, max. 25 KB).
 | Befehl | Alias | Was passiert | Cooldown (User/Global) |
 |---|---|---|---|
 | `!retrofakt` | `!retro` | Retro-Spiele-Fakt (188, `fakten/retro.txt`) | 300 s / 300 s |
-| `!chinfakt` | `!chinchilla` | Chinchilla-Fakt (71, `fakten/chinchilla.txt`) | 300 s / 300 s |
+| `!chinfakt` | `!chinchilla` | Chinchilla-Fakt (109, `fakten/chinchilla.txt`) | 300 s / 300 s |
 | `!techfakt` | `!tech` | Technik-Fakt (104, `fakten/technik.txt`) | 300 s / 300 s |
 | `!chintyp @Name` | – | Zufälliger Chinchilla-Typ mit Prozentzahl | 60 s / 10 s |
 | `!retrolevel @Name` | – | Zufälliges Retro-Gamer-Level mit Prozentzahl | 60 s / 10 s |
