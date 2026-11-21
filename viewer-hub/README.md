@@ -4,10 +4,10 @@ Dieser Ordner enthält ein fertiges, getestetes Backend für Twitch-Login +
 eigene Zuschauer-Währung + Rangliste + Admin-Panel (inspiriert von
 Nilson1489s "Twitch User Events Starter").
 
-**Entscheidung (2026-11-20):** Der Kanal nutzt "Mandeln" ausschließlich als
-StreamElements-Loyalty-System (siehe `../docs/STREAMELEMENTS-EINRICHTEN.md`,
-Abschnitt 2c) — bewusst EIN System statt zwei parallele Mandel-Konten
-(StreamElements-Store + eigene Website-Rangliste wären verwirrend gewesen).
+**Entscheidung (aktualisiert 2026-11-21):** "Mandeln" sind die
+Twitch-Kanalpunkte (siehe `../docs/STREAMELEMENTS-EINRICHTEN.md`, Abschnitt
+2c) — bewusst EIN System statt mehrerer paralleler Mandel-Konten.
+StreamElements-Loyalty ist ausgeschaltet.
 Dieser Code ist deshalb aktuell nicht in `website/` eingebunden.
 
 **Warum trotzdem behalten statt löschen:** Falls StreamElements irgendwann

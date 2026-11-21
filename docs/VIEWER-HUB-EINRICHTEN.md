@@ -1,7 +1,7 @@
 # Viewer-Hub einrichten (falls später reaktiviert)
 
 Aktuell **geparkt** — siehe `../viewer-hub/README.md` für die Begründung
-(Kanal nutzt stattdessen StreamElements-Loyalty als einziges Mandel-System).
+(Kanal nutzt stattdessen die Twitch-Kanalpunkte als einziges Mandel-System).
 Diese Anleitung ist für den Fall, dass das Backend später gebraucht wird.
 
 ## 1. Twitch-App registrieren

@@ -1,7 +1,7 @@
 # Twitch-Channel-Points → OBS-Effekte (Better Points)
 
-Echte Twitch-Channel-Points (nicht die StreamElements-"Mandeln"-Loyalty-Punkte,
-siehe `STREAMELEMENTS-EINRICHTEN.md`) lassen sich über das OBS-Plugin
+Die Twitch-Kanalpunkte (auf dem Kanal "Mandeln" genannt, siehe
+`STREAMELEMENTS-EINRICHTEN.md`) lassen sich über das OBS-Plugin
 **Better Points** direkt mit Szenenwechseln/Filtern/Quellen verknüpfen —
 z. B. "Chinchilla füttern" als Redemption, die unser Chinchilla-Ticker-
 Overlay kurz eine Sonderanimation zeigen lässt statt nur die Dauerschleife.
