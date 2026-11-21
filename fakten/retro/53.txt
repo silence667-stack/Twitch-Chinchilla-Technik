@@ -1,1 +1,0 @@
-Duck Hunt erkennt Treffer so: Beim Abdrücken wird das Bild kurz schwarz und das Ziel blitzt weiß auf. Der Sensor im Zapper misst dieses Licht.

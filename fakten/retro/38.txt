@@ -1,1 +1,0 @@
-In Space Invaders werden die Aliens schneller, je weniger übrig sind – weil der Prozessor weniger zeichnen musste. Aus einem Hardware-Limit wurde ein Spielprinzip.
