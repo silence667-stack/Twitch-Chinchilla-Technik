@@ -1,0 +1,1 @@
+Das NES hat den Schutzchip 10NES, der nur von Nintendo zugelassene Module durchlässt. Das japanische Famicom hatte noch keine solche Sperre.

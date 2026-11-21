@@ -1,0 +1,1 @@
+Im Arcade-Klassiker Donkey Kong ist bei Level 22 Schluss: Ein Programmierfehler lässt Mario nach wenigen Sekunden sterben. Das ist der berühmte Kill Screen.

@@ -1,1 +1,188 @@
-
+Das Super Nintendo erschien am 21.11.1990 in Japan als Super Famicom, im August 1991 in den USA und 1992 in Europa. Weltweit gingen rund 49,1 Millionen Stück über die Ladentheke.
+Gegen Import-Spiele sperrt das SNES gleich doppelt: Ein CIC-Chip prüft die Region, und US-Module haben einen anderen Gehäusefuß mit Rillen als japanische und europäische.
+Den Soundchip im SNES entwickelte Ken Kutaragi bei Sony. Später baute Sony sogar einen SNES-Prototyp mit CD-Laufwerk namens "PlayStation" – er kam nie in den Handel.
+Nintendo-Chef Hiroshi Yamauchi ließ das CD-Projekt mit Sony platzen und präsentierte 1991 auf der CES stattdessen Philips als Partner. Sony machte allein weiter – das Ergebnis war die PlayStation.
+Der Grafikmodus "Mode 7" des SNES dreht und skaliert Flächen und erzeugt so Pseudo-3D. Vorgeführt wurde er zum Start mit F-Zero und Pilotwings.
+Der Super-FX-Chip im Modul machte Star Fox möglich: Er ist ein RISC-Prozessor als Zusatz-Hardware und berechnete Polygon-3D, zu dem das SNES allein nicht fähig war.
+Mit dem Super Game Boy konnte man Game-Boy-Spiele auf dem SNES spielen – mit Farbpaletten und eigenen Bildschirmrändern pro Spiel.
+Das Nintendo 64 erschien am 23.6.1996 in Japan und am 1.3.1997 in Europa. Weltweit wurden etwa 32,9 Millionen Stück verkauft.
+Nintendo blieb beim N64 bei Modulen statt CDs: Sie laden schneller und sind schwerer zu raubkopieren. Nachteil: nur bis zu 64 MB statt 650 MB und teurere Produktion.
+Das N64 hat vier Controller-Anschlüsse serienmäßig. Das Expansion Pak erweiterte den Arbeitsspeicher von 4 auf 8 MB, das Rumble Pak brachte Force Feedback.
+Im N64 steckte ein 64-Bit-Prozessor (NEC VR4300) mit 93,75 MHz. Nintendo warb mit dem Namen groß, die meisten Spiele nutzten die 64 Bit aber kaum aus.
+Das 64DD, ein Disketten-Laufwerk mit Internet-Anbindung für das N64, kam nur in Japan heraus und bekam gerade einmal neun Spiele.
+Die erste PlayStation erschien am 3.12.1994 in Japan für 39.800 Yen. In den USA kostete sie ab 9.9.1995 dann 299 Dollar.
+Rund 102,5 Millionen PlayStations wurden verkauft. Das meistverkaufte Spiel war Gran Turismo mit etwa 10,85 Millionen Exemplaren.
+Mit dem Net Yaroze brachte Sony 1996 ein Entwicklerpaket für Hobby-Programmierer heraus: Man programmierte in C und tauschte Spiele in einem Sony-Forum.
+Die japanische PocketStation war eine Memory Card mit eigenem kleinen LCD-Display und Minispielen. Laut Wikipedia wurde sie über 5 Millionen Mal verkauft.
+Die verkleinerte PS one (2000) war laut Wikipedia sogar die meistverkaufte Konsole des Jahres 2000 – vor der PlayStation 2. Die Produktion endete erst am 23.3.2006.
+Der Game Boy erschien am 21.4.1989 in Japan, am 31.7.1989 in den USA und am 28.9.1990 in Europa. Die Produktion lief bis 2003.
+Der Game Boy hatte ein 2,5-Zoll-Display mit 160 x 144 Pixeln und vier Graustufen. Vier AA-Batterien hielten bis zu rund 30 Stunden.
+Gunpei Yokoi lebte beim Game Boy sein Motto "Lateral Thinking with Withered Technology" aus: bewährte, billige Technik kreativ einsetzen statt Spitzentechnik.
+Der Game Boy Pocket (1996) lief mit nur zwei AAA-Batterien rund 10 Stunden und war deutlich kleiner als das Original.
+Der Game Boy Light mit Hintergrundbeleuchtung erschien 1998 nur in Japan.
+Laut Wikipedia wurde Tetris auf dem Game Boy über 35 Millionen Mal verkauft – ein Großteil davon, weil es dem Handheld außerhalb Japans beilag.
+Das Atari VCS kam 1977 auf den Markt und hieß erst ab November 1982 offiziell "Atari 2600". Die CPU war ein MOS 6507 mit 1,19 MHz.
+Der Entwicklungs-Codename des Atari 2600 war "Stella" – nach der Fahrradmarke von Entwickler Joe Decuir.
+Die Holzmaserung am Atari 2600 war die Idee des Beraters Gene Landrum. Das schwarze Modell von 1982 hat deshalb den Spitznamen "Vader".
+"Racing the Beam": Atari-Programmierer mussten ihren Code mit dem Elektronenstrahl des Fernsehers synchronisieren, weil es keinen Bildspeicher gab. Spiellogik lief nur, wenn der Strahl außerhalb des Bildes war.
+E.T. für den Atari 2600 wurde in nur etwa sechs Wochen programmiert. Es wurden rund 4 Millionen Module hergestellt, aber nur etwa 1,5 Millionen verkauft.
+Atari meldete für das Jahr 1983 einen Verlust von 536 Millionen Dollar – der Höhepunkt des nordamerikanischen Videospiel-Crashs.
+Bei der Ausgrabung der Atari-Deponie in Alamogordo fand man 2014 rund 700.000 Module – nicht die Millionen, von denen die Legende sprach.
+Pac-Man war mit etwa 8 Millionen Stück das meistverkaufte Atari-2600-Spiel – obwohl die Umsetzung als schwach gilt.
+Pong (1972) war Ataris erstes großes Produkt und gilt als erstes kommerziell erfolgreiches Arcade-Videospiel.
+Das Neo Geo AES erschien am 26.4.1990 in Japan. In den USA kostete das Gold System bei Start 649,99 Dollar, Spiele oft 200 Dollar und mehr.
+Laut Wikipedia hatte das Neo Geo AES als erste Heimkonsole eine austauschbare Memory Card. Damit konnte man Spielstände zwischen Heimkonsole und Spielhalle (MVS) mitnehmen.
+Neo-Geo-Spiele erschienen bis 2004 – 14 Jahre nach dem Start. Das letzte offizielle Spiel war Samurai Shodown V Special.
+Das Neo Geo lief auf einem Motorola 68000 mit 12 MHz plus Z80 für den Ton. Verkauft wurden rund 1 Million Automaten (MVS) und 410.000 Heimkonsolen (AES).
+Der Commodore 64 erschien 1982 für 595 Dollar. Jack Tramiel verlangte 64 KB RAM, daher der Name.
+Der SID-Soundchip des C64 stammt von Bob Yannes und hat drei Oszillatoren. Sein Klang ist bis heute Kult und wird nachgebaut.
+Der VIC-II im C64 konnte 320 x 200 Pixel in 16 Farben und Hardware-Sprites. Produziert wurde der Rechner bis April 1994, rund 11,5 Jahre lang.
+Laut Guinness ist der C64 das meistverkaufte Desktop-Computermodell. Die Schätzungen schwanken zwischen 12,5 und 17 Millionen Stück.
+Der Amiga 1000 erschien im Juli 1985. Die berühmte Boing-Ball-Demo – ein hüpfender, karierter Ball – wurde schon auf der CES im Januar 1984 gezeigt.
+Der Amiga-Soundchip Paula bot vier PCM-Kanäle. Der Amiga 500 (1987) wurde das meistverkaufte Modell.
+Der Video Toaster von NewTek machte den Amiga ab 1990 zum günstigen Videoschnitt-System für Fernsehproduktionen.
+Am 26.4.1994 stellte Commodore die Amiga-Produktion ein, drei Tage später folgte die Insolvenz. Das deutsche Unternehmen Escom kaufte die Reste – und ging 1996 selbst pleite.
+Der zweite Famicom-Controller hatte statt Start und Select ein kleines Mikrofon. Nur wenige Spiele nutzten es.
+Das NES verkaufte sich weltweit rund 61,9 Millionen Mal, das SNES rund 49,1 Millionen.
+Das NES hat den Schutzchip 10NES, der nur von Nintendo zugelassene Module durchlässt. Das japanische Famicom hatte noch keine solche Sperre.
+R.O.B. (1985) ließ das NES nach dem Videospiel-Crash wie ein Spielzeug wirken und brachte es so in die Spielwarenabteilungen. Es gab nur zwei offizielle Spiele dafür: Gyromite und Stack-Up.
+Für Mattels Power Glove (1989) erschienen nur zwei Spiele mit Spezialfunktionen: Super Glove Ball und Bad Street Brawler. Im Film The Wizard sagt der Bösewicht: "I love the Power Glove, it's so bad."
+Super Mario Bros. erschien am 13.9.1985 in Japan. Koji Kondo schuf den Soundtrack mit sechs Musikstücken und alle Klangeffekte.
+Super Mario Bros. 3 verkaufte sich rund 17 bis 18 Millionen Mal, ohne je einer Konsole beizuliegen. Laut Journalist Steven Kent war das lange Zeit Rekord für ein nicht mitgeliefertes Modul.
+Das Mega Drive erschien am 29.10.1988 in Japan. In den USA hieß es Genesis und warb mit dem Slogan "Genesis does what Nintendon't".
+Sonic the Hedgehog entstand 1991 bei Sega: Yuji Naka programmierte, Naoto Ohshima gestaltete die Figuren, Hirokazu Yasuhara entwarf die Level.
+Sonic the Hedgehog 2 kam im Westen am Dienstag, 24.11.1992, in alle Läden – Sega nannte das "Sonic 2sday". In Japan war es schon am 21.11. erschienen.
+Die Sega Dreamcast erschien am 27.11.1998 in Japan und am 9.9.1999 in den USA, beworben als "9/9/99 for $199". Am 31.1.2001 kündigte Sega das Ende nach dem 31.3.2001 an.
+Die 3DO-Konsole (Panasonic FZ-1) startete am 4.10.1993 in den USA für 699,99 Dollar. Erst im Herbst 1994 sank der Preis auf 399,99 Dollar.
+Auf dem Philips CD-i erschienen drei Zelda-Spiele, darunter Link: The Faces of Evil (1993). Der Hintergrund: Nintendos CD-Pläne mit Sony platzten, danach lizenzierte Nintendo Zelda-Figuren an Philips.
+Die PC Engine von NEC erschien am 30.10.1987 in Japan und nutzte scheckkartengroße HuCards. Das CD-ROM²-Laufwerk (4.12.1988) machte sie laut Wikipedia zur ersten Konsole mit CD-ROM als Speichermedium.
+Die Magnavox Odyssey kam im September 1972 auf den Markt und gilt als erste kommerzielle Heimvideospielkonsole. Ralph Baers Team entwarf sie, bunte Plastikfolien auf dem Fernseher dienten als Spielfeld.
+Der Fairchild Channel F (November 1976) war laut Wikipedia die erste Konsole mit ROM-Modulen und einem Mikroprozessor. Die Module hießen "Videocarts", der Startpreis lag bei 169,95 Dollar.
+Das Vectrex (1982) hatte einen eigenen Vektorgrafik-Monitor eingebaut. Farbige Folien über dem Bildschirm ersetzten die fehlende Farbe, das Spiel Mine Storm war fest eingebaut.
+"Tennis for Two" von William Higinbotham lief ab 18.10.1958 im Brookhaven National Laboratory auf einem 5-Zoll-Oszilloskop und einem Analogrechner – 14 Jahre vor Pong.
+"Spacewar!" schrieb Steve Russell 1962 am MIT für einen PDP-1, der etwa 120.000 Dollar kostete. Der Code war gemeinfrei und verbreitete sich unter Computerleuten.
+Computer Space (1971) von Nolan Bushnell und Ted Dabney war der erste kommerzielle Arcade-Automat. Er steckte in einem futuristischen Fiberglas-Gehäuse und war 1973 im Film Soylent Green zu sehen.
+Space-Invaders-Schöpfer Tomohiro Nishikado entwickelte für das Spiel (1978) eigene Hardware und viele Entwicklungswerkzeuge selbst. Er brauchte dafür etwa ein Jahr.
+In Pac-Man bricht das Spiel auf Level 256 zusammen, weil ein Zähler überläuft: der Kill Screen. Billy Mitchell erreichte am 3.7.1999 als Erster bezeugt die perfekte Punktzahl von 3.333.360.
+Im Arcade-Klassiker Donkey Kong ist bei Level 22 Schluss: Ein Programmierfehler lässt Mario nach wenigen Sekunden sterben. Das ist der berühmte Kill Screen.
+Dragon's Lair (1983) lief von Laserdisc und kostete 50 Cent pro Spiel statt der üblichen 25. Trotzdem bildeten sich Schlangen: Bis Anfang 1984 soll es über 32 Millionen Dollar eingespielt haben.
+In Mortal Kombat (1992) ist Sub-Zero ein blau gefärbter Scorpion, Reptile ein grüner Palettentausch. Die Figuren sind digitalisierte Schauspieler, die Entwicklergruppe bestand anfangs aus nur vier Leuten.
+Dance Dance Revolution von Konami erschien Ende 1998 in den japanischen Spielhallen als Teil der Bemani-Reihe und machte Tanzspiele weltweit populär.
+SCUMM, die Engine hinter Maniac Mansion und Monkey Island, steht für "Script Creation Utility for Maniac Mansion". Ron Gilbert schrieb die erste Version für das Spiel von 1987.
+The Secret of Monkey Island erschien im Oktober 1990 bei LucasArts. Ron Gilbert entwickelte die Idee, Tim Schafer und Dave Grossman schrieben Dialoge und Handlung mit.
+Elite (20.9.1984, BBC Micro) von David Braben und Ian Bell bot acht Galaxien mit je 256 Planeten. Sie wurden nicht gespeichert, sondern aus einer einzigen Startzahl (Seed) per Algorithmus erzeugt.
+Der Name Final Fantasy (18.12.1987) kam laut Uematsu daher, dass Hironobu Sakaguchi bei einem Flop die Branche verlassen wollte. Der Arbeitstitel lautete Fighting Fantasy. Sakaguchi relativierte das später.
+Pokémon Rot und Grün erschienen am 27.2.1996 in Japan. Mew steckte als interner Scherz des Programmierers Shigeki Morimoto im Spiel und war für Spieler eigentlich nicht vorgesehen.
+The Great Giana Sisters (Rainbow Arts, 6.5.1987) sollte Super Mario Bros. ähneln, aber rechtlich eigenständig sein. Nach einem bösen Brief von Nintendo nahm der britische Vertrieb es 1988 aus dem Handel.
+Die Musik zu The Great Giana Sisters stammt von Chris Hülsbeck, der später auch durch Turrican berühmt wurde. Das Spiel erschien für C64, Amiga, Atari ST, Amstrad CPC und MSX.
+Turrican (1990) wurde von Manfred Trenz entworfen, die C64-Version erschien bei Rainbow Arts. Factor 5 setzte es für Amiga, Atari ST und CDTV um. Vorbilder waren laut Wikipedia Metroid und Psycho-Nics Oscar.
+Die Siedler (Amiga, 30.6.1993) stammt von Blue Byte. Volker Wertich entwarf und programmierte es, in den USA hieß es "Serf City: Life is Feudal".
+Blue Byte, bekannt für Battle Isle und Die Siedler, wurde im Februar 2001 von Ubi Soft übernommen.
+Factor 5 wurde 1987 in Köln von fünf ehemaligen Rainbow-Arts-Leuten mitgegründet. Star Wars Rogue Squadron erschien 1998 für das N64.
+Anno 1602 (1998) kam von Max Design (Österreich) und Sunflowers (Deutschland) und wurde 1998 das meistverkaufte Computerspiel in Deutschland. Bis 2004 verkaufte es über 2,7 Millionen Exemplare.
+Moorhuhn entstand 1998 als Werbespiel für Johnnie Walker Whisky und hieß zunächst KippenSchieten. Mit nur etwa 2 MB ließ es sich per E-Mail verschicken und wurde zum Büro-Phänomen.
+Die USK wurde 1994 gegründet. Gesetzlich bindend wurden ihre Alterskennzeichen erst mit der Änderung des Jugendschutzgesetzes 2003 – vorher waren sie nur Empfehlungen.
+Wolfenstein 3D (1992) wurde in Deutschland am 29.1.1994 indiziert, wegen Gewaltdarstellung. Schon vier Tage zuvor war es beschlagnahmt worden. 2019 flog es vom Index, 2022 bekam es USK 16.
+Mortal Kombat wurde in Deutschland 1994 indiziert und bundesweit beschlagnahmt. Die Beschlagnahme fiel im Oktober 2019, die Indizierung im März 2020.
+Mario wurde in Mario Bros. (1983) zum Klempner, weil das Spiel ein Netz riesiger Rohre hatte. Bruder Luigi entstand für den Zweispielermodus – als umgefärbte Mario-Figur.
+Laut Don James, damals Lagerchef bei Nintendo of America, nannten er und Chef Minoru Arakawa den Jumpman als Scherz nach dem Vermieter Mario Segale – den im Büro kaum jemand je zu Gesicht bekam.
+Donkey Kong (1981) war Shigeru Miyamotos erstes Spiel als leitender Designer. Der Held hieß zuerst nur "Zimmermann", dann Jumpman und schließlich Mario.
+Den Namen Donkey Kong wollte Miyamoto laut eigener Aussage von 2001 als "dummen Affen" verstanden wissen. Die Tippfehler-Story vom "Monkey Kong" nennt Wikipedia einen Mythos.
+Universal verklagte Nintendo 1982 wegen Donkey Kong und King Kong – und verlor. Nintendo bekam 1985 zusätzlich 1,8 Millionen Dollar aus der Gegenklage zugesprochen.
+Für Donkey Kong baute Nintendo etwa 2.000 unverkaufte Radar-Scope-Automaten um. Am Ende wurden rund 132.000 Spielhallen-Automaten verkauft, 65.000 in Japan und 67.000 in den USA.
+Die Prinzessin in Donkey Kong hieß in Japan zuerst nur "Lady". Ihren Namen Pauline erhielt sie in den USA nach Polly James, der Frau von Nintendo-Lagerchef Don James.
+Das Game & Watch Donkey Kong (8 Millionen Stück) brauchte ein Steuerkreuz statt Joystick. So erfand Nintendo das flache Vier-Wege-Steuerkreuz, das heute fast jeder Controller hat.
+Gunpei Yokoi kam auf Game & Watch (1980), als er im Shinkansen einen gelangweilten Geschäftsmann mit Taschenrechner beobachtete. Insgesamt wurden 43,4 Millionen Geräte verkauft.
+The Legend of Zelda erschien am 21.2.1986 in Japan für das Famicom Disk System. Die NES-Version von 1987 gehörte zu den ersten Spielen mit Batterie im Modul zum Speichern.
+Zelda wurde weltweit etwa 6,5 Millionen Mal verkauft. Miyamoto ließ sich von Kindheitsausflügen in Wäldern, Feldern und Höhlen bei Kyoto inspirieren.
+Prinzessin Zelda ist nach Zelda Fitzgerald benannt, der Frau des Schriftstellers F. Scott Fitzgerald. Miyamoto gefiel laut Wikipedia einfach der Klang des Namens.
+Koji Kondo wollte für Zelda erst Ravels Boléro als Titelmusik nehmen. Im November 1985 stellte sich heraus, dass das Stück in Japan noch nicht gemeinfrei war – er schrieb binnen eines Tages Ersatz.
+Ocarina of Time erhielt bei Metacritic 99 von 100 Punkten (22 Wertungen). Das Modul fasste 32 MB – damals Nintendos größtes Spiel. Die Entwicklung kostete über 12 Millionen Dollar.
+Für Ocarina of Time gab es über 500.000 Vorbestellungen in den USA – ein Guinness-Rekord für die meisten Vorbestellungen eines Spiels. Das Z-Targeting ist nach der Z-Taste benannt.
+Ocarina of Time war erst für das 64DD geplant, wechselte aber aufs Modul. Die schwerere Variante Master Quest (ursprünglich Ura Zelda) erschien erst 2002 bis 2003 auf dem GameCube.
+Super Mario 64 wurde vom 7.9.1994 bis 20.5.1996 entwickelt und fast 12 Millionen Mal verkauft. Eine Kamera in Gestalt eines Lakitu filmt Mario, der Analogstick erlaubt 360-Grad-Steuerung.
+Auf dem Dach von Peachs Schloss wartet in Super Mario 64 Yoshi – aber erst, wenn man alle 120 Sterne hat. Er gibt 100 Extraleben und eine Botschaft der Entwickler.
+Marios verformbares Gesicht im Titelbild von Super Mario 64 geht auf eine 3D-Kopf-Demo von der CES im Januar 1993 zurück. Giles Goddard programmierte es.
+Super Mario Bros. verkaufte als NES-Spiel 40,23 Millionen Exemplare – das brachte einen Guinness-Rekord als meistverkauftes Videospiel. In Nordamerika gingen davon 29 Millionen über die Theke.
+In Super Mario Bros. sind Wolken und Büsche dieselbe Grafik, nur umgefärbt. Das ganze Modul fasste 32 KiB Programm und 8 KiB Grafik – weniger als ein durchschnittliches Handyfoto.
+Der Film The Wizard (Dezember 1989) war ein 90-minütiger Werbefilm für Super Mario Bros. 3. Nintendo gab zudem rund 25 Millionen Dollar für Marketing aus, die Entwicklung kostete weniger als 1,3 Millionen.
+Pac-Man entstand unter Toru Iwatani mit einem Team von neun Leuten. Die erste Testrunde lief am 22.5.1980 in Shibuya. Als Puck-Man kam er nicht in die USA, weil man fürchtete, Vandalen könnten aus dem P ein F machen.
+Die Pizza-Story zu Pac-Man ist nur halb wahr: Iwatani erzählte oft von einer Pizza mit fehlendem Stück, sagte 1986 aber, das stimme nur teilweise. Auch das japanische Wort für Mund (kuchi) spielte mit.
+Die Geister in Pac-Man haben eigene Strategien: Blinky jagt direkt, Pinky und Inky versuchen, Pac-Man den Weg abzuschneiden, und Clyde wechselt je nach Abstand zwischen Verfolgen und Flucht.
+Bis 1982 wurden rund 400.000 Pac-Man-Automaten gebaut. Guinness listet 293.822 installierte Münzautomaten als Rekord für ein Arcade-Spiel (2005 aufgestellt, 2010 bestätigt).
+Pac-Man sollte auch Frauen in die Spielhalle locken. Midway-Manager Stan Jarocki nannte es das erste kommerzielle Videospiel mit vielen Spielerinnen. 1982 kam dann Ms. Pac-Man.
+Der Song "Pac-Man Fever" von Buckner & Garcia (1981) erreichte Platz 9 der Billboard Hot 100 und bekam eine Goldene Schallplatte.
+Galaga (Namco, 1981) hat seine Bonusrunden einem Fehler zu verdanken: Gegner flogen aus dem Bild, das gefiel dem Entwickler Ogawa. So entstanden die Challenging Stages, die in Level 3 beginnen.
+In Galaga kann ein Boss-Gegner das eigene Schiff per Traktorstrahl entführen. Befreit man es, wird daraus ein Doppeljäger mit mehr Feuerkraft – aber auch größerer Trefferfläche.
+Asteroids (Atari, 1979) von Lyle Rains und Ed Logg nutzt Vektorgrafik. Über 70.000 Automaten wurden ausgeliefert. Die Highscore-Liste mit Initialen übernahm Logg von Exidys Star Fire.
+Bei Asteroids lauerten Profis am Bildrand und schossen über die Kante auf die Untertassen. Betreiber beschwerten sich, Atari lieferte einen neuen Chip. Rekord: 41.336.440 Punkte (Scott Safran, 13.11.1982).
+Defender (Williams, 1981) von Eugene Jarvis galt als eines der härtesten Arcade-Spiele. Es hat einen Zwei-Wege-Joystick und fünf Knöpfe, über 55.000 Automaten wurden verkauft und es spielte über eine Milliarde Dollar ein.
+Bei Space Invaders werden die Gegner schneller, je weniger übrig sind: Der Prozessor musste weniger Figuren zeichnen. Nishikado ließ diesen Effekt bewusst als Spielelement im Spiel.
+Space Invaders (Juli 1978) wurde in Japan zum Hit: Bis Ende 1978 standen dort über 100.000 Automaten. Die Atari-2600-Umsetzung verkaufte sich bis 1983 etwa 6,1 Millionen Mal.
+Nishikado ließ sich für Space Invaders von Breakout, Der Krieg der Welten und Star Wars inspirieren. In den USA brachte Midway das Spiel ab November 1978 heraus.
+Von Computer Space wurden laut Bushnell 1.300 bis 1.500 Stück verkauft. Der große Erfolg kam erst mit Ataris Pong.
+Die Magnavox Odyssey kostete 99,95 Dollar, hatte keinen Ton und zählte keine Punkte. Laut Baer verkaufte sie sich etwa 350.000 Mal. 1974 verklagte Magnavox Atari wegen Patenten, 1976 gab es einen Vergleich.
+Mit Spacewar! (1962) wurde 1972 das erste Videospiel-Turnier ausgetragen: die Intergalactic Spacewar Olympics im Stanford AI Lab, gesponsert vom Rolling Stone, am 18.10.1972.
+Beim Fairchild Channel F steuerte man mit einem Griffstück, dessen Knauf sich nach vorn, hinten, seitlich, drehen und drücken ließ. Entwickelt hat die Konsole ein Team um Jerry Lawson.
+Das Vectrex gehörte zu General Consumer Electronics; Milton Bradley kaufte die Firma im September 1982. Am 27.1.1984 wurde das Gerät eingestellt. Mit dem 3D Imager gab es sogar eine Stereo-Brille.
+Das erste Easter Egg der Spielegeschichte versteckte Warren Robinett 1980 in Atari 2600 Adventure: einen Geheimraum mit seinem Namen. Atari nannte damals keine Programmierer – ein Teenager fand ihn später.
+Activision gründeten am 1.10.1979 Ex-Atari-Programmierer wie David Crane. Sie war das erste unabhängige Konsolenspiele-Studio. Der Name kombiniert "active" und "television".
+Pitfall! (1982, David Crane) hat 255 Bildschirme und 32 Schätze bei 20 Minuten Zeit. Crane brauchte laut Wikipedia rund 10 Minuten für den Entwurf und etwa 1.000 Stunden fürs Programmieren.
+Die 255 Bildschirme von Pitfall! brauchen weniger als 50 Byte im Modul: Ein 8-Bit-Zähler erzeugt sie. Das ganze Spiel passt in ein 4-Kilobyte-ROM. Über 4 Millionen Stück gingen auf dem Atari 2600 weg.
+Der Atari Jaguar kam am 23.11.1993 in den USA heraus, wurde als erste 64-Bit-Konsole beworben ("Do the math!") und hatte die Chips Tom und Jerry. Hasbro gab die Patente 1999 frei.
+Der Atari Lynx (1989) war der erste Handheld mit Farb-LCD, Hintergrundbeleuchtung und umschaltbarem Links-/Rechtshändermodus. Er kostete 179,95 Dollar. Die Batterien hielten nur 4 bis 5 Stunden.
+Am Atari Lynx arbeiteten mit RJ Mical und Dave Needle zwei frühere Amiga-Entwickler. Entstanden ist er bei Epyx unter dem Namen "Handy".
+Der Virtual Boy von Gunpei Yokoi (Japan, 21.7.1995) zeigte nur Rot auf Schwarz, weil das am billigsten war. Etwa 770.000 Stück wurden verkauft, es gab nur 22 Spiele, schon 1996 war Schluss.
+Der Game Boy Color erschien am 21.10.1998 in Japan, kostete in den USA 79,95 Dollar und lief auf Wunsch mit doppeltem Takt (rund 8,4 MHz). Pokémon Gold und Silber wurden 23 Millionen Mal ausgeliefert.
+Die Game Boy Camera (1998) speicherte bis zu 30 Fotos mit 128 x 112 Pixeln in vier Graustufen. Mit dem Game Boy Printer druckte man sie auf Thermopapier aus.
+Die PlayStation 2 erschien am 4.3.2000 in Japan für 39.800 Yen. Mit rund 160 Millionen Stück gilt sie als meistverkaufte Konsole der Geschichte, die Produktion endete am 4.1.2013.
+Das Sega Master System erschien als Mark III am 20.10.1985 in Japan. Dank Tectoy gilt es als langlebigste Konsole der Geschichte: In Brasilien wurden bis 2016 über 8 Millionen Geräte verkauft.
+Das Master System hatte eine 3D-Brille (SegaScope 3-D) mit Shutter-Technik. Acht Spiele unterstützten sie, darunter Zaxxon 3-D und OutRun 3-D. In Europa war das Master System bis 1990 die meistverkaufte Konsole.
+Im Mega Drive steckt ein Motorola 68000 mit 7,6 MHz, ein Z80 sorgt für Ton und Master-System-Kompatibilität. Sega verkaufte weltweit rund 30,75 Millionen, Tectoy in Brasilien etwa 3 Millionen zusätzlich.
+Das Mega-CD erschien am 12.12.1991 in Japan für 49.800 Yen und wurde 2,24 Millionen Mal verkauft. Das 32X-Zusatzgerät schaffte nur etwa 800.000 Stück. Beide wurden 1996 eingestellt.
+Sonic-Zeichner Naoto Ohshima gewann mit der Figur einen internen Sega-Wettbewerb. Die Figur hieß zuerst "Mr. Hedgehog". Sonic ist dunkelblau, damit er zum Sega-Logo passt.
+Ab November 1991 lag Sonic in den USA jedem Genesis bei und ersetzte Altered Beast. Den Soundtrack schrieb Masato Nakamura, Bassist der japanischen Band Dreams Come True.
+Sonic 2 entstand bei Sega Technical Institute in Kalifornien, gegründet von Mark Cerny. Sonic-Team-Mitglieder zogen dafür aus Japan um. Tails heißt eigentlich Miles Prower – ein Wortspiel mit "miles per hour".
+Sonic 2 verkaufte sich in Großbritannien in der ersten Woche 750.000 Mal, etwa 48 Prozent aller Spiele-Verkäufe dort. In den USA waren es in der Woche 400.000 Stück.
+Das Sega Saturn erschien am 22.11.1994 in Japan für 44.800 Yen. Auf der E3 am 11.5.1995 verkündete Sega überraschend den sofortigen US-Start für 399 Dollar – rund 30.000 Geräte gingen direkt in den Handel.
+Das Sega Saturn hat acht Prozessoren, darunter zwei Hitachi SH-2 mit 28,6 MHz. In Europa startete es am 8.7.1995 für 399,99 Pfund. Weltweit wurden etwa 9,26 Millionen verkauft.
+Beim Saturn-Start verkaufte sich Virtua Fighter fast im Verhältnis 1:1 zur Konsole. Panzer Dragoon Saga gilt als bestes Saturn-Spiel – in den USA erschienen davon weniger als 20.000 Stück.
+Die Dreamcast verkaufte sich in den USA innerhalb von zwei Wochen über 500.000 Mal. Das Medium GD-ROM wählte Sega, um die Lizenzgebühren für DVD zu sparen. Weltweit wurden etwa 9,13 Millionen verkauft.
+Die Dreamcast hat einen Memory-Stick namens VMU: 128 KB Speicher plus eigenes LCD-Display mit Tasten. Das Betriebssystem war eine angepasste Version von Windows CE.
+Segas Dreamcast-Reparaturdienst lief noch bis zum 28.9.2007. In Europa kam sie am 14.10.1999 heraus, das eingebaute Modem war modular und konnte ausgetauscht werden.
+Die PC Engine hatte einen 8-Bit-Hauptprozessor (HuC6280, 7,16 MHz) mit 16-Bit-Grafikchips. Das "16" im US-Namen TurboGrafx-16 wurde deshalb als irreführend kritisiert. Sie erschien dort am 29.8.1989.
+Beim 3DO verlangte der Hersteller nur 3 Dollar Lizenzgebühr pro Spiel. Die Firma war im September 1991 aus Electronic Arts ausgegliedert worden. Der Nachfolger M2 wurde nie fertig.
+Tetris programmierte Alexey Pajitnov in etwa drei Wochen in Pascal auf einem Elektronika 60. Der Name verbindet "tetra" (vier) mit Tennis, seinem Lieblingssport.
+Laut Guinness ist Tetris das am häufigsten umgesetzte Videospiel: auf mindestens 70 Plattformen. Auf dem Game Boy lag es ab 31.7.1989 in den USA bei – etwa 35 Millionen Mal.
+Pokémon hieß zuerst Capsule Monsters, der Name änderte sich wegen Markenproblemen. Satoshi Tajiri kam die Tauschidee nach Dragon Quest II, das Link-Kabel des Game Boy machte sie möglich.
+Pokémon Blau gab es in Japan zuerst nur per Post für Abonnenten des Magazins CoroCoro (15.10.1996). Insgesamt wurden von Rot, Grün und Blau über 31 Millionen Stück verkauft.
+Final Fantasy erschien 1987 mit 520.000 ausgelieferten Exemplaren in Japan. Geplant waren zunächst nur 200.000. Nobuo Uematsu komponierte die Musik, Yoshitaka Amano zeichnete die Figuren.
+In Street Fighter II (Capcom, März 1991) entstanden die Combos zufällig: Ein Fehler beim Testen ließ Treffer verketten, das Team behielt es. Es gibt acht spielbare Kämpfer.
+Street Fighter II wurde über 200.000 Mal als Automat verkauft. Die SNES-Version brachte es auf etwa 6,3 Millionen Stück. Die Champion Edition (März 1992) war das erste Update.
+Mortal Kombat erschien im August 1992 in den Spielhallen. Die Genesis-Version zeigte Blut per Geheimcode, die SNES-Version ersetzte es durch Schweiß. Das löste Anhörungen im US-Senat aus.
+Dragon's Lair war mit rund 3 Millionen Dollar und sieben Monaten Entwicklung teuer. Don Bluth zeichnete die Animation. Der Gas-Laser im Laserdisc-Player hielt nur etwa 650 Stunden.
+Von Dragon's Lair wurden über 16.000 Automaten gebaut. Die Laserdisc-Player gingen oft kaputt, weil das Spiel ständig springen musste und das Laufwerk stark belastete.
+In den USA standen DDR-Automaten meist in Gehäusen von Raw Thrills. 2006 kündigte Konami an, die Spiele schrittweise in die 765 Schulen von West Virginia einzuführen.
+Das Adventure Loom (1990) wird statt mit Verben mit Zaubersprüchen auf einem Notenstab gesteuert und lief ebenfalls auf SCUMM. ScummVM lässt viele dieser Spiele heute auf modernen Rechnern laufen.
+Die "Scumm Bar" in Monkey Island trägt den Namen der Skriptsprache. In Escape from Monkey Island wurde sie zur "Lua Bar", weil die Engine auf Lua wechselte.
+Monkey Island: Ron Gilbert ließ sich von der Disney-Fahrt Pirates of the Caribbean und Tim Powers' Roman On Stranger Tides inspirieren. Die Beleidigungs-Duelle gehen auf Piraten in Errol-Flynn-Filmen zurück.
+Michael Land komponierte den MIDI-Soundtrack von Monkey Island im Piraten-Reggae-Stil. Es war sein erstes Projekt bei Lucasfilm. Guybrush kann nur ertrinken, wenn er über zehn Minuten unter Wasser bleibt.
+Elite war eines der ersten Heimcomputerspiele mit Drahtgitter-3D und Verdeckung. Auf dem BBC Micro wurden 107.898 Stück verkauft. Schätzungen für alle Systeme liegen bei 600.000 bis zu einer Million.
+Chris Hülsbeck wurde 1968 in Kassel geboren. 1986 gewann seine Komposition "Shades" einen Wettbewerb des Magazins 64'er, was ihm den Job bei Rainbow Arts einbrachte. Dort entstand auch sein SoundMonitor für den C64.
+Am 23.8.2008 spielte das WDR Funkhausorchester in Köln das Konzert "Symphonic Shades" mit Chris Hülsbecks Musik. Es war das erste Videospielmusik-Konzert, das live im Radio übertragen wurde.
+Chris Hülsbeck zog 1998 in die USA und arbeitete bei Factor 5 an der Rogue-Squadron-Reihe. Zuvor komponierte er für Katakis (1988), die Intro-Musik von R-Type (1989) und die Turrican-Reihe.
+Der Name Katakis stammt aus einem Telefonbuch aus Gütersloh. Das R-Type-ähnliche Spiel bekam später den Namen Denaris, der aus einem Zufallsgenerator stammte.
+Katakis ähnelte R-Type so stark, dass Activision Europe Factor 5 vor die Wahl stellte: Entweder setzen sie R-Type offiziell auf den Amiga um oder es gäbe eine Klage. Factor 5 nahm den Deal an.
+Factor 5 programmierte auch die SNES-Spiele Super Turrican (1993, 1995). Das US-Büro in San Rafael wurde im Mai 1996 gegründet und im Mai 2009 geschlossen, die deutsche Firma wurde im Januar 2011 aufgelöst.
+Im Amiga-Spiel Die Siedler schrieb Volker Wertich über 70.000 Zeilen Assembler. Ein Siedler-Kopf ist nur 5 x 5 Pixel klein. Auf einem Amiga 1200 ließen sich etwa 16.000 Siedler verwalten.
+Ein 16-stelliger Code erzeugt in Die Siedler rund 270 Milliarden verschiedene Karten. Bis Mai 1998 wurden über 400.000 Stück verkauft. Ursprünglich war es als Göttersimulation wie Populous geplant.
+Blue Byte entstand im Oktober 1988 auf dem Dachboden von Thomas Hertzler in Mülheim, gegründet von ihm und Lothar Schmitt. Battle Isle (1991) war der erste große Erfolg.
+Anno 1602 war das erste PC-Spiel mit einer Doppel-Platin-Auszeichnung des VUD (für 400.000 Verkäufe in der D-A-CH-Region). Max Design sitzt im österreichischen Schladming.
+Moorhuhn verbreitete sich ab 1999 als Gratis-Download. Medien warnten, Angestellte verbrächten Stunden mit dem Spiel. Crazy Chicken 2 folgte im September 2000. 2009 wurden Phenomedia-Manager verurteilt.
+Die USK hat laut Wikipedia seit 1994 über 30.000 Spiele geprüft. Seit dem 31.5.2008 wird sie von der USK gGmbH in Berlin betrieben. Die Stufen heißen ab 0, 6, 12, 16 und 18.
+Die SNES-Fassung von Wolfenstein 3D (1994) musste auf Nintendos Wunsch entschärft werden: NS-Symbole fielen weg, Wachhunde wurden zu Mutanten-Ratten. Sie wurde am 29.10.1994 separat indiziert.
+Wolfenstein 3D erschien am 5.5.1992 als Shareware bei Apogee. Mac-Versionen kamen 1994, portiert von Rebecca Heineman. Der Mac-Port basierte auf der SNES-Fassung.
+Für den Power Glove (Mattel, 1989) nennt Wikipedia fast eine Million verkaufte Stück und einen Preis von 75 bis 100 Dollar. In Japan fertigte die Firma PAX das Gerät.
+Das N64-Spiel Super Mario 64 und Ocarina of Time wurden zeitgleich bei Nintendo EAD entwickelt, zusammen mit Mario Kart 64. Ocarina begann 1994 und beschäftigte laut Wikipedia über 120 Leute.
+Das Famicom wurde nach dem Start am 15.7.1983 für 14.800 Yen zurückgerufen: Ein fehlerhafter Chip konnte das Gerät einfrieren. Yamauchi ordnete an, alle zurückzurufen, die Konsole bekam ein neues Mainboard.
+Das NES kam am 18.10.1985 in New York in den Testmarkt und am 27.9.1986 landesweit in die USA. In Europa startete es 1986 in Skandinavien. In Japan wurde es erst 2003 eingestellt.

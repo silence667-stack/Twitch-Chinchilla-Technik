@@ -1,0 +1,1 @@
+Bei Space Invaders werden die Gegner schneller, je weniger übrig sind: Der Prozessor musste weniger Figuren zeichnen. Nishikado ließ diesen Effekt bewusst als Spielelement im Spiel.

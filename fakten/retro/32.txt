@@ -1,0 +1,1 @@
+Der Grafikmodus "Mode 7" des SNES dreht und skaliert Flächen und erzeugt so Pseudo-3D. Vorgeführt wurde er zum Start mit F-Zero und Pilotwings.

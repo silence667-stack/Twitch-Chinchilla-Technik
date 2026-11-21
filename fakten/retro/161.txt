@@ -1,0 +1,1 @@
+In Super Mario Bros. sind Wolken und Büsche dieselbe Grafik, nur umgefärbt. Das ganze Modul fasste 32 KiB Programm und 8 KiB Grafik – weniger als ein durchschnittliches Handyfoto.

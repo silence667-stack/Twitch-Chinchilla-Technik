@@ -1,0 +1,1 @@
+Elite (20.9.1984, BBC Micro) von David Braben und Ian Bell bot acht Galaxien mit je 256 Planeten. Sie wurden nicht gespeichert, sondern aus einer einzigen Startzahl (Seed) per Algorithmus erzeugt.

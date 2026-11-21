@@ -1,0 +1,1 @@
+Im Mega Drive steckt ein Motorola 68000 mit 7,6 MHz, ein Z80 sorgt für Ton und Master-System-Kompatibilität. Sega verkaufte weltweit rund 30,75 Millionen, Tectoy in Brasilien etwa 3 Millionen zusätzlich.

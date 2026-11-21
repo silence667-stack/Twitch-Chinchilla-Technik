@@ -1,0 +1,1 @@
+Die PC Engine hatte einen 8-Bit-Hauptprozessor (HuC6280, 7,16 MHz) mit 16-Bit-Grafikchips. Das "16" im US-Namen TurboGrafx-16 wurde deshalb als irreführend kritisiert. Sie erschien dort am 29.8.1989.

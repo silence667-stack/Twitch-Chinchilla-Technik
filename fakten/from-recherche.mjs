@@ -24,7 +24,7 @@ const md = readFileSync(join(here, 'recherche', `${name}.md`), 'utf-8');
 const facts = [];
 let skipped = 0;
 for (const line of md.split('\n')) {
-  const m = line.match(/^\|\s*\d+\s*\|(.+)\|(.+)\|\s*(hoch|mittel)\s*\|\s*$/i);
+  const m = line.match(/^\|\s*\d+\s*\|(.+)\|(.+)\|\s*(hoch|mittel)\b[^|]*\|\s*$/i);
   if (!m) continue;
   if (m[3].toLowerCase() !== 'hoch') { skipped++; continue; }
   let fact = m[1].trim();

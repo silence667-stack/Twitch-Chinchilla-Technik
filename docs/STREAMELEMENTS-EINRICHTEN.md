@@ -62,8 +62,9 @@ Mandel-Icon für die Kanalpunkte (28/56/112 px, PNG, max. 25 KB).
 
 | Befehl | Alias | Was passiert | Cooldown (User/Global) |
 |---|---|---|---|
-| `!retrofakt` | `!retro` | Retro-Spiele-Fakt aus `fakten/retro.txt` | 300 s / 300 s |
-| `!chinfakt` | `!chinchilla` | Chinchilla-Fakt aus `fakten/chinchilla.txt` | 300 s / 300 s |
+| `!retrofakt` | `!retro` | Retro-Spiele-Fakt (188, `fakten/retro.txt`) | 300 s / 300 s |
+| `!chinfakt` | `!chinchilla` | Chinchilla-Fakt (71, `fakten/chinchilla.txt`) | 300 s / 300 s |
+| `!techfakt` | `!tech` | Technik-Fakt (104, `fakten/technik.txt`) | 300 s / 300 s |
 | `!chintyp @Name` | – | Zufälliger Chinchilla-Typ mit Prozentzahl | 60 s / 10 s |
 | `!retrolevel @Name` | – | Zufälliges Retro-Gamer-Level mit Prozentzahl | 60 s / 10 s |
 | `!discord` | – | Discord-Einladung | 15 s / 5 s |
@@ -81,13 +82,18 @@ Retro-Spielwunsch (3.000, mit Texteingabe).
 **So funktionieren die Fakten-Befehle:** `node fakten/build.mjs` macht aus
 jeder Zeile von `fakten/<name>.txt` eine eigene Datei `fakten/<name>/<n>.txt`
 (fest gemischte Reihenfolge). Der Befehl zählt per `$(count retrofakt)` hoch
-und holt per `$(customapi …/fakten/retro/$(math mod($(count retrofakt),92)+1).txt)`
+und holt per `$(customapi …/fakten/retro/$(math mod($(count retrofakt),188)+1).txt)`
 die passende Datei von GitHub Pages. So kommt jeder Fakt einmal dran, bevor
 sich einer wiederholt.
 
-**Neuen Fakt hinzufügen:** Zeile in `fakten/retro.txt` ergänzen (max. ~380
-Byte), `node fakten/build.mjs`, committen und pushen. Danach im Befehl die
-Zahl im `mod(…, 92)` auf die neue Anzahl anpassen (das Skript gibt sie aus).
+**Herkunft der Fakten:** Jede Datenbank hat ein Recherche-Dokument mit Quellen
+und Sicherheit in `fakten/recherche/<name>.md`. Übernommen werden nur Fakten mit
+Sicherheit "hoch": `node fakten/from-recherche.mjs <name>`, dann
+`node fakten/build.mjs`.
+
+**Neuen Fakt hinzufügen:** Zeile mit Quelle in `fakten/recherche/<name>.md`
+ergänzen, beide Skripte laufen lassen, committen und pushen. Danach im Befehl die
+Zahl im `mod(…, N)` auf die neue Anzahl anpassen (das Skript gibt sie aus).
 
 ## 4. Panels einbinden
 

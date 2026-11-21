@@ -1,0 +1,1 @@
+Gegen Import-Spiele sperrt das SNES gleich doppelt: Ein CIC-Chip prüft die Region, und US-Module haben einen anderen Gehäusefuß mit Rillen als japanische und europäische.

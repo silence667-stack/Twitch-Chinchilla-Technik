@@ -1,0 +1,1 @@
+Das Neo Geo lief auf einem Motorola 68000 mit 12 MHz plus Z80 für den Ton. Verkauft wurden rund 1 Million Automaten (MVS) und 410.000 Heimkonsolen (AES).

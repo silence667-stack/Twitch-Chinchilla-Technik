@@ -1,0 +1,1 @@
+Der VIC-II im C64 konnte 320 x 200 Pixel in 16 Farben und Hardware-Sprites. Produziert wurde der Rechner bis April 1994, rund 11,5 Jahre lang.

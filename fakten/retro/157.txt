@@ -1,0 +1,1 @@
+Der Super-FX-Chip im Modul machte Star Fox möglich: Er ist ein RISC-Prozessor als Zusatz-Hardware und berechnete Polygon-3D, zu dem das SNES allein nicht fähig war.

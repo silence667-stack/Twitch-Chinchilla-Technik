@@ -1,0 +1,1 @@
+"Racing the Beam": Atari-Programmierer mussten ihren Code mit dem Elektronenstrahl des Fernsehers synchronisieren, weil es keinen Bildspeicher gab. Spiellogik lief nur, wenn der Strahl außerhalb des Bildes war.

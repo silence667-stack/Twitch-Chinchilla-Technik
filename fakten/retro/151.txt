@@ -1,0 +1,1 @@
+Die Dreamcast hat einen Memory-Stick namens VMU: 128 KB Speicher plus eigenes LCD-Display mit Tasten. Das Betriebssystem war eine angepasste Version von Windows CE.

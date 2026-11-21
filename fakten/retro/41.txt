@@ -1,0 +1,1 @@
+Asteroids (Atari, 1979) von Lyle Rains und Ed Logg nutzt Vektorgrafik. Über 70.000 Automaten wurden ausgeliefert. Die Highscore-Liste mit Initialen übernahm Logg von Exidys Star Fire.
