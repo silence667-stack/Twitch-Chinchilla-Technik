@@ -1,38 +1,39 @@
-# Twitch-Panels hochladen
+# Twitch-Panels (Stand 21.11.2026)
 
-Die drei fertigen Bilder liegen in `panels/`:
+Alle Bild-Panels stammen aus dem gekauften Pack **"Cyanide Twitch Panels"
+von Gaming Visuals** (ZIP: `~/Downloads/Cyanide-Twitch-Panels.zip`,
+16 Panels à 1207×458 px). Lizenz: Nutzung auf dem eigenen Kanal frei,
+**Weitergabe verboten** – die Pack-Bilder gehören deshalb nicht in dieses
+öffentliche Repo (`panels/originals/` steht in `.gitignore`).
 
-- `panel-ueber-mich.png` — "derBaLu84 · Chinchillas &amp; Technik"
-- `panel-chinchillas.png` — "Die Crew"
-- `panel-technik.png` — "Mein Setup"
+## Was aktuell live ist
 
-## Schritte
+| Panel | Link / Beschreibung |
+|---|---|
+| StreamElements Leaderboards (Erweiterung) | Subs, Gifts, Bits, Chatstats |
+| ABOUT ME | – |
+| SUBSCRIBE | https://www.twitch.tv/subs/derbalu84 |
+| SCHEDULE | https://www.twitch.tv/derbalu84/schedule |
+| SOCIALS | Beschreibung mit YouTube, Instagram, Twitter/X, Discord |
+| FAQs | Beschreibung mit Chat-Befehlen und Mandeln-Erklärung |
+| FOLLOW ME INSTAGRAM, TWITTER, YOUTUBE, COMMUNITY DISCORD, MY HARDWARE PC SPECS, CHAT RULES, SUPPORT ME DONATE | bestehende Panels |
 
-1. Auf twitch.tv einloggen, zu deinem Kanal gehen, **"Kanal bearbeiten"**
-   (Stift-Symbol unter dem Video-Bereich auf deiner eigenen Kanalseite).
-2. Runterscrollen zu **"Panels"** → **"Panel hinzufügen"** → **"Bild hinzufügen"**.
-3. Je Panel das passende PNG aus `panels/` hochladen.
-4. Für jedes Panel kannst du zusätzlich eintragen (optional, aber empfohlen):
+Noch ungenutzt im Pack: CONTACT ME, FACEBOOK, WISHLIST (Amazon).
 
-   **Panel "Über mich"**
-   - Titel: `Über mich`
-   - Beschreibung: kurzer Text über dich, z. B. "Technik-Nerd mit drei
-     Chinchillas im Hintergrund. Hier gibt's Gaming, Technik-Projekte und
-     ruhige Talk-Streams."
+## Neues Panel hochladen – worauf achten
 
-   **Panel "Die Crew"**
-   - Titel: `Die Chinchilla-Crew`
-   - Beschreibung: Namen und 1-2 Sätze zu den drei Chinchillas
-   - Link: deine Zuschauer-Website, Abschnitt `#crew`
-     (z. B. `https://silence667-stack.github.io/Twitch-Chinchilla-Technik/website/#crew`)
+1. Kanalseite → **Info** → Schalter **"Panels bearbeiten"** an.
+2. Ganz unten **"+"** → **"Ein Text- oder Bildpanel hinzufügen"**.
+3. **"Bild hinzufügen"**, PNG aus dem Pack wählen.
+4. **Wichtig:** Im Zuschnitt-Dialog markiert Twitch zuerst nur eine kleine
+   Ecke. Den Rahmen an der unteren rechten Ecke über das ganze Bild ziehen,
+   sonst wird das Panel beschnitten. Dann **"Fertig"**.
+5. Optional Link und Beschreibung eintragen (Beschreibung kann Markdown).
+6. **"Absenden"** und warten, bis der Button ausgegraut ist. Erst danach die
+   Seite neu laden – sonst geht das Panel verloren oder es bleibt ein leeres
+   Panel zurück.
 
-   **Panel "Mein Setup"**
-   - Titel: `Mein Setup`
-   - Beschreibung: Kurzfassung deiner Technik
-   - Link: Zuschauer-Website, Abschnitt `#setup`
+## Fehlt noch (Grafik → Codex)
 
-5. Reihenfolge per Drag&amp;Drop anpassen, speichern.
-
-Tipp: Falls du später Text/Farben in den Panels ändern willst, die
-`.html`-Quellen in `panels/` bearbeiten und `bash panels/render-panels.sh`
-erneut ausführen — dann die neuen PNGs bei Twitch austauschen.
+- Eigenes Panel für die Chinchilla-Crew im Pack-Stil.
+- Mandel-Icon für die Kanalpunkte (28/56/112 px, PNG, max. 25 KB).
